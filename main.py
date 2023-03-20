@@ -7,20 +7,10 @@ def deleteExtraTitles(df, condition):
     return df
 
 def deleteNan(list):
-    newList = []
-    last = ''
-    for l in list :
-        if pd.isna(l) : l = last
-        last = l
-        newList.append(l)
-    return newList         
+    return [ list[i] if not pd.isna(list[i]) else list[i-1] for i in range(len(list))]        
 
 def renameNan(list):
-    newList = []
-    for l in list :
-        if pd.isna(l) : newList.append('N.D.')
-        else : newList.append(l)
-    return newList 
+    return [ 'N.D' if pd.isna(l) else l for l in list]
 
 def splitList(list,condition):
     return [ l.split(condition) for l in list]
