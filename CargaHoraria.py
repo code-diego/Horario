@@ -23,10 +23,9 @@ def renameNan(list):
 def splitList(list,condition):
     return [ l.split(condition) for l in list]
 
-#Creamos un Data Frame como BD
-df_FC = pd.read_excel('./Horarios2021-2.xlsx')
-
 def data(): 
+    #Creamos un Data Frame como BD
+    df_FC = pd.read_excel('./Horarios2021-2.xlsx')
     #Titulos de Data Frame
     names = df_FC.columns.tolist() #['CURSOS'(0), 'CÓDIGO'(1), 'HORARIO'(2), 'AULA'(3), 'DOCENTE'(4), 'N'(5)] 
     #Eliminamos los titulos extras en la data
@@ -51,7 +50,10 @@ def data():
     df_FC[names[4]] = splitList(docentes,'\n')
     df_FC[names[3]] = splitList(aulas,' ')
 
-
-
     #Retornando DataFrame
     return df_FC
+
+def cursos():
+    df = data()
+    cursos = list(set(df[df.columns.tolist()[0]]))
+    [print(curso) for curso in cursos]

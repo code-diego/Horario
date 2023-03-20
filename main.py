@@ -2,7 +2,7 @@ import CargaHoraria
 
 def run():
     db = CargaHoraria.data()
-    print(db)
+    CargaHoraria.cursos()
 
 if __name__ == "__main__":
     run()
