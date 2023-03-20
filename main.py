@@ -6,7 +6,7 @@ def deleteExtraTitles(df, condition):
     df = df.reset_index(drop=True)
     return df
 
-def deleteNam(list):
+def deleteNan(list):
     newList = []
     last = ''
     for l in list :
@@ -15,25 +15,42 @@ def deleteNam(list):
         newList.append(l)
     return newList         
 
+def renameNan(list):
+    newList = []
+    for l in list :
+        if pd.isna(l) : newList.append('N.D.')
+        else : newList.append(l)
+    return newList 
+
+def splitList(list,condition):
+    return [ l.split(condition) for l in list]
+
+#Creamos un Data Frame como BD
 df_FC = pd.read_excel('./Horarios2021-2.xlsx')
 
 #Titulos de Data Frame
-names = df_FC.columns.tolist() #['CURSOS', 'CÓDIGO', 'HORARIO', 'AULA', 'DOCENTE', 'N'] 
-
-cursos     = df_FC[names[0]].tolist()
-codigos    = df_FC[names[1]].tolist()
-horarios   = df_FC[names[2]].tolist()
-aulas      = df_FC[names[3]].tolist()
-docentes   = df_FC[names[4]].tolist()
-ns         = df_FC[names[5]].tolist()
-
-df_FC[names[0]] = deleteNam(cursos)
-df_FC[names[1]] = deleteNam(codigos)
-df_FC[names[5]] = deleteNam(ns)
-
+names = df_FC.columns.tolist() #['CURSOS'(0), 'CÓDIGO'(1), 'HORARIO'(2), 'AULA'(3), 'DOCENTE'(4), 'N'(5)] 
+#Eliminamos los titulos extras en la data
 df_FC = deleteExtraTitles(df_FC, names)
+#Creando una lista para cada columna del Data Frame
+cursos, codigos, horarios, aulas, docentes, ns = [df_FC[name].tolist() for name in names]
+
+#Limpiamos los "nan" de Data Frame
+df_FC[names[0]] = deleteNan(cursos)
+df_FC[names[1]] = deleteNan(codigos)
+df_FC[names[5]] = deleteNan(ns)
+#Renombrando 'nan' por falda de datos (N.D.)
+df_FC[names[4]] = renameNan(docentes)
+df_FC[names[3]] = renameNan(aulas)
+
+#Actualizando xd
+cursos, codigos, horarios, aulas, docentes, ns = [df_FC[name].tolist() for name in names]
+
+#Separando en sublistas las sig listas
+df_FC[names[1]] = splitList(codigos,' ')
+df_FC[names[2]] = splitList(horarios,'\n')
+df_FC[names[4]] = splitList(docentes,'\n')
+df_FC[names[3]] = splitList(aulas,' ')
 
 #Mostrar DataFrame
 print(df_FC)
-
-
