@@ -6,6 +6,18 @@ def deleteExtraTitles(df, condition):
     df = df.reset_index(drop=True)
     return df
 
+def deleteNoDataWithText(df,txt):
+    iters = [ index for index,row in df.iterrows() if row[0] == txt ]
+    df = df.drop(i for i in iters)
+    df = df.reset_index(drop=True)
+    return df
+
+def deleteNoDataWithTextStart(df,txt):
+    iters = [ index for index,row in df.iterrows() if not pd.isna(row[0]) and str(row[0]).startswith(txt) ]
+    df = df.drop(i for i in iters)
+    df = df.reset_index(drop=True)
+    return df
+
 def deleteNan(list):
     newList, last, = [], ''
 
@@ -25,35 +37,74 @@ def splitList(list,condition):
 
 def data(): 
     #Creamos un Data Frame como BD
-    df_FC = pd.read_excel('./Horarios2021-2.xlsx')
+    dfc = pd.read_excel('./Horarios2022-2.xlsx')
+    #Configuracion a 'pd' para mostrar todas las filas de la data
+    pd.set_option('display.max_rows', None)
     #Titulos de Data Frame
-    names = df_FC.columns.tolist() #['CURSOS'(0), 'CÓDIGO'(1), 'HORARIO'(2), 'AULA'(3), 'DOCENTE'(4), 'N'(5)] 
-    #Eliminamos los titulos extras en la data
-    df_FC = deleteExtraTitles(df_FC, names)
+    names = dfc.columns.tolist() #['CURSOS'(0), 'CÓDIGO'(1), 'HORARIO'(2), 'AULA'(3), 'DOCENTE'(4), 'N'(5)] 
+    #Eliminamos los titulos extras, y datos inecesaria en la data
+    dfc = deleteExtraTitles(dfc, names)
+    txt1 = 'CURSOS OFRECIDOS EN EL PERIODO ACADÉMICO 2022-2'
+    txt2 = 'CURSOS ELECTIVOS'
+    txt3 = 'ESCUELA PROFESIONAL DE '
+    dfc = deleteNoDataWithText(dfc,txt1)
+    dfc = deleteNoDataWithText(dfc,txt2)
+    dfc = deleteNoDataWithTextStart(dfc,txt3)
+    
     #Creando una lista para cada columna del Data Frame
-    cursos, codigos, horarios, aulas, docentes, ns = [df_FC[name].tolist() for name in names]
+    cursos, codigos, horarios, aulas, docentes, ns = [dfc[name].tolist() for name in names]
 
     #Limpiamos los "nan" de Data Frame
-    df_FC[names[0]] = deleteNan(cursos)
-    df_FC[names[1]] = deleteNan(codigos)
-    df_FC[names[5]] = deleteNan(ns)
+    dfc[names[0]] = deleteNan(cursos)
+    dfc[names[1]] = deleteNan(codigos)
+    dfc[names[5]] = deleteNan(ns)
+
+    #Para 'ns' cambiamos los datos float -> int
+    dfc[names[5]] = dfc[names[5]].astype(int)
+
     #Renombrando 'nan' por falda de datos (N.D.)
-    df_FC[names[4]] = renameNan(docentes)
-    df_FC[names[3]] = renameNan(aulas)
+    dfc[names[2]] = dfc[names[2]].fillna('n.d.')
+    dfc[names[3]] = dfc[names[3]].fillna('n.d.')
+    dfc[names[4]] = dfc[names[4]].fillna('n.d.')
 
     #Actualizando xd
-    cursos, codigos, horarios, aulas, docentes, ns = [df_FC[name].tolist() for name in names]
+    cursos, codigos, horarios, aulas, docentes, ns = [dfc[name].tolist() for name in names]
 
     #Separando en sublistas las sig listas
-    df_FC[names[1]] = splitList(codigos,' ')
-    df_FC[names[2]] = splitList(horarios,'\n')
-    df_FC[names[4]] = splitList(docentes,'\n')
-    df_FC[names[3]] = splitList(aulas,' ')
+    dfc[names[1]] = splitList(codigos,' ')
+    dfc[names[2]] = splitList(horarios,'\n')
+    dfc[names[4]] = splitList(docentes,'\n')
+    dfc[names[3]] = splitList(aulas,' ') #Data split : bad split for the formant in main data excel
 
-    #Retornando DataFrame
-    return df_FC
+    #Actulizacion again xd
+    cursos, codigos, horarios, aulas, docentes, ns = [dfc[name].tolist() for name in names]
+    
+    return dfc    
 
-def cursos():
+def cursos_sec():
     df = data()
-    cursos = list(set(df[df.columns.tolist()[0]]))
-    [print(curso) for curso in cursos]
+    cursos, codigos = [], []
+    for index,row in df.iterrows():
+        if (row[0] not in cursos) or (row[1][0] not in codigos) : 
+            cursos.append( row[0] )
+            codigos.append( row[1][0] )
+    return cursos
+    
+def codigos_sec():
+    df = data()
+    codigos = [ codigo for codigo,seccion in df[df.columns.tolist()[1]] ]
+    secciones = [ seccion for codigo,seccion in df[df.columns.tolist()[1]] ]
+
+    newCodigos =  []
+    for codigo in codigos :
+        if codigo not in newCodigos:
+            newCodigos.append(codigo)
+    return newCodigos
+
+def diccionario():
+    cursos = cursos_sec()
+    codigos = codigos_sec()
+    diccionario = {codigos[i]:cursos[i] for i in range(len(codigos))}
+    return diccionario
+    
+
