@@ -78,6 +78,7 @@ def data():
     
     return dfc    
 
+#Esto podia meterlo a una clase Data :0
 def cursos_sec():
     df = data()
     cursos, codigos = [], []
