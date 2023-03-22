@@ -20,14 +20,11 @@ def deleteNoDataWithTextStart(df,txt):
 
 def deleteNan(list):
     newList, last, = [], ''
-
     for l in list :
         if pd.isna(l) : l = last
         last = l
         newList.append(l)
-
-    return newList
-    #return [ list[i] if not pd.isna(list[i]) else list[i-1] for i in range(len(list))]        
+    return newList      
 
 def renameNan(list):
     return [ 'N.D' if pd.isna(l) else l for l in list]
