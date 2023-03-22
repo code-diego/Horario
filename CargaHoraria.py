@@ -34,7 +34,7 @@ def splitList(list,condition):
 
 def data(): 
     #Creamos un Data Frame como BD
-    dfc = pd.read_excel('./Horarios2022-2.xlsx')
+    dfc = pd.read_excel('./data/Horarios2022-2.xlsx')
     #Configuracion a 'pd' para mostrar todas las filas de la data
     pd.set_option('display.max_rows', None)
     #Titulos de Data Frame
