@@ -5,14 +5,19 @@ import CargaHoraria as ch
 root = tk.Tk()
 root.title("Generador de Horarios")
 
-# Dimensiones
-screen_width = 1500
+# Resolucion de la pantalla
+screen_width = 1200
 screen_height = 800
+root.geometry(f'{screen_width}x{screen_height}')
 
-# establece las dimensiones de la ventana para que ocupe toda la pantalla
-#root.geometry(f"{screen_width}x{screen_height}+0+0")
+# rows y columns
+root.rowconfigure(0, weight=1)
+root.rowconfigure(1, weight=3)
+root.rowconfigure(2, weight=1)
+root.columnconfigure(0, weight=3)
+root.columnconfigure(1, weight=2)
 
-# Crear la función de búsqueda
+# After functions 
 def search_courses():
     search_term = search_entry.get().lower()  # Obtener el término de búsqueda y convertirlo a minúsculas
     course_listbox.delete(0, tk.END)  # Eliminar los cursos actuales en el Listbox
@@ -23,27 +28,23 @@ def search_courses():
             course_listbox.insert(tk.END, course)
 
 # Widgets :
-title_label = tk.Label(root, text="Generador Horario de la U :D")
 search_entry = tk.Entry(root, width=30)
-# Listbox :
 courses = ch.cursos_sec()
-course_listbox = tk.Listbox(root, selectmode=tk.MULTIPLE, width=int(800/10), height=int(100/10))
+course_listbox = tk.Listbox(root, selectmode=tk.MULTIPLE)
 for course in courses:
     course_listbox.insert(tk.END, course)
-# Botones :
+course_selected= tk.Listbox(root)
 button_search = tk.Button(root, text="Buscar", command=search_courses)
 button_generate = tk.Button(root, text="Generar Horario")
 
 # Grid :
-title_label.grid(row=0, column=0, columnspan=2, padx=10, pady=10)
-search_entry.grid(row=1, column=0, padx=10, pady=10)
-course_listbox.grid(row=2, column=0, columnspan=2, padx=10, pady=10, sticky="nesw")
-button_search.grid(row=1, column=1, padx=10, pady=10)
-button_generate.grid(row=3, column=0, columnspan=2, padx=10, pady=10)
+search_entry.grid   (row=0, column=0, sticky='ew', ipadx=10, ipady=10 , padx=(50,120), pady=(80,5))
+button_search.grid  (row=0, column=0, sticky='e', ipadx=10, ipady=10, padx=50, pady=(80,5))
+course_listbox.grid (row=1, column=0, sticky='nsew', padx=50, pady=(5,5))
+course_selected.grid(row=0, column=1, sticky='nsew', padx=50, pady=(120,5), rowspan=2)
+button_generate.grid(row=2, column=0, sticky='', ipadx=40, ipady=20, padx=5, pady=5, columnspan=2)
 
-
-
-# Usamos nuestra data
+# Before functions
 def generate_schedule():
     selected_course = course_listbox.get(course_listbox.curselection())
     # Utiliza los datos de Excel para generar el horario
