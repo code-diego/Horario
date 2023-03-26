@@ -93,20 +93,21 @@ def codigos_of(df):
                 newCodigos.append(codigo)
         return newCodigos
 
-class DataBase :
-    def __init__(self,data= read_data()):
-        self.data = data
-
-    def get_data(self): 
-        return self.data
-    
-    def get_cursos_names(self):
-        return cursos_of(self.data)
-    
-    def get_codigos_names(self):
-        return codigos_of(self.data)
-    
-#Structure
+#Creando un diccionrio con los datos de la data
+def dataframe_to_dict(df):
+    dictionary = { codigo:{} for codigo in codigos_of(df) }
+    for row in df.iterrows():
+        dictionary[row[1][1][0]].update({'curso':row[1][0]})
+        dictionary[row[1][1][0]].update({'codigo':row[1][1][0]})
+        dictionary[row[1][1][0]].update({'seccion':{}})
+    for row in df.iterrows():   
+        dictionary[row[1][1][0]]['seccion'].update({row[1][1][1]:{}})
+        dictionary[row[1][1][0]]['seccion'][row[1][1][1]].update({'aula':row[1][3][0]})
+        dictionary[row[1][1][0]]['seccion'][row[1][1][1]].update({'docente':row[1][4][0]})
+        dictionary[row[1][1][0]]['seccion'][row[1][1][1]].update({'horario':row[1][2][0]})
+        
+    return dictionary
+#Structure example of data
 c = {
         'bf01': {
             'curso': 'fisica',
@@ -125,23 +126,27 @@ c = {
             }
         }
     }
-  
-#Creando un diccionrio con los datos de la data
-def dataframe_to_dict():
-    df = read_data()
-    dictionary = { codigo:{} for codigo in codigos_of(df) }
-    for row in df.iterrows():
-        dictionary[row[1][1][0]].update({'curso':row[1][0]})
-        dictionary[row[1][1][0]].update({'codigo':row[1][1][0]})
-        dictionary[row[1][1][0]].update({'seccion':{}})
-    for row in df.iterrows():   
-        dictionary[row[1][1][0]]['seccion'].update({row[1][1][1]:{}})
-        dictionary[row[1][1][0]]['seccion'][row[1][1][1]].update({'aula':row[1][3][0]})
-        dictionary[row[1][1][0]]['seccion'][row[1][1][1]].update({'docente':row[1][4][0]})
-        dictionary[row[1][1][0]]['seccion'][row[1][1][1]].update({'horario':row[1][2][0]})
-        
-    return dictionary
-        
 
+c['bf01']['curso'] #fisica
+c['bf01']['seccion']['A']['horario'] #LU 8:00-10:00
+
+class DataBase :
+    def __init__(self,data= read_data()):
+        self.data = data
+
+    def get_data(self): 
+        return self.data
+    
+    def get_diccionario(self):
+        return dataframe_to_dict(self.data)
+    
+    def get_cursos_names(self):
+        return cursos_of(self.data)
+    
+    def get_codigos_names(self):
+        return codigos_of(self.data)
+    
+
+      
 if __name__ == '__main__':
-    dataframe_to_dict()
+    print('you are in DataBase :0')

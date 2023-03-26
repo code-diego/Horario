@@ -260,8 +260,9 @@ bh_unicode_properties.cache
 # https://packagecontrol.io/packages/sublime-github
 GitHub.sublime-settings
 
-### env ###
+#carpetas locales
 env/
+__pycache__/
 
 ### venv ###
 # Virtualenv
