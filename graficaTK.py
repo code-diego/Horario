@@ -1,6 +1,7 @@
 import tkinter as tk
 from CargaHoraria import DataBase
 
+'''
 database = DataBase()
 #courses = database.get_cursos_names()
 data_in_dict = database.get_diccionario()
@@ -67,3 +68,4 @@ button_generate.grid(row=2, column=0, sticky='', ipadx=40, ipady=20, padx=5, pad
 
 # start GUI
 root.mainloop()
+'''
