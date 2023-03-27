@@ -56,18 +56,23 @@ class WinMain:
         selected_course = [ self.courses_listbox.get(i) for i in self.courses_listbox.curselection()]
         codes_selected = [ dict_index_code[index] for index in self.courses_listbox.curselection() ]
         
-        #Elimina los widgets de la ventana
+        # Elimina los widgets de la ventana
         for widget in self.root.winfo_children():
             widget.destroy(codes_selected)
-
         
+        # Crea una nueva ventana
+        win = WInHorario(codes_selected)
+        win.star()
+
 
         # Utiliza los datos de Excel para generar el horario
 
 class WInHorario:
     def __init__(self, codes_selected):
         self.codes_selected = codes_selected
-
+    def star(self):
+        pass
+        
 
 if __name__ == '__main__':
     win = WinMain()
