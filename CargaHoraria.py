@@ -107,6 +107,7 @@ def dataframe_to_dict(df):
         dictionary[row[1][1][0]]['seccion'][row[1][1][1]].update({'horario':row[1][2][0]})
         
     return dictionary
+#********************************************************************
 #Structure example of data
 c = {
         'bf01': {
@@ -127,8 +128,10 @@ c = {
         }
     }
 
-c['bf01']['curso'] #fisica
-c['bf01']['seccion']['A']['horario'] #LU 8:00-10:00
+c['bf01']['curso'] # >fisica
+c['bf01']['seccion']['A']['horario'] # >LU 8:00-10:00
+
+#********************************************************************
 
 class DataBase :
     def __init__(self,data= read_data()):

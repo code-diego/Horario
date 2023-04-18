@@ -6,7 +6,7 @@ class WinMain:
         self.database = DataBase()
         self.data_in_dict = self.database.get_diccionario()
 
-    def star(self):
+    def start(self):
         # creamos una ventana
         self.root = tk.Tk()
         self.root.title("Generador de Horarios")
@@ -48,7 +48,7 @@ class WinMain:
 
     # Filtro
     def search_courses(self):
-        return None # Return in live :)
+        return None # Return (in progres please dont remenber this :))
 
     # Generar el horario
     def generate_schedule(self):
@@ -58,11 +58,11 @@ class WinMain:
         
         # Elimina los widgets de la ventana
         for widget in self.root.winfo_children():
-            widget.destroy(codes_selected)
+            widget.destroy()
         
         # Crea una nueva ventana
         win = WInHorario(codes_selected)
-        win.star()
+        win.start()
 
 
         # Utiliza los datos de Excel para generar el horario
@@ -70,12 +70,11 @@ class WinMain:
 class WInHorario:
     def __init__(self, codes_selected):
         self.codes_selected = codes_selected
-    def star(self):
-        pass
+    def start(self):
+        print(self.codes_selected)
         
 
 if __name__ == '__main__':
-    win = WinMain()
-    win.star()
+    WinMain().start()
 
 
