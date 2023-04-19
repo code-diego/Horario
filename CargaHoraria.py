@@ -29,6 +29,8 @@ def delete_nan(list):
 def split_list(list,condition):
     return [ l.split(condition) for l in list]
 
+#---------------------------------------------------------------------------------------------
+
 def read_data(): 
     dfc = pd.read_excel('./data/Horarios2023-1.xlsx') # Data Frame
     pd.set_option('display.max_rows', None) # Confi para mostrar todas las filas

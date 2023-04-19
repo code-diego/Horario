@@ -7,7 +7,7 @@ class WinMain:
         self.data_in_dict = self.database.get_diccionario()
 
     def start(self):
-        # creamos una ventana
+        # creamos una ventana ()
         self.root = tk.Tk()
         self.root.title("Generador de Horarios")
 
@@ -24,11 +24,11 @@ class WinMain:
 
         # Widgets :
         self.search_entry = tk.Entry(self.root, width=30)
-        self.courses_listbox = tk.Listbox(self.root, selectmode=tk.MULTIPLE)
+        self.courses_listbox = tk.Listbox(self.root, selectmode=tk.MULTIPLE)#
         for value in self.data_in_dict.values():
             self.courses_listbox.insert(tk.END, value['curso'])
         self.scrolbar_courses = tk.Scrollbar(self.root, command=self.courses_listbox.yview)
-        self.courses_listbox.config(yscrollcommand=self.scrolbar_courses.set)
+        self.courses_listbox.config(yscrollcommand=self.scrolbar_courses.set)#
         self.course_selected= tk.Listbox(self.root)
         self.button_search = tk.Button(self.root, text="Buscar", command=self.search_courses)
 
@@ -61,20 +61,35 @@ class WinMain:
             widget.destroy()
         
         # Crea una nueva ventana
-        win = WInHorario(codes_selected)
+        win = WInHorario(codes_selected,self.root)
         win.start()
+        win.root.mainloop()
 
 
         # Utiliza los datos de Excel para generar el horario
 
 class WInHorario:
-    def __init__(self, codes_selected):
+    def __init__(self, codes_selected,root):
         self.codes_selected = codes_selected
+        self.root = root       
+        self.root.title("Horario")
     def start(self):
-        print(self.codes_selected)
+
+        # NUEVAS CONFIGURACION PARA GRID
+        self.root.rowconfigure(0, weight=1)
+        self.root.columnconfigure(0, weight=5)
+        self.root.columnconfigure(1, weight=2)
+
+        # Widgets :
+        self.course_selected = tk.Label(self.root, text="\n".join(self.codes_selected), bg="green")
+
+        # Grid :
+        self.course_selected.grid (row=0, column=1, sticky='nsew', padx=50, pady=(120,5), rowspan=2)
+
         
 
 if __name__ == '__main__':
     WinMain().start()
+    
 
 
