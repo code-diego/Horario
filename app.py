@@ -91,7 +91,33 @@ class WInHorario:
         self.course_selected = tk.Label(self.root, text="\n".join(self.codes_selected), bg="green")
 
         # Canvas :
+        self.canvas.pack()
+        cell_width = 100
+        cell_height = 40
+        days_week = ['Hora','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado']
+        hours = [ str(hour) + ' - ' + str(hour+1) for hour in range(6,24) ]
         
+        # Dibujar etiquetas de días
+        for i, dia in enumerate(days_week):
+            x = (i + 1) * cell_width
+            y = cell_height
+            self.canvas.create_text(x, y, text=dia, anchor='nw')
+
+        # Dibujar etiquetas de horas
+        for i, hora in enumerate(hours):
+            x = cell_width
+            y = (i + 2) * cell_height
+            self.canvas.create_text(x, y, text=hora, anchor='nw')
+
+        # Dibujar líneas horizontales
+        for i in range(len(hours) + 2):
+            y = (i + 1) * cell_height
+            self.canvas.create_line(cell_width, y, cell_width * (len(days_week) + 1), y)
+
+        # Dibujar líneas verticales
+        for i in range(len(days_week) + 1):
+            x = (i + 1) * cell_width
+            self.canvas.create_line(x, cell_height, x, cell_height * (len(hours) + 2))
 
         # Grid :
         self.canvas.grid(row=0, column=0, sticky='nsew')
