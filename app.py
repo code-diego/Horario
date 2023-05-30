@@ -31,7 +31,7 @@ class WinMain:
         self.courses_listbox.config(yscrollcommand=self.scrolbar_courses.set)#
         self.course_selected= tk.Listbox(self.root)
         self.button_search = tk.Button(self.root, text="Buscar", command=self.search_courses)
-
+        
         # Grid :
         self.search_entry.grid    (row=0, column=0, sticky='ew', ipadx=10, ipady=10 , padx=(50,120), pady=(80,5))
         self.button_search.grid   (row=0, column=0, sticky='e', ipadx=10, ipady=10, padx=50, pady=(80,5))
@@ -48,7 +48,7 @@ class WinMain:
 
     # Filtro
     def search_courses(self):
-        return None # Return (in progres please dont remenber this :))
+        return None # (in progres please dont remenber this :))
 
     # Generar el horario
     def generate_schedule(self):
@@ -77,13 +77,24 @@ class WInHorario:
 
         # NUEVAS CONFIGURACION PARA GRID
         self.root.rowconfigure(0, weight=1)
+        self.root.rowconfigure(1, weight=0) # clear
+        self.root.rowconfigure(2, weight=0) # clear
         self.root.columnconfigure(0, weight=5)
         self.root.columnconfigure(1, weight=2)
 
+        # n_filas, n_column = self.root.grid_size()
+        # print(f"La ventana tiene {n_filas} filas y {n_column} columnas")
+
+
         # Widgets :
+        self.canvas = tk.Canvas(self.root, bg= "pink")
         self.course_selected = tk.Label(self.root, text="\n".join(self.codes_selected), bg="green")
 
+        # Canvas :
+        
+
         # Grid :
+        self.canvas.grid(row=0, column=0, sticky='nsew')
         self.course_selected.grid (row=0, column=1, sticky='nsew', padx=50, pady=(120,5), rowspan=2)
 
         
@@ -91,5 +102,3 @@ class WInHorario:
 if __name__ == '__main__':
     WinMain().start()
     
-
-
