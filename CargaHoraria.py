@@ -1,5 +1,6 @@
 import pandas as pd
-
+import json
+    
 def delete_extra_titles(df, condition):
     iters = [ index for index,row in df.iterrows() if row[0] == condition[0] ]
     df = df.drop(i for i in iters)
@@ -26,8 +27,8 @@ def delete_nan(list):
         newList.append(l)
     return newList      
 
-def split_list(list,condition):
-    return [ l.split(condition) for l in list]
+def split_list(lst,condition):
+    return [ l.split(condition) for l in lst]
 
 #---------------------------------------------------------------------------------------------
 
@@ -70,7 +71,9 @@ def read_data():
     dfc[titles[1]] = split_list(codigos,'\n')
     dfc[titles[2]] = split_list(horarios,'\n')
     dfc[titles[4]] = split_list(docentes,'\n')
-    dfc[titles[3]] = split_list(aulas,'/') #Data split : bad split for the formant in main data excel
+    dfc[titles[3]] = split_list(aulas,'\n') # no necessario
+    #dfc[titles[3]] = split_list(aulas,'/') # no necessario
+    
 
     # Actulizacion again xd
     cursos, codigos, horarios, aulas, docentes, ns = [dfc[title].tolist() for title in titles]
@@ -95,20 +98,53 @@ def codigos_of(df):
                 newCodigos.append(codigo)
         return newCodigos
 
-#Creando un diccionrio con los datos de la data
-def dataframe_to_dict(df):
-    dictionary = { codigo:{} for codigo in codigos_of(df) }
-    for row in df.iterrows():
-        dictionary[row[1][1][0]].update({'curso':row[1][0]})
-        dictionary[row[1][1][0]].update({'codigo':row[1][1][0]})
-        dictionary[row[1][1][0]].update({'seccion':{}})
-    for row in df.iterrows():   
-        dictionary[row[1][1][0]]['seccion'].update({row[1][1][1]:{}})
-        dictionary[row[1][1][0]]['seccion'][row[1][1][1]].update({'aula':row[1][3][0]})
-        dictionary[row[1][1][0]]['seccion'][row[1][1][1]].update({'docente':row[1][4][0]})
-        dictionary[row[1][1][0]]['seccion'][row[1][1][1]].update({'horario':row[1][2][0]})
+# Creando un diccionrio con los datos de la data
+# def dataframe_to_dict(df):
+#     dictionary = { codigo:{} for codigo in codigos_of(df) }
+#     for i,row in df.iterrows():
+#         dictionary[row[1][0]].update({'curso':row[0]})
+#         dictionary[row[1][0]].update({'codigo':row[1][0]})
+#         dictionary[row[1][0]].update({'seccion':{}})
+#     for i,row in df.iterrows():   
+#         dictionary[row[1][0]]['seccion'].update({row[1][1][1]:{}})
+#         dictionary[row[1][0]]['seccion'][row[1][1]].update({'horario':row[2]})
+#         dictionary[row[1][0]]['seccion'][row[1][1]].update({'aula':row[3]})
+#         dictionary[row[1][0]]['seccion'][row[1][1]].update({'docente':row[4]})
         
+#     return dictionary
+
+def dataframe_to_dict(df):
+    dictionary = {codigo: {} for codigo in codigos_of(df)}
+
+    for i, row in df.iterrows():
+        curso = row[0]
+        codigo = row[1][0]
+        seccion = row[1][1]
+        horarios = row[2]
+        aulas = row[3]
+        docentes = row[4]
+        n = row[5]
+
+        dictionary[codigo].update({'curso' : curso, 'codigo' : codigo})
+        dictionary[codigo].setdefault('seccion', {}).setdefault(seccion, {})
+        dictionary[codigo]['seccion'].update({seccion : {}})
+        dictionary[codigo]['seccion'][seccion] = {
+            'horario': [],
+            'aula': [],
+            'docente': []
+        }
+        
+
+        # agregar no reemplazar
+        dictionary[codigo]['seccion'][seccion]['horario'].append(horarios)
+        dictionary[codigo]['seccion'][seccion]['aula'].append(aulas)
+        dictionary[codigo]['seccion'][seccion]['docente'].append(docentes)
+
     return dictionary
+
+database = read_data()
+print(json.dumps(dataframe_to_dict(database)['BFI01'], indent=4))
+
 #********************************************************************
 #Structure example of data
 c = {
@@ -117,9 +153,15 @@ c = {
             'codigo' : 'bf01',
             'seccion': {
                 'A': {
-                    'aula': 'A-101',
+                    'aula': 'A-101',    
                     'docente': 'Juan Perez',
-                    'horario': 'LU 8:00-10:00'
+                    'horario': 'LU 8:00-10:00' 
+                    
+                },
+                'new A': {
+                    'horario': ['LU 8:00-10:00' , 'MA 8:00-10:00' , 'MI 8:00-10:00'],
+                    'aula': ['A-101', 'A-102', 'A-103'],    
+                    'docente': ['Juan Perez', 'Juana', 'Juana']
                 },
                 'B': {
                     'aula': 'A-101',
@@ -155,3 +197,6 @@ class DataBase :
       
 if __name__ == '__main__':
     print('you are in DataBase :0')
+    
+    
+    
