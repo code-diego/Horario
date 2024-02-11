@@ -98,52 +98,46 @@ def codigos_of(df):
                 newCodigos.append(codigo)
         return newCodigos
 
-# Creando un diccionrio con los datos de la data
-# def dataframe_to_dict(df):
-#     dictionary = { codigo:{} for codigo in codigos_of(df) }
-#     for i,row in df.iterrows():
-#         dictionary[row[1][0]].update({'curso':row[0]})
-#         dictionary[row[1][0]].update({'codigo':row[1][0]})
-#         dictionary[row[1][0]].update({'seccion':{}})
-#     for i,row in df.iterrows():   
-#         dictionary[row[1][0]]['seccion'].update({row[1][1][1]:{}})
-#         dictionary[row[1][0]]['seccion'][row[1][1]].update({'horario':row[2]})
-#         dictionary[row[1][0]]['seccion'][row[1][1]].update({'aula':row[3]})
-#         dictionary[row[1][0]]['seccion'][row[1][1]].update({'docente':row[4]})
-        
-#     return dictionary
-
 def dataframe_to_dict(df):
     dictionary = {codigo: {} for codigo in codigos_of(df)}
 
     for i, row in df.iterrows():
-        curso = row[0]
-        codigo = row[1][0]
-        seccion = row[1][1]
-        horarios = row[2]
-        aulas = row[3]
-        docentes = row[4]
-        n = row[5]
+        icurso = row[0]
+        icodigo = row[1][0]
+        iseccion = row[1][1]
+        ihorarios = row[2]
+        iaulas = row[3]
+        idocentes = row[4]
+        inn = row[5]
 
-        dictionary[codigo].update({'curso' : curso, 'codigo' : codigo})
-        dictionary[codigo].setdefault('seccion', {}).setdefault(seccion, {})
-        dictionary[codigo]['seccion'].update({seccion : {}})
-        dictionary[codigo]['seccion'][seccion] = {
-            'horario': [],
-            'aula': [],
-            'docente': []
-        }
+        if icodigo not in dictionary:
+            dictionary[icodigo] = {'curso': icurso, 'codigo': icodigo, 'seccion': {}}
+
+        if 'seccion' not in dictionary[icodigo]:
+            dictionary[icodigo]['seccion'] = {}
         
+        if iseccion not in dictionary[icodigo]['seccion']:
+            dictionary[icodigo]['seccion'][iseccion] = {'horario': [], 'aula': [], 'docente': []}
 
-        # agregar no reemplazar
-        dictionary[codigo]['seccion'][seccion]['horario'].append(horarios)
-        dictionary[codigo]['seccion'][seccion]['aula'].append(aulas)
-        dictionary[codigo]['seccion'][seccion]['docente'].append(docentes)
+        # dictionary[icodigo].update({'curso' : icurso, 'codigo' : icodigo})
+        # dictionary[icodigo].setdefault('seccion', {}).setdefault(iseccion, {})
+        # dictionary[icodigo]['seccion'].update({iseccion : {}})
+        # dictionary[icodigo]['seccion'][iseccion] = {
+        #     'horario': [],
+        #     'aula': [],
+        #     'docente': []
+        # }
+        
+        dictionary[icodigo]['seccion'][iseccion]['horario'].extend(ihorarios)
+        dictionary[icodigo]['seccion'][iseccion]['aula'].extend(iaulas)
+        dictionary[icodigo]['seccion'][iseccion]['docente'].extend(idocentes)
 
     return dictionary
 
+
 database = read_data()
 print(json.dumps(dataframe_to_dict(database)['BFI01'], indent=4))
+#print(read_data())
 
 #********************************************************************
 #Structure example of data
@@ -173,7 +167,7 @@ c = {
     }
 
 c['bf01']['curso'] # >fisica
-c['bf01']['seccion']['A']['horario'] # >LU 8:00-10:00
+c['bf01']['seccion']['A']['horario'] # >"LU 10-12", "MI 10-12", "VI 08-10", "VI 13-15"
 
 #********************************************************************
 
