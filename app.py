@@ -83,7 +83,7 @@ class WInHorario:
         self.root.columnconfigure(1, weight=2)
 
         # n_filas, n_column = self.root.grid_size()
-        # print(f"La ventana tiene {n_filas} filas y {n_column} columnas")
+        #   (f"La ventana tiene {n_filas} filas y {n_column} columnas")
 
 
         # Widgets :
