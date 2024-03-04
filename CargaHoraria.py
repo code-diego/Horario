@@ -134,10 +134,10 @@ def dataframe_to_dict(df):
 
     return dictionary
 
-
-database = read_data()
-print(json.dumps(dataframe_to_dict(database)['BFI01'], indent=4))
-#print(read_data())
+##test data
+# database = read_data()
+# print(json.dumps(dataframe_to_dict(database)['BFI01'], indent=4))
+# print(read_data())
 
 #********************************************************************
 #Structure example of data

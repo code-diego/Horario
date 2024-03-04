@@ -3,3 +3,19 @@
     border: 1px solid #000000;
     padding: 5px;
 }
+
+header{
+    background-color: #561C24;
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: #C7B7A3;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
