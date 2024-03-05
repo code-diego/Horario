@@ -34,6 +34,7 @@ def split_list(lst,condition):
 
 def read_data(): 
     
+    #archivo = './data/Horarios2023-1.xlsx'
     archivo = './data/Horarios2024-1.xlsx'
     dfc = pd.read_excel(archivo) 
 
@@ -74,6 +75,7 @@ def read_data():
 
     # Separando en sublistas las sig listas
     dfc[titles[1]] = split_list(codigos,'\n')
+    dfc[titles[1]] = split_list(codigos, ' ')
     dfc[titles[2]] = split_list(horarios,'\n')
     dfc[titles[4]] = split_list(docentes,'\n')
     dfc[titles[3]] = split_list(aulas,'\n') # no necessario
@@ -139,10 +141,10 @@ def dataframe_to_dict(df):
 
     return dictionary
 
-##test data
-# database = read_data()
-# print(json.dumps(dataframe_to_dict(database)['BFI01'], indent=4))
-# print(read_data())
+#test data
+#database = read_data()
+#print(json.dumps(dataframe_to_dict(database)['BFI01'], indent=4))
+#print(read_data())
 
 #********************************************************************
 #Structure example of data
