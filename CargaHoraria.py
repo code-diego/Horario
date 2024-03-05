@@ -33,7 +33,12 @@ def split_list(lst,condition):
 #---------------------------------------------------------------------------------------------
 
 def read_data(): 
-    dfc = pd.read_excel('./data/Horarios2023-1.xlsx') # Data Frame
+    
+    archivo = './data/Horarios2024-1.xlsx'
+    dfc = pd.read_excel(archivo) 
+
+    
+    
     pd.set_option('display.max_rows', None) # Confi para mostrar todas las filas
     titles = dfc.columns.tolist() #['CURSOS'(0), 'CÓDIGO'(1), 'HORARIO'(2), 'AULA'(3), 'DOCENTE'(4), 'N'(5)] 
     
@@ -58,7 +63,7 @@ def read_data():
 
     # Para 'ns' cambiamos los datos float -> int
     dfc[titles[5]] = dfc[titles[5]].astype(int)
-
+    
     # Renombrando 'nan' por falda de datos (N.D.)
     dfc[titles[2]] = dfc[titles[2]].fillna('n.d.')
     dfc[titles[3]] = dfc[titles[3]].fillna('n.d.')

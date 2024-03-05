@@ -1,12 +1,8 @@
-import CargaHoraria
+from CargaHoraria import DataBase 
 
 def run():
-    #I think, we have to declarate a object with class "DataBase"
-    #to fix
-    db = CargaHoraria.data()
-    cursos = CargaHoraria.cursos_sec()
-    codigos = CargaHoraria.codigos_sec()
-    diccionario = CargaHoraria.diccionario()
+    data = DataBase()
+    print(data.get_data())
 
 if __name__ == "__main__":
     run()
