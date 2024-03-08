@@ -275,7 +275,7 @@ __pycache__/
 [Ll]ocal
 [Ss]cripts
 pyvenv.cfg
-.venv
+.env
 pip-selfcheck.json
 
 ### Windows ###
