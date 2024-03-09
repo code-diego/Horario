@@ -1,10 +1,20 @@
 //constantes
+const main_section = document.querySelector('main');
 const list_data_div = document.querySelector('#list-data');
 const list_selected_div = document.querySelector('.selected-box');
+//boton
+const generate_button = document.querySelector('#generate');
+//calendario
+var calendar_div = document.createElement('div');
+calendar_div.classList.add('calendar');
+//lista de cursos - calendario
+var allcourses_div = document.createElement('div');
+allcourses_div.classList.add('allcourses')
+var sections_courses_selected = [];
 //codes
 var codes_data = Object.keys(data);
 var codes_selected = [];
-//list to select (ul-li)
+//listas para seleccionar)
 var ul_element = document.createElement('ul');
 ul_element.classList.add('scrollable-list');
 
@@ -41,19 +51,14 @@ function updateSelectedList() {
     list_selected_div.appendChild(ul_element_sel);
 }
 
-
-const main_section = document.querySelector('main');
-const generate_button = document.querySelector('#generate');
-
-var courses = codes_selected; //from script2.js
-
-var calendar_div = document.createElement('div');
-calendar_div.classList.add('calendar');
-
+// ==================================================================
+// boton generate
 generate_button.addEventListener('click',function () {
     main_section.textContent = '';
     calendar_div.appendChild(makeTableCalendar());
     main_section.appendChild(calendar_div);
+    allcourses_div.appendChild(makeCourseForCalendar(codes_selected));
+    main_section.appendChild(allcourses_div);
 })
 
 function makeTableCalendar(){
@@ -96,6 +101,30 @@ function createTimeHeader(hour, period){
     return time_cell;
 }
 
+function makeCourseForCalendar(codes_s){
+    var courses = document.createElement('div');
+    codes_s.forEach(function(code){
+        var course = document.createElement('div');
+        course.innerHTML = code;
+        course.appendChild(addCourseSeccion(code));
+        courses.appendChild(course);
+    })
+    return courses;
+}
 
-
-
+function addCourseSeccion(course_code){
+    var course_sections = document.createElement('div');
+    var sections = data[course_code]["seccion"];
+    var name_sections = Object.keys(sections);
+    name_sections.forEach(function(sec){
+        var section = document.createElement('div');
+        section.addEventListener('click', function(){
+            section.classList.toggle('select-one');
+            var value = section.textContent;
+            sections_courses_selected.push(value);w
+        })
+        section.innerHTML = sec;
+        course_sections.appendChild(section);
+    })
+    return course_sections
+}
