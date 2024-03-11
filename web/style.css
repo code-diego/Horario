@@ -38,6 +38,10 @@ main {
     font-weight: bold;
 }
 
+.select-one {
+    background-color: rgb(99, 179, 99);
+}
+
 #generate {
     position: fixed;
     bottom: 100px;

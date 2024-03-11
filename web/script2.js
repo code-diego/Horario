@@ -9,8 +9,7 @@ var calendar_div = document.createElement('div');
 calendar_div.classList.add('calendar');
 //lista de cursos - calendario
 var allcourses_div = document.createElement('div');
-allcourses_div.classList.add('allcourses')
-var sections_courses_selected = [];
+var courses_sections_selected = {};
 //codes
 var codes_data = Object.keys(data);
 var codes_selected = [];
@@ -18,6 +17,8 @@ var codes_selected = [];
 var ul_element = document.createElement('ul');
 ul_element.classList.add('scrollable-list');
 
+// ==================================================================
+// lista para escoger
 codes_data.forEach(function(key) {
     var li_element = document.createElement('li');
     li_element.textContent = key;
@@ -57,7 +58,7 @@ generate_button.addEventListener('click',function () {
     main_section.textContent = '';
     calendar_div.appendChild(makeTableCalendar());
     main_section.appendChild(calendar_div);
-    allcourses_div.appendChild(makeCourseForCalendar(codes_selected));
+    allcourses_div = makeCoursesWithSection(codes_selected);
     main_section.appendChild(allcourses_div);
 })
 
@@ -101,30 +102,54 @@ function createTimeHeader(hour, period){
     return time_cell;
 }
 
-function makeCourseForCalendar(codes_s){
+// ------------------------------------------------------------------
+function makeCoursesWithSection(codes_s){
     var courses = document.createElement('div');
+    courses.classList.add('allcourses')
     codes_s.forEach(function(code){
         var course = document.createElement('div');
         course.innerHTML = code;
-        course.appendChild(addCourseSeccion(code));
+        course.appendChild(addCourseSection(code));
         courses.appendChild(course);
     })
     return courses;
 }
 
-function addCourseSeccion(course_code){
+function addCourseSection(course_code){
     var course_sections = document.createElement('div');
     var sections = data[course_code]["seccion"];
     var name_sections = Object.keys(sections);
+    
+    var old_cd_crs_select = '';
+
     name_sections.forEach(function(sec){
         var section = document.createElement('div');
+        section.classList.add(course_code+'-'+sec);
+        section.textContent = sec;
+
         section.addEventListener('click', function(){
+            var sec_select = section.textContent;
+            var old_sec = courses_sections_selected[course_code];
+            
+            if (old_cd_crs_select && course_code === old_cd_crs_select && sec !== old_sec){    
+                var old_sec_div = document.querySelector('.'+course_code+'-'+old_sec);
+                if (old_sec_div){
+                    old_sec_div.classList.remove('select-one');
+                    delete courses_sections_selected[course_code];
+                }
+            }
+
             section.classList.toggle('select-one');
-            var value = section.textContent;
-            sections_courses_selected.push(value);w
+            courses_sections_selected[course_code] = sec_select;
+            old_cd_crs_select = course_code;
+
         })
-        section.innerHTML = sec;
         course_sections.appendChild(section);
     })
     return course_sections
+}
+
+// ------------------------------------------------------------------
+
+function paintCalendar(course_code, section){
 }
