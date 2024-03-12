@@ -152,4 +152,6 @@ function addCourseSection(course_code){
 // ------------------------------------------------------------------
 
 function paintCalendar(course_code, section){
+
+
 }
