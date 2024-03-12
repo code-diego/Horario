@@ -78,17 +78,15 @@ function makeTableCalendar(){
     table.appendChild(header);
 
     for (var hour = hourStart; hour < hourEnd; hour++){
-        var hour_noon = (hour%12 == 0) ? 12 : hour%12;
-        var period = (hour < 12) ? 'am' : 'pm';
-        var row = createRow(hour_noon, period);
+        var row = createRow(hour);
         table.appendChild(row);
     }
     return table
 }
 
-function createRow(hour, period) {
+function createRow(hour) {
     var row = document.createElement('tr');
-    row.appendChild(createTimeHeader(hour, period));
+    row.appendChild(createTimeHeader(hour));
     for (var i = 0; i < 6; i++){
         var cell = document.createElement('td');
         row.appendChild(cell);
@@ -96,9 +94,11 @@ function createRow(hour, period) {
     return row;
 }
 
-function createTimeHeader(hour, period){
+function createTimeHeader(hour){
+    var hour_n = (hour%12 == 0) ? 12 : hour%12;
+    var period = (hour < 12) ? 'am' : 'pm';
     var time_cell = document.createElement('td');
-    time_cell.textContent = hour + period + ' - ' + (hour+1) + period;
+    time_cell.textContent = hour_n + period + ' - ' + (hour_n+1) + period;
     return time_cell;
 }
 
