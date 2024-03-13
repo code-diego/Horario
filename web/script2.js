@@ -13,37 +13,59 @@ var courses_sections_selected = {};
 //codes
 var codes_data = Object.keys(data);
 var codes_selected = [];
-//listas para seleccionar)
-var ul_element = document.createElement('ul');
-ul_element.classList.add('scrollable-list');
 
 // ==================================================================
-// lista para escoger
-codes_data.forEach(function(key) {
-    var li_element = document.createElement('li');
-    li_element.textContent = key;
+// buscador
+function searchInList(){
+    var filer = document.getElementById('search').value.toLowerCase();
+    var list = document.getElementById('list-data');
+    var elements = list.getElementsByTagName('li');
 
-    // agregando evento de click a c/u de la lista
-    li_element.addEventListener('click', function(){
-        li_element.classList.toggle('selected');
-        var value = li_element.textContent;
-        var index = codes_selected.indexOf(value);
-        if(index !== -1) {
-            codes_selected.splice(index,1)
-        }else {
-            codes_selected.push(key);
+    for (var i=0; i< elements.length; i++) {
+        var textElement = elements[i].textContent.toLowerCase();
+        if (textElement.includes(filer)){
+            elements[i].style.display = 'block';
+        } else {
+            elements[i].style.display = 'none';
         }
-        updateSelectedList();
-    })
+    }
+}
 
-    ul_element.appendChild(li_element)
-})
-list_data_div.appendChild(ul_element)
+// ==================================================================
+// mostrar cursos
+showCourses(Object.keys(data));
+
+function showCourses(codes){
+    var ul_element = document.createElement('ul');
+    ul_element.classList.add('scrollable-list');
+
+    codes.forEach(function(code) {
+        var li_element = document.createElement('li');
+        li_element.textContent = code;
+    
+        // agregando evento
+        li_element.addEventListener('click', function(){
+            li_element.classList.toggle('selected');
+            var value = li_element.textContent;
+            var index = codes_selected.indexOf(value);
+            if(index !== -1) {
+                codes_selected.splice(index,1)
+            }else {
+                codes_selected.push(code);
+            }
+            updateSelectedList();
+        })
+    
+        ul_element.appendChild(li_element)
+    })
+    list_data_div.appendChild(ul_element)
+}
 
 function updateSelectedList() {
     var ul_element_sel = document.createElement('ul');
     ul_element_sel.classList.add('scrollable-list');
     list_selected_div.textContent = 'cursos :';
+
     codes_selected.forEach(function(key) {
         var li_element_sel = document.createElement('li');
         li_element_sel.textContent = key;
