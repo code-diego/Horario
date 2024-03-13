@@ -46,7 +46,7 @@ ul {
 
 .scrollable-list {
     max-height: 600px; 
-    overflow-y: auto; /*Para no sobrepasar el tamaño del div */
+    overflow-y: auto; /*Para no sobrepasar el tamaño maximo */
     list-style-type: none; /* Elimina puntos de lista */
     padding: 0;
     margin: 0; 

@@ -134,8 +134,10 @@ function addCourseSection(course_code){
             var old_sec = courses_sections_selected[course_code];
             
             if (old_cd_crs_select && course_code === old_cd_crs_select ){
+                // si se selecciona el mismo curso
+
                 if (sec !== old_sec){
-                    // si se selecciona una nueva seccion del mismo curso   
+                    // si se selecciona una nueva seccion (del mismo curso)   
                     var old_sec_div = document.querySelector('.'+course_code+'-'+old_sec);
                     if (old_sec_div){
                         old_sec_div.classList.remove('select-one');
@@ -153,7 +155,7 @@ function addCourseSection(course_code){
                 clearCellCourse(course_code);
             }
 
-            paintCalendar(course_code, sec);
+            paintCourseSec(course_code, sec);
 
             section_div.classList.toggle('select-one');
             courses_sections_selected[course_code] = sec_select;
@@ -167,8 +169,12 @@ function addCourseSection(course_code){
 
 // ------------------------------------------------------------------
 
-function paintCalendar(course_code, section){
+function paintCourseSec(course_code, section){
     var schedules_data = data[course_code]['seccion'][section]['horario'];
+    if (schedules_data.includes('n.d.')) {
+       alert('No hay horarios para este curso :C');
+        return;
+    } ;
     schedules_data.forEach(function(hour_data){
         var day = hour_data.split(' ')[0];
         var hourStar = parseInt(hour_data.split(' ')[1].split('-')[0]);
@@ -177,19 +183,19 @@ function paintCalendar(course_code, section){
             var cell = document.querySelector('#'+day+'-'+(h));
             
             // aqui cruzan 2 cursos
-            if (cell.className) {
-                var course_with_conflict = cell.className.split(' ')[1];
+            if (cell.className && cell.className !== course_code) {
                 cell.textContent = '*cruze*';
                 cell.classList.add(course_code);
                 cell.classList.add('conflict');
-                return;
+            }else {  
+                cell.classList.add(course_code);
+                cell.textContent = course_code + '-' + section;
             }
-            
-            cell.classList.add(course_code);
-            cell.textContent = course_code + '-' + section;
         }   
     })
 }
+
+
 
 function clearAllCells(){
     const cells = document.querySelectorAll('.calendar td');
@@ -201,8 +207,20 @@ function clearAllCells(){
 function clearCellCourse(code_c){
     const cells = document.querySelectorAll('.'+code_c);
     cells.forEach(cell => {
+        
+        if (cell.classList.contains('conflict')){
+            if (cell.classList.contains(code_c)) {
+                var course_code_stand = '';
+                cell.classList.remove('conflict');
+                cell.classList.remove(code_c);
+                course_code_stand = cell.className;
+                cell.className = '';
+                paintCourseSec(course_code_stand, courses_sections_selected[course_code_stand])
+                return;
+            }
+        }
+
         cell.textContent = '';
-        //cell.classList.remove(code_c);
-        cell.classList = '';
+        cell.classList.remove(code_c);
     })
 }
