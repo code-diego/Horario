@@ -125,12 +125,12 @@ function addCourseSection(course_code){
     var old_cd_crs_select = '';
 
     name_sections.forEach(function(sec){
-        var section = document.createElement('div');
-        section.classList.add(course_code+'-'+sec);
-        section.textContent = sec;
+        var section_div = document.createElement('div');
+        section_div.classList.add(course_code+'-'+sec);
+        section_div.textContent = sec;
 
-        section.addEventListener('click', function(){
-            var sec_select = section.textContent;
+        section_div.addEventListener('click', function(){
+            var sec_select = section_div.textContent;
             var old_sec = courses_sections_selected[course_code];
             
             if (old_cd_crs_select && course_code === old_cd_crs_select ){
@@ -155,12 +155,12 @@ function addCourseSection(course_code){
 
             paintCalendar(course_code, sec);
 
-            section.classList.toggle('select-one');
+            section_div.classList.toggle('select-one');
             courses_sections_selected[course_code] = sec_select;
             old_cd_crs_select = course_code;
 
         })
-        course_sections.appendChild(section);
+        course_sections.appendChild(section_div);
     })
     return course_sections
 }
@@ -169,18 +169,26 @@ function addCourseSection(course_code){
 
 function paintCalendar(course_code, section){
     var schedules_data = data[course_code]['seccion'][section]['horario'];
-    //clearAllCells();
     schedules_data.forEach(function(hour_data){
         var day = hour_data.split(' ')[0];
         var hourStar = parseInt(hour_data.split(' ')[1].split('-')[0]);
         var hourEnd = parseInt(hour_data.split(' ')[1].split('-')[1]);
         for (var h = hourStar; h < hourEnd; h++){
             var cell = document.querySelector('#'+day+'-'+(h));
-            cell.textContent = course_code + '-' + section;
+            
+            // aqui cruzan 2 cursos
+            if (cell.className) {
+                var course_with_conflict = cell.className.split(' ')[1];
+                cell.textContent = '*cruze*';
+                cell.classList.add(course_code);
+                cell.classList.add('conflict');
+                return;
+            }
+            
             cell.classList.add(course_code);
-        }
+            cell.textContent = course_code + '-' + section;
+        }   
     })
-
 }
 
 function clearAllCells(){
