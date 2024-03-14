@@ -7,10 +7,10 @@ def run():
     data = DataBase()
     diccionario = data.get_diccionario()
 
-    if not os.path.exists('web'):
-        os.makedirs('web')
+    if not os.path.exists('docs'):
+        os.makedirs('docs')
     
-    ruta = os.path.join('web','data.json')
+    ruta = os.path.join('docs','data.json')
     with open(ruta, 'w') as archivo:
         json.dump(diccionario, archivo)
         
