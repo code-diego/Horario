@@ -1,15 +1,13 @@
-# Horario
+# Horario 
 
-# Activando el entorno
+## Activando el entorno
 
 ```sh
-git clone "-.git"
+git clone "---.git"
 cd Horario
 python3 -m venv env
-source env/bin/
-# Para windows: 
-env\Scripts\activate
-# 
+source env/bin/activate # Unix
+env\Scripts\activate # Windows
 pip3 install -r requirements.txt
 
 # Ejecutar programa
@@ -17,12 +15,6 @@ pip3 install -r requirements.txt
 python3 main.py
 ```
 
-# Para ver el diccionario
-```py
-import json 
-from CargaHoraria import DataBase 
+## Link de la pagina 
 
-database = DataBase()
-print(json.dumps(database.get_diccionario(), indent=4))
-```
-
+https://code-diego.github.io/Horario/

@@ -127,4 +127,5 @@ class WInHorario:
 
 if __name__ == '__main__':
     WinMain().start()
-    
+
+# La interfaz no era tan practica, así que opte por hacer una pagina web
