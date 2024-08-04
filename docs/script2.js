@@ -62,10 +62,15 @@ function showCourses(codes){
 }
 
 function updateSelectedList() {
+    var div_title = document.createElement('div');
+    div_title.textContent = 'cursos :';
     var ul_element_sel = document.createElement('ul');
     ul_element_sel.classList.add('scrollable-list');
-    list_selected_div.textContent = 'cursos :';
 
+    // limpiar lista
+    list_selected_div.textContent = '';
+
+    list_selected_div.appendChild(div_title);
     codes_selected.forEach(function(key) {
         var li_element_sel = document.createElement('li');
         li_element_sel.textContent = key;

@@ -30,6 +30,11 @@ main .search-box{
     border : 1px solid black;
 }
 
+.search-box input{
+    width: 90%;
+    padding: 2%;
+}
+
 main .selected-box{
     width: 40%;
     padding: 20px;
