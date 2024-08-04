@@ -32,16 +32,16 @@ def split_list(lst,condition):
 
 #---------------------------------------------------------------------------------------------
 
-def read_data(): 
+def read_data_xlsx(): 
     
-    #archivo = './data/Horarios2023-1.xlsx'
+    # actualizar el archivo de excel 
+    # ACTUAL -> 2024-1
     archivo = './data/Horarios2024-1.xlsx'
     dfc = pd.read_excel(archivo) 
-
     
+    titles = dfc.columns.tolist() #['CURSOS'(0), 'CÓDIGO'(1), 'HORARIO'(2), 'AULA'(3), 'DOCENTE'(4), 'N'(5)] 
     
     pd.set_option('display.max_rows', None) # Confi para mostrar todas las filas
-    titles = dfc.columns.tolist() #['CURSOS'(0), 'CÓDIGO'(1), 'HORARIO'(2), 'AULA'(3), 'DOCENTE'(4), 'N'(5)] 
     
     # Eliminamos los titulos extras, y datos inecesaria en la data
     txt1 = 'CURSOS OFRECIDOS EN EL PERIODO ACADÉMICO'
@@ -62,7 +62,7 @@ def read_data():
     dfc[titles[1]] = delete_nan(codigos)
     dfc[titles[5]] = delete_nan(ns)
 
-    # Para 'ns' cambiamos los datos float -> int
+    # Para 'ns' cambiamos los tipos de datos (float -> int)
     dfc[titles[5]] = dfc[titles[5]].astype(int)
     
     # Renombrando 'nan' por falda de datos (N.D.)
@@ -141,33 +141,27 @@ def dataframe_to_dict(df):
 
     return dictionary
 
-#test data
-#database = read_data()
+# Test Data
+#database = read_data_xlsx()
 #print(json.dumps(dataframe_to_dict(database)['BFI01'], indent=4))
-#print(read_data())
+#print(read_data_xlsx())
 
 #********************************************************************
 #Structure example of data
 c = {
         'bf01': {
-            'curso': 'fisica',
+            'curso': 'fisica 1',
             'codigo' : 'bf01',
             'seccion': {
                 'A': {
-                    'aula': 'A-101',    
-                    'docente': 'Juan Perez',
-                    'horario': 'LU 8:00-10:00' 
-                    
-                },
-                'new A': {
-                    'horario': ['LU 8:00-10:00' , 'MA 8:00-10:00' , 'MI 8:00-10:00'],
-                    'aula': ['A-101', 'A-102', 'A-103'],    
+                    'horario': ['LU 8-10' , 'MA 8-10' , 'MI 8-10', 'VI 13-15'],
+                    'aula': ['A-101', 'A-102', 'A-103','lab f'],    
                     'docente': ['Juan Perez', 'Juana', 'Juana']
                 },
                 'B': {
-                    'aula': 'A-101',
-                    'docente': 'Juan Perez',
-                    'horario': 'MA 8:00-10:00'
+                    'horario': ['LU 8-10:' , 'MA 8-10' , 'MI 8-10', 'VI 13-15'],
+                    'aula': ['A-101', 'A-102', 'A-103' ,'lab f'],    
+                    'docente': ['Juan Perez', 'Juana', 'Juana']
                 }
             }
         }
@@ -179,7 +173,7 @@ c['bf01']['seccion']['A']['horario'] # >"LU 10-12", "MI 10-12", "VI 08-10", "VI 
 #********************************************************************
 
 class DataBase :
-    def __init__(self,data= read_data()):
+    def __init__(self,data= read_data_xlsx()):
         self.data = data
 
     def get_data(self): 
@@ -197,7 +191,7 @@ class DataBase :
 
       
 if __name__ == '__main__':
-    print('you are in DataBase :0')
+    print('you are in DataBase :0 \n-> CargaHoraria.py')
     
     
     

@@ -5,15 +5,15 @@ import os
 # diccionario (python) to json (para javascript)
 
 def run():
-    #crea una variable de tipo DataBase(CargaHoraria.py)
+    # crea una variable de tipo DataBase(CargaHoraria.py)
     data = DataBase()
     diccionario = data.get_diccionario()
 
-    #asegura que exista la carpeta 'docs'
+    # asegura que exista la carpeta 'docs'
     if not os.path.exists('docs'):
         os.makedirs('docs')
     
-    #guarda el diccionario en un archivo json
+    # guarda el diccionario en un archivo json
     ruta = os.path.join('docs','data.json')
     with open(ruta, 'w') as archivo:
         json.dump(diccionario, archivo)
