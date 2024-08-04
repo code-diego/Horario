@@ -206,7 +206,7 @@ function paintCourseSec(course_code, section){
             
             // aqui cruzan 2 cursos
             if (cell.className && cell.className !== course_code) {
-                cell.textContent = '*cruze*';
+                cell.textContent = '*cruce*';
                 cell.classList.add(course_code);
                 cell.classList.add('conflict');
             }else {  
