@@ -66,5 +66,5 @@ def tablehtml_to_df(table):
     return df
     
 if __name__ == '__main__':
-    main()
+    print('Estas en el archivo scraping.py')
 

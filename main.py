@@ -1,12 +1,11 @@
-from CargaHoraria import dataframe_to_dict
+from CargaHoraria import DataBase
 from scraping import url_to_df
 import json
 
 def main():
-    dataframe = url_to_df()
-    dict_data = dataframe_to_dict(dataframe)
-    
-    print(dict_data)
+    data = DataBase(url_to_df())
+    dicty = data.get_diccionario()
+    print(dicty)
 
 if __name__ == "__main__":
     main()
