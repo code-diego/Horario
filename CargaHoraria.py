@@ -1,4 +1,6 @@
 from xlsx import read_data_xlsx
+from scraping import url_to_df
+import json
 
 def cursos_of(df):
         cursos, codigos = [], []
@@ -30,7 +32,7 @@ def dataframe_to_dict(df):
         idocentes = row[4]
         inn = row[5]
 
-        if icodigo not in dictionary:
+        if 'curso' not in dictionary[icodigo]:
             dictionary[icodigo] = {'curso': icurso, 'codigo': icodigo, 'seccion': {}}
 
         if 'seccion' not in dictionary[icodigo]:
@@ -38,15 +40,7 @@ def dataframe_to_dict(df):
         
         if iseccion not in dictionary[icodigo]['seccion']:
             dictionary[icodigo]['seccion'][iseccion] = {'horario': [], 'aula': [], 'docente': []}
-
-        # dictionary[icodigo].update({'curso' : icurso, 'codigo' : icodigo})
-        # dictionary[icodigo].setdefault('seccion', {}).setdefault(iseccion, {})
-        # dictionary[icodigo]['seccion'].update({iseccion : {}})
-        # dictionary[icodigo]['seccion'][iseccion] = {
-        #     'horario': [],
-        #     'aula': [],
-        #     'docente': []
-        # }
+            # aquí se puede agregar el dato {'n' : inn}
         
         dictionary[icodigo]['seccion'][iseccion]['horario'].extend(ihorarios)
         dictionary[icodigo]['seccion'][iseccion]['aula'].extend(iaulas)
@@ -54,12 +48,7 @@ def dataframe_to_dict(df):
 
     return dictionary
 
-# Test Data
-#database = read_data_xlsx()
-#print(json.dumps(dataframe_to_dict(database)['BFI01'], indent=4))
-#print(read_data_xlsx())
-
-#********************************************************************
+#***************************************************************************************************
 #Structure example of data
 c = {
         'bf01': {
@@ -70,6 +59,7 @@ c = {
                     'horario': ['LU 8-10' , 'MA 8-10' , 'MI 8-10', 'VI 13-15'],
                     'aula': ['A-101', 'A-102', 'A-103','lab f'],    
                     'docente': ['Juan Perez', 'Juana', 'Juana']
+                    # 'nn' : 30 (no necesario-omitir)
                 },
                 'B': {
                     'horario': ['LU 8-10:' , 'MA 8-10' , 'MI 8-10', 'VI 13-15'],
@@ -83,7 +73,7 @@ c = {
 c['bf01']['curso'] # >fisica
 c['bf01']['seccion']['A']['horario'] # >"LU 10-12", "MI 10-12", "VI 08-10", "VI 13-15"
 
-#********************************************************************
+#***************************************************************************************************
 
 class DataBase :
     def __init__(self,data):
@@ -101,9 +91,15 @@ class DataBase :
     def get_codigos_names(self):
         return codigos_of(self.data)
     
+# Test Data
+def test():
+    data = DataBase(url_to_df())
+    dicty = data.get_diccionario()
+    print(json.dumps(dicty['BFI01'], indent=4))
 
       
 if __name__ == '__main__':
+    test()
     print('you are in DataBase :0 \n-> CargaHoraria.py')
     
     

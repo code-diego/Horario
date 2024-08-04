@@ -146,7 +146,7 @@ function makeCoursesWithSection(codes_s){
 
 function addCourseSection(course_code){
     var course_sections = document.createElement('div');
-    var sections = data[course_code]["seccion"];
+    var sections = data[course_code]['seccion'];
     var name_sections = Object.keys(sections);
     
     var old_cd_crs_select = '';
