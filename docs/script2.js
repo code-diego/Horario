@@ -11,18 +11,26 @@ calendar_div.classList.add('calendar');
 //lista de cursos - calendario
 var allcourses_div = document.createElement('div');
 var sections_selected_courses = {};
-//codigos de los cursos
-var codes_data = Object.keys(data);
+// Lista de los codigos de los cursos
+var codes_data = Object.keys(DATA);
+// Lista de los codigos de los cursos seleccionados
 var codes_selected = [];
+// Lista de los nombres de los cursos (esta como 'curso' en data )
+
+var names_courses = [];
+codes_data.forEach(function(code){
+    names_courses.push(DATA[code]['curso'][0]);
+})
+
 // ==================================================================
-// Implementa funcion al input de busqueda -> ('search')
+// Funcion para el input  -> 'search'
 function searchInList(){
-    var filer = document.getElementById('search').value.toLowerCase();
+    var filer = normalizeStr(document.getElementById('search').value);
     var list = document.getElementById('list-data');
     var elements = list.getElementsByTagName('li');
 
     for (var i=0; i< elements.length; i++) {
-        var textElement = elements[i].textContent.toLowerCase();
+        var textElement = normalizeStr(elements[i].textContent);
         if (textElement.includes(filer)){
             elements[i].style.display = 'block';
         } else {
@@ -31,9 +39,14 @@ function searchInList(){
     }
 }
 
+function normalizeStr(str) {
+    // Normaliza el texto a Unicode NFD y elimina los caracteres diacríticos
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
 // ==================================================================
 // Muestra los cursos de 'data'
-showCourses(Object.keys(data));
+showCourses(Object.keys(DATA));
 
 function showCourses(codes_course){
     var ul_element = document.createElement('ul');
@@ -41,12 +54,18 @@ function showCourses(codes_course){
 
     codes_course.forEach(function(code) {
         var li_element = document.createElement('li');
-        li_element.textContent = code;
+
+        course_name = DATA[code]['curso'][0];
+        li_element.textContent = course_name;
+
+        var div_code = document.createElement('div');
+        div_code.textContent = code;
+        li_element.appendChild(div_code);
     
         // agregando evento
         li_element.addEventListener('click', function(){
             li_element.classList.toggle('selected');
-            var value = li_element.textContent;
+            var value = li_element.querySelector('div').textContent;
             var index = codes_selected.indexOf(value);
             if(index !== -1) {
                 codes_selected.splice(index,1)
@@ -72,9 +91,9 @@ function updateSelectedList() {
     list_selected_div.textContent = '';
 
     list_selected_div.appendChild(div_title);
-    codes_selected.forEach(function(key) {
+    codes_selected.forEach(function(cs) {
         var li_element_sel = document.createElement('li');
-        li_element_sel.textContent = key;
+        li_element_sel.textContent = cs;
         ul_element_sel.appendChild(li_element_sel);
     })
     list_selected_div.appendChild(ul_element_sel);
@@ -155,7 +174,7 @@ function makeCoursesWithSection(codes_s){
 // Agrega las secciones al div-curso
 function addCourseSection(course_code){
     var course_sections = document.createElement('div');
-    var sections = data[course_code]['seccion'];
+    var sections = DATA[course_code]['seccion'];
     var name_sections = Object.keys(sections);
     
     var old_cd_crs_select = '';
@@ -207,7 +226,7 @@ function addCourseSection(course_code){
 
 // Pinta el curso-secc seleccionado(clickeado) 
 function paintCourseSec(course_code, section){
-    var schedules_data = data[course_code]['seccion'][section]['horario'];
+    var schedules_data = DATA[course_code]['seccion'][section]['horario'];
     if (schedules_data.includes('n.d.')) {
         alert('No hay horarios para este curso :C');
         return;
