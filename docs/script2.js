@@ -32,7 +32,7 @@ function searchInList(){
     for (var i=0; i< elements.length; i++) {
         var textElement = normalizeStr(elements[i].textContent);
         if (textElement.includes(filer)){
-            elements[i].style.display = 'block';
+            elements[i].style.display = 'flex';
         } else {
             elements[i].style.display = 'none';
         }
