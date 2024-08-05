@@ -104,6 +104,16 @@ table th {
     height: auto;
 }
 
+table td[class] {
+    background-color: #454372;
+    color: white;
+}
+
+table td.conflict{
+    background-color: #FF312E;
+    color: white;
+}
+
 .allcourses *{
     border: 1px solid black;
 }

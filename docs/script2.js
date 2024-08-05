@@ -4,18 +4,18 @@ const list_data_div = document.querySelector('#list-data');
 const list_selected_div = document.querySelector('.selected-box');
 //boton
 const generate_button = document.querySelector('#generate');
+
 //calendario
 var calendar_div = document.createElement('div');
 calendar_div.classList.add('calendar');
 //lista de cursos - calendario
 var allcourses_div = document.createElement('div');
-var courses_sections_selected = {};
-//codes
+var sections_selected_courses = {};
+//codigos de los cursos
 var codes_data = Object.keys(data);
 var codes_selected = [];
-
 // ==================================================================
-// buscador
+// Implementa funcion al input de busqueda -> ('search')
 function searchInList(){
     var filer = document.getElementById('search').value.toLowerCase();
     var list = document.getElementById('list-data');
@@ -32,14 +32,14 @@ function searchInList(){
 }
 
 // ==================================================================
-// mostrar cursos
+// Muestra los cursos de 'data'
 showCourses(Object.keys(data));
 
-function showCourses(codes){
+function showCourses(codes_course){
     var ul_element = document.createElement('ul');
     ul_element.classList.add('scrollable-list');
 
-    codes.forEach(function(code) {
+    codes_course.forEach(function(code) {
         var li_element = document.createElement('li');
         li_element.textContent = code;
     
@@ -61,6 +61,7 @@ function showCourses(codes){
     list_data_div.appendChild(ul_element)
 }
 
+// Actualiza la lista de cursos seleccionados
 function updateSelectedList() {
     var div_title = document.createElement('div');
     div_title.textContent = 'cursos :';
@@ -80,15 +81,18 @@ function updateSelectedList() {
 }
 
 // ==================================================================
-// boton generate
+// Agregando evento al boton (generar)
 generate_button.addEventListener('click',function () {
+    // limpia toda la pagina
     main_section.textContent = '';
+    // agregamos nuevos divs a la pagina (actulaizamos)
     calendar_div.appendChild(makeTableCalendar());
     main_section.appendChild(calendar_div);
     allcourses_div = makeCoursesWithSection(codes_selected);
     main_section.appendChild(allcourses_div);
 })
 
+// Retorna una tabla(html) de horarios
 function makeTableCalendar(){
     var table = document.createElement('table');
     var days = ['Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
@@ -111,6 +115,7 @@ function makeTableCalendar(){
     return table
 }
 
+// Retorna una fila de la tabla
 function createRow(hour) {
     var prefix_days = ['LU','MA','MI','JU','VI','SA'];
     var row = document.createElement('tr');
@@ -123,6 +128,7 @@ function createRow(hour) {
     return row;
 }
 
+// Retorna el encabezado en una fila de la tabla
 function createTimeHeader(hour){
     var hour_n = (hour%12 == 0) ? 12 : hour%12;
     var period = (hour < 12) ? 'am' : 'pm';
@@ -132,6 +138,8 @@ function createTimeHeader(hour){
 }
 
 // ------------------------------------------------------------------
+
+// Retorna div con div-curso's en el div -> 'allcourses'
 function makeCoursesWithSection(codes_s){
     var courses = document.createElement('div');
     courses.classList.add('allcourses')
@@ -144,6 +152,7 @@ function makeCoursesWithSection(codes_s){
     return courses;
 }
 
+// Agrega las secciones al div-curso
 function addCourseSection(course_code){
     var course_sections = document.createElement('div');
     var sections = data[course_code]['seccion'];
@@ -158,10 +167,10 @@ function addCourseSection(course_code){
 
         section_div.addEventListener('click', function(){
             var sec_select = section_div.textContent;
-            var old_sec = courses_sections_selected[course_code];
+            var old_sec = sections_selected_courses[course_code];
             
             if (old_cd_crs_select && course_code === old_cd_crs_select ){
-                // si se selecciona el mismo curso
+                // si se selecciona el mismo curso -> cambio de seccion
 
                 if (sec !== old_sec){
                     // si se selecciona una nueva seccion (del mismo curso)   
@@ -174,7 +183,7 @@ function addCourseSection(course_code){
                     var old_sec_div = document.querySelector('.'+course_code+'-'+old_sec+'.select-one');
                     if (old_sec_div){
                         old_sec_div.classList.remove('select-one');
-                        delete courses_sections_selected[course_code];
+                        delete sections_selected_courses[course_code];
                         clearCellCourse(course_code);
                         return;
                     }
@@ -185,7 +194,7 @@ function addCourseSection(course_code){
             paintCourseSec(course_code, sec);
 
             section_div.classList.toggle('select-one');
-            courses_sections_selected[course_code] = sec_select;
+            sections_selected_courses[course_code] = sec_select;
             old_cd_crs_select = course_code;
 
         })
@@ -196,34 +205,39 @@ function addCourseSection(course_code){
 
 // ------------------------------------------------------------------
 
+// Pinta el curso-secc seleccionado(clickeado) 
 function paintCourseSec(course_code, section){
     var schedules_data = data[course_code]['seccion'][section]['horario'];
     if (schedules_data.includes('n.d.')) {
-       alert('No hay horarios para este curso :C');
+        alert('No hay horarios para este curso :C');
         return;
-    } ;
+    }
+
+    // schedules_data (ejemplo) -> ['MI 10-12','VI 10-12']
     schedules_data.forEach(function(hour_data){
         var day = hour_data.split(' ')[0];
         var hourStar = parseInt(hour_data.split(' ')[1].split('-')[0]);
         var hourEnd = parseInt(hour_data.split(' ')[1].split('-')[1]);
         for (var h = hourStar; h < hourEnd; h++){
             var cell = document.querySelector('#'+day+'-'+(h));
-            
-            // aqui cruzan 2 cursos
-            if (cell.className && cell.className !== course_code) {
-                cell.textContent = '*cruce*';
-                cell.classList.add(course_code);
-                cell.classList.add('conflict');
-            }else {  
+
+            if (Array.from(cell.classList).length == 0){
+                // si la celda no tiene clases
                 cell.classList.add(course_code);
                 cell.textContent = course_code + '-' + section;
-            }
+            } else {
+                if (cell.className !== course_code){
+                    // si la celda tiene una clase diferente a una clase()
+                    cell.classList.add('conflict');
+                    cell.classList.add(course_code);
+                    cell.textContent = '*cruce*';
+                }
+            } 
         }   
     })
 }
 
-
-
+// Limpia todas las celdas del horario
 function clearAllCells(){
     const cells = document.querySelectorAll('.calendar td');
     cells.forEach(cell => {
@@ -231,23 +245,26 @@ function clearAllCells(){
     })
 }
 
+// Limpia las celdas(code) -> celdas que contienen la clase 'code' 
 function clearCellCourse(code_c){
     const cells = document.querySelectorAll('.'+code_c);
     cells.forEach(cell => {
         
-        if (cell.classList.contains('conflict')){
-            if (cell.classList.contains(code_c)) {
-                var course_code_stand = '';
+        if (cell.classList.length > 1){
+            if (cell.classList.contains('conflict')){
                 cell.classList.remove('conflict');
                 cell.classList.remove(code_c);
-                course_code_stand = cell.className;
-                cell.className = '';
-                paintCourseSec(course_code_stand, courses_sections_selected[course_code_stand])
-                return;
+                Array.from(cell.classList).forEach(function(c){
+                    cell.classList.remove(c);
+                    paintCourseSec(c,sections_selected_courses[c]);
+                })
+                if (cell.classList.length > 1){
+                    cell.classList.add('conflict');
+                }
             }
+        } else {
+            cell.textContent = '';
+            cell.removeAttribute('class');
         }
-
-        cell.textContent = '';
-        cell.classList.remove(code_c);
     })
 }
