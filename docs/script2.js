@@ -266,16 +266,16 @@ function makeDivCourse(course_code, section){
 
 // Limpia las celdas(code) -> celdas que contienen la clase 'code' 
 function clearCellCourse(code_c){
-    const divs_cell = document.querySelectorAll('div.'+code_c);
+    var divs_cell = document.querySelectorAll('div.'+code_c);
 
     divs_cell.forEach(div_c => {
         var cell = div_c.parentElement;
         cell.classList.remove(code_c);
-        div_c.remove();
         if (cell.querySelectorAll('div').length == 1){
             cell.classList.remove('conflict');
             cell.removeAttribute('class');
         } 
+        div_c.remove();
     })
 }
 
