@@ -152,7 +152,7 @@ function createTimeHeader(hour){
     var hour_n = (hour%12 == 0) ? 12 : hour%12;
     var period = (hour < 12) ? 'am' : 'pm';
     var time_cell = document.createElement('th');
-    time_cell.textContent = hour_n + period + ' - ' + (hour_n+1) + period;
+    time_cell.textContent = hour_n + period + ' - ' + ((hour_n+1 === 13)?1:(hour_n+1)) + period;
     return time_cell;
 }
 
@@ -210,7 +210,7 @@ function addCourseSection(course_code){
                 clearCellCourse(course_code);
             }
 
-            paintCourseSec(course_code, sec);
+            makeDivCourse(course_code, sec);
 
             section_div.classList.toggle('select-one');
             sections_selected_courses[course_code] = sec_select;
@@ -225,7 +225,7 @@ function addCourseSection(course_code){
 // ------------------------------------------------------------------
 
 // Pinta el curso-secc seleccionado(clickeado) 
-function paintCourseSec(course_code, section){
+function makeDivCourse(course_code, section){
     var schedules_data = DATA[course_code]['seccion'][section]['horario'];
     if (schedules_data.includes('n.d.')) {
         alert('No hay horarios para este curso :C');
@@ -237,22 +237,45 @@ function paintCourseSec(course_code, section){
         var day = hour_data.split(' ')[0];
         var hourStar = parseInt(hour_data.split(' ')[1].split('-')[0]);
         var hourEnd = parseInt(hour_data.split(' ')[1].split('-')[1]);
+        var course_name = DATA[course_code]['curso'][0];
+
         for (var h = hourStar; h < hourEnd; h++){
             var cell = document.querySelector('#'+day+'-'+(h));
+            var divs_cell = cell.querySelectorAll('div');
 
-            if (Array.from(cell.classList).length == 0){
-                // si la celda no tiene clases
-                cell.classList.add(course_code);
-                cell.textContent = course_code + '-' + section;
+            var div_course = document.createElement('div');
+            if (divs_cell.length == 0){
+                // si la celda no tiene cursos(divs)
+                cell.classList.add(course_code); // old
+                div_course.textContent = course_name + ' - ' + section;
+                div_course.classList.add(course_code);
+                cell.appendChild(div_course);
             } else {
-                if (cell.className !== course_code){
-                    // si la celda tiene una clase diferente a una clase()
+                if (divs_cell[0].id !== course_code){
+                    // si la celda solo tiene un curso)
                     cell.classList.add('conflict');
-                    cell.classList.add(course_code);
-                    cell.textContent = '*cruce*';
+                    cell.classList.add(course_code); // old
+                    div_course.textContent = course_name + ' - ' + section;
+                    div_course.classList.add(course_code);
+                    cell.appendChild(div_course);
                 }
             } 
         }   
+    })
+}
+
+// Limpia las celdas(code) -> celdas que contienen la clase 'code' 
+function clearCellCourse(code_c){
+    const divs_cell = document.querySelectorAll('div.'+code_c);
+
+    divs_cell.forEach(div_c => {
+        var cell = div_c.parentElement;
+        cell.classList.remove(code_c);
+        div_c.remove();
+        if (cell.querySelectorAll('div').length == 1){
+            cell.classList.remove('conflict');
+            cell.removeAttribute('class');
+        } 
     })
 }
 
@@ -261,29 +284,5 @@ function clearAllCells(){
     const cells = document.querySelectorAll('.calendar td');
     cells.forEach(cell => {
         cell.textContent = '';
-    })
-}
-
-// Limpia las celdas(code) -> celdas que contienen la clase 'code' 
-function clearCellCourse(code_c){
-    const cells = document.querySelectorAll('.'+code_c);
-    cells.forEach(cell => {
-        
-        if (cell.classList.length > 1){
-            if (cell.classList.contains('conflict')){
-                cell.classList.remove('conflict');
-                cell.classList.remove(code_c);
-                Array.from(cell.classList).forEach(function(c){
-                    cell.classList.remove(c);
-                    paintCourseSec(c,sections_selected_courses[c]);
-                })
-                if (cell.classList.length > 1){
-                    cell.classList.add('conflict');
-                }
-            }
-        } else {
-            cell.textContent = '';
-            cell.removeAttribute('class');
-        }
     })
 }

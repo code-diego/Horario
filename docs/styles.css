@@ -187,7 +187,7 @@ table td.conflict{
     transition: background-color 0.3s, transform 0.3s;
 }
 .allcourses > div > div > div:hover{
-    background-color: #d0d0d0;
+    background-color:  rgb(99, 179, 99);
     transform: scale(1.1); 
 }
 
