@@ -252,7 +252,7 @@ function makeDivCourse(course_code, section){
                 cell.appendChild(div_course);
             } else {
                 if (divs_cell[0].id !== course_code){
-                    // si la celda solo tiene un curso)
+                    // si la celda solo tiene un curso(diferente al actual)
                     cell.classList.add('conflict');
                     cell.classList.add(course_code); // old
                     div_course.textContent = course_name + ' - ' + section;
@@ -264,17 +264,21 @@ function makeDivCourse(course_code, section){
     })
 }
 
-// Limpia las celdas(code) -> celdas que contienen la clase 'code' 
+// limpia el div(course) de la celda
 function clearCellCourse(code_c){
     var divs_cell = document.querySelectorAll('div.'+code_c);
 
     divs_cell.forEach(div_c => {
         var cell = div_c.parentElement;
         cell.classList.remove(code_c);
-        if (cell.querySelectorAll('div').length == 1){
+        // si la celda tiene solo un curso
+        if (cell.querySelectorAll('div').length <= 1){
             cell.classList.remove('conflict');
-            cell.removeAttribute('class');
-        } 
+            cell.removeAttribute('class'); 
+        } else {
+            cell.classList.remove('conflict');
+        }
+
         div_c.remove();
     })
 }

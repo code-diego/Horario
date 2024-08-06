@@ -148,12 +148,12 @@ table th {
 }
 
 table td[class] {
-    background-color: #215382;
+    background-color: #5CA4A9;
     color: white;
 }
 
 table td.conflict{
-    background-color: #FF312E;
+    background-color: #ED6A5A;
     color: white;
 }
 
