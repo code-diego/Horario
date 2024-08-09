@@ -55,7 +55,7 @@ function showCourses(codes_course){
     codes_course.forEach(function(code) {
         var li_element = document.createElement('li');
 
-        course_name = DATA[code]['curso'][0];
+        course_name = DATA[code]['curso'][0]; // uso de DATA
         li_element.textContent = course_name;
 
         var div_code = document.createElement('div');
