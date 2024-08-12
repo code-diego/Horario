@@ -33,7 +33,7 @@
 *.webp
 
 # Portable Network Graphics
-*png
+#*.png #(para subir mi ig)
 
 # Animated Portable Network Graphics
 *.apng
