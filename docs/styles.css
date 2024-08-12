@@ -3,15 +3,25 @@
     padding: 5px;
 } */
 
-header{
+header {
     background-color: #561C24;
     color: white;
     text-align: center;
+    position: relative;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
 }
 
-header h1{
+header h1 {
     margin: 0;
     padding: 20px;
+    flex-grow: 1; 
+    text-align: center;
+}
+
+header.sm-icon {
+    margin-left: auto; 
 }
 
 body {
