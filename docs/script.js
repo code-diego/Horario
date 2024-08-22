@@ -1,17 +1,20 @@
-async function loadJSON(file) {
-    try {
-      const response = await fetch(file);
-      if (!response.ok) {
-        throw new Error("Network problems");
-      }
-      const data = await response.json();
-      return data;
+const url = "https://raw.githubusercontent.com/code-diego/Horario/main/docs/data.json";
 
-    } catch (error) {
-      console.error('Error:', error);
-      return null;
+async function getData(){
+  try {
+    const response = await fetch(url);
+    
+    if(!response.ok){
+      throw new Error('Error al cargar los datos');
     }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error en la petición: ', error);
   }
-  
-var data = await loadJSON("data.json");
-  
+}  
+
+getData().then(data => {
+  console.log(data);
+});
