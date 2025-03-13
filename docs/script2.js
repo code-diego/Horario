@@ -44,52 +44,78 @@ function normalizeStr(str) {
 }
 
 // ==================================================================
+
+// Cargar los cursos guardados al inicio
+loadSelectedCourses();
 // Muestra los cursos de 'data'
 showCourses(Object.keys(DATA));
 
-function showCourses(codes_course){
+
+// Guarda los cursos seleccionados en localStorage
+function saveSelectedCourses() {
+    localStorage.setItem('selectedCourses', JSON.stringify(codes_selected));
+}
+
+// Carga los cursos seleccionados desde localStorage
+function loadSelectedCourses() {
+    var storedCourses = localStorage.getItem('selectedCourses');
+    if (storedCourses) {
+        codes_selected = JSON.parse(storedCourses);
+    } else {
+        codes_selected = [];
+    }
+    updateSelectedList();
+}
+
+// Muestra los cursos de 'data'
+function showCourses(codes_course) {
     var ul_element = document.createElement('ul');
     ul_element.classList.add('scrollable-list');
 
     codes_course.forEach(function(code) {
         var li_element = document.createElement('li');
-
         course_name = DATA[code]['curso'][0]; // uso de DATA
         li_element.textContent = course_name;
 
         var div_code = document.createElement('div');
         div_code.textContent = code;
         li_element.appendChild(div_code);
+
+        // Marcar como seleccionado si está en codes_selected
+        if (codes_selected.includes(code)) {
+            li_element.classList.add('selected');
+        }
     
         // agregando evento
-        li_element.addEventListener('click', function(){
+        li_element.addEventListener('click', function() {
             li_element.classList.toggle('selected');
             var value = li_element.querySelector('div').textContent;
             var index = codes_selected.indexOf(value);
-            if(index !== -1) {
-                codes_selected.splice(index,1)
-            }else {
+            if (index !== -1) {
+                codes_selected.splice(index, 1);
+            } else {
                 codes_selected.push(code);
             }
             updateSelectedList();
-        })
+        });
     
-        ul_element.appendChild(li_element)
-    })
-    list_data_div.appendChild(ul_element)
+        ul_element.appendChild(li_element);
+    });
+    list_data_div.appendChild(ul_element);
 }
 
 // Actualiza la lista de cursos seleccionados
 function updateSelectedList() {
     var div_title = document.createElement('div');
-    div_title.textContent = 'cursos :';
+    div_title.textContent = 'Cursos:';
+    
     var ul_element_sel = document.createElement('ul');
     ul_element_sel.classList.add('scrollable-list');
 
-    // limpiar lista
+    // Limpiar lista
     list_selected_div.textContent = '';
     list_selected_div.appendChild(div_title);
-
+    
     codes_selected.forEach(function(cs, index) {
         var li_element_sel = document.createElement('li');
         li_element_sel.style.display = 'flex';
@@ -118,7 +144,9 @@ function updateSelectedList() {
         
         remove_button.addEventListener('click', function() {
             codes_selected.splice(index, 1);
+            saveSelectedCourses(); // Guardar después de eliminar
             updateSelectedList(); // Actualizar la lista después de eliminar
+            
             // Actualizar la lista de cursos mostrados
             var course_items = document.querySelectorAll('#list-data ul li');
             course_items.forEach(function(item) {
@@ -126,21 +154,16 @@ function updateSelectedList() {
                 if (!codes_selected.includes(code)) {
                     item.classList.remove('selected');
                 }
-            });s
+            });
         });
         
         li_element_sel.appendChild(span_text);
         li_element_sel.appendChild(remove_button);
         ul_element_sel.appendChild(li_element_sel);
     });
-
-    // codes_selected.forEach(function(cs) {
-    //     var li_element_sel = document.createElement('li');
-    //     li_element_sel.textContent = cs;
-    //     ul_element_sel.appendChild(li_element_sel);
-    // })
     
     list_selected_div.appendChild(ul_element_sel);
+    saveSelectedCourses(); // Guardar cuando se actualiza la lista
 }
 
 // ==================================================================
