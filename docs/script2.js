@@ -16,7 +16,6 @@ var codes_data = Object.keys(DATA);
 // Lista de los codigos de los cursos seleccionados
 var codes_selected = [];
 // Lista de los nombres de los cursos (esta como 'curso' en data )
-
 var names_courses = [];
 codes_data.forEach(function(code){
     names_courses.push(DATA[code]['curso'][0]);
@@ -89,13 +88,58 @@ function updateSelectedList() {
 
     // limpiar lista
     list_selected_div.textContent = '';
-
     list_selected_div.appendChild(div_title);
-    codes_selected.forEach(function(cs) {
+
+    codes_selected.forEach(function(cs, index) {
         var li_element_sel = document.createElement('li');
-        li_element_sel.textContent = cs;
+        li_element_sel.style.display = 'flex';
+        li_element_sel.style.justifyContent = 'space-between';
+        li_element_sel.style.alignItems = 'center';
+        li_element_sel.style.padding = '10px';
+        li_element_sel.style.fontSize = '16px';
+        li_element_sel.style.position = 'relative';
+        
+        var span_text = document.createElement('span');
+        span_text.textContent = cs;
+        
+        var remove_button = document.createElement('button');
+        remove_button.textContent = '✖';
+        remove_button.style.position = 'absolute';
+        remove_button.style.right = '10px';
+        remove_button.style.top = '50%';
+        remove_button.style.transform = 'translateY(-50%)';
+        remove_button.style.cursor = 'pointer';
+        remove_button.style.background = 'red';
+        remove_button.style.color = 'white';
+        remove_button.style.border = 'none';
+        remove_button.style.padding = '5px 10px';
+        remove_button.style.borderRadius = '5px';
+        remove_button.style.fontSize = '16px';
+        
+        remove_button.addEventListener('click', function() {
+            codes_selected.splice(index, 1);
+            updateSelectedList(); // Actualizar la lista después de eliminar
+            // Actualizar la lista de cursos mostrados
+            var course_items = document.querySelectorAll('#list-data ul li');
+            course_items.forEach(function(item) {
+                var code = item.querySelector('div').textContent;
+                if (!codes_selected.includes(code)) {
+                    item.classList.remove('selected');
+                }
+            });s
+        });
+        
+        li_element_sel.appendChild(span_text);
+        li_element_sel.appendChild(remove_button);
         ul_element_sel.appendChild(li_element_sel);
-    })
+    });
+
+    // codes_selected.forEach(function(cs) {
+    //     var li_element_sel = document.createElement('li');
+    //     li_element_sel.textContent = cs;
+    //     ul_element_sel.appendChild(li_element_sel);
+    // })
+    
     list_selected_div.appendChild(ul_element_sel);
 }
 
