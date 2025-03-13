@@ -1,3 +1,4 @@
+var DATA;
 const url = "https://raw.githubusercontent.com/code-diego/Horario/main/docs/data.json";
 
 async function getData(){
@@ -9,12 +10,11 @@ async function getData(){
     }
 
     const data = await response.json();
-    return data;
+    
+    DATA = data;
   } catch (error) {
     console.error('Error en la petición: ', error);
   }
-}  
+}
 
-getData().then(data => {
-  console.log(data);
-});
+getData();

@@ -5,11 +5,11 @@ import pandas as pd
 
 def url_to_df():
     
-    # URL del Google Sheet publicado
-    url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTPzuVjn2HghoAvtnQi2qhz0i_aMlTmozXfkgC-8lYWweJvWvGNiEAI9Kz-CBHcVwUdoLCP29jxcqNx/pubhtml?gid=2053301174&single=true"
+    # URL del Google Sheet 
+    # #2025-1
+    url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSz5izSseufs6Vbro3Z2asV9hKDCjGWatgTo1bCYrtnX1n-4hPQeWtPp4h0gTBxwhTVhXQL1nW5s72N/pubhtml?gid=2053301174&single=true&urp=gmail_link"
     # Haciendo la petición GET
     response = requests.get(url)
-
     # Parseando el HTML
     soup = BeautifulSoup(response.text, 'html.parser')
     table = soup.find('table')
