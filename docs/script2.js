@@ -229,6 +229,12 @@ function createTimeHeader(hour){
 function makeCoursesWithSection(codes_s){
     var courses = document.createElement('div');
     courses.classList.add('allcourses')
+
+    var title = document.createElement('h3');
+    title.textContent = "*eliga la sección de los cursos"; 
+    title.style.fontWeight = "normal"; 
+    courses.appendChild(title);
+
     codes_s.forEach(function(code){
         var course = document.createElement('div');
         course.innerHTML = code;
