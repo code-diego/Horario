@@ -1,21 +1,23 @@
 import pandas as pd
-    
+import openpyxl
+
 def delete_extra_titles(df, condition):
-    iters = [ index for index,row in df.iterrows() if row[0] == condition[0] ]
-    df = df.drop(i for i in iters)
-    df = df.reset_index(drop=True)
+    # antes: row[0] == condition[0]
+    iters = [idx for idx, row in df.iterrows() if row.iat[0] == condition[0]]
+    df = df.drop(index=iters, errors="ignore").reset_index(drop=True)
     return df
 
-def delete_data_with(df,txt):
-    iters = [ index for index,row in df.iterrows() if row[0] == txt ]
-    df = df.drop(i for i in iters)
-    df = df.reset_index(drop=True)
+def delete_data_with(df, txt):
+    # antes: row[0] == txt
+    iters = [idx for idx, row in df.iterrows() if row.iat[0] == txt]
+    df = df.drop(index=iters, errors="ignore").reset_index(drop=True)
     return df
 
-def delete_data_starts_with(df,txt):
-    iters = [ index for index,row in df.iterrows() if not pd.isna(row[0]) and str(row[0]).startswith(txt) ]
-    df = df.drop(i for i in iters)
-    df = df.reset_index(drop=True)
+def delete_data_starts_with(df, txt):
+    # antes: str(row[0]).startswith(txt)
+    iters = [idx for idx, row in df.iterrows()
+             if pd.notna(row.iat[0]) and str(row.iat[0]).startswith(txt)]
+    df = df.drop(index=iters, errors="ignore").reset_index(drop=True)
     return df
 
 def delete_nan(list):
@@ -34,9 +36,9 @@ def split_list(lst,condition):
 def read_data_xlsx(): 
     
     # actualizar el archivo de excel 
-    # ACTUAL -> 2024-1
-    archivo = './data/Horarios2024-1.xlsx'
-    dfc = pd.read_excel(archivo) 
+    # ACTUAL -> 2025-2
+    archivo = './data/Horarios2025-2.xlsx'
+    dfc = pd.read_excel(archivo, engine="openpyxl") 
     
     titles = dfc.columns.tolist() #['CURSOS'(0), 'CÓDIGO'(1), 'HORARIO'(2), 'AULA'(3), 'DOCENTE'(4), 'N'(5)] 
     
@@ -85,3 +87,8 @@ def read_data_xlsx():
     cursos, codigos, horarios, aulas, docentes, ns = [dfc[title].tolist() for title in titles]
     
     return dfc    
+
+if __name__ == "__main__":
+    #test
+    data = read_data_xlsx()
+    print(data)

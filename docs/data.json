@@ -1,1 +1,5004 @@
-{"BFI01": {"curso": ["F\u00cdSICA I"], "codigo": "BFI01", "seccion": {"A": {"horario": ["LU 10-12", "MI 10-12", "VI 08-10", "VI 13-15"], "aula": ["R1-450", "R1-460", "J3-182A (P)", "LAB F (L)"], "docente": ["S. CUSTODIO", "A. ORCCOHUARANCCA", "S. RODR\u00cdGUEZ"]}, "B": {"horario": ["LU 14-16", "MI 14-16", "VI 08-10", "VI 08-10"], "aula": ["J3-182B", "J3-182A", "J3-232 (P)", "LAB F (L)"], "docente": ["M. BROCCA", "R. SALAZAR", "D. RUEDA"]}, "C": {"horario": ["JU 08-10", "MA 08-10", "VI 08-10", "VI 10-12"], "aula": ["J3-242", "J3-232", "J3-162B (P)", "LAB F (L)"], "docente": ["M. ZEVALLOS", "A. ZEGARRA", "J. AMORETTI"]}, "D": {"horario": ["MA 10-12", "VI 10-12", "VI 08-10", "JU 10-12"], "aula": ["J3-182B", "R1-430", "J3-242 (P)", "LAB F (L)"], "docente": ["C. RIVERA", "G. CORTEZ", "M. ZEVALLOS"]}, "E": {"horario": ["LU 10-12", "MI 10-12", "VI 08-10", "VI 15-17"], "aula": ["R1-440", "R1-430", "J3-182B (P)", "LAB F (L)"], "docente": ["A. ORCCOHUARANCCA", "C. CASTROMONTE", "A. ALTAMIRANO"]}, "F": {"horario": ["LU 10-12", "MI 10-12", "VI 08-10", "MI 16-18"], "aula": ["R1-411", "R1-411", "J3-252 (P)", "LAB F (L)"], "docente": ["G. RIVERA", "NNF1", "S. RODR\u00cdGUEZ"]}}}, "CF1B2": {"curso": ["F\u00cdSICA II"], "codigo": "CF1B2", "seccion": {"A": {"horario": ["LU 10-12", "MI 10-12", "VI 08-10", "VI 14-17"], "aula": ["R1-421", "R1-421", "R1-440 (P)", "LAB2 F (L)"], "docente": ["C. ONCEBAY", "E. VIDAL\u00d3N", "G. CORTEZ"]}, "B": {"horario": ["MA 08-10", "JU 08-10", "VI 08-10", "MA 13-16"], "aula": ["R1-430", "R1-421", "R1-401 (P)", "LAB2 F (L)"], "docente": ["H. LORO", "M. ZEVALLOS", "S. RODR\u00cdGUEZ"]}, "C": {"horario": ["LU 14-16", "MI 14-16", "VI 08-10", "VI 10-13"], "aula": ["R1-440", "R1-401", "R1-430 (P)", "LAB2 F (L)"], "docente": ["A. ORCCOHUARANCCA", "A. PAREDES", "G. RIVERA"]}}}, "CF2B1": {"curso": ["FISICA III"], "codigo": "CF2B1", "seccion": {"A": {"horario": ["LU 08-10", "MI 08-10", "VI 10-12", "JU 16-19"], "aula": ["R1-125A", "R1-125A", "J3-162A (P)", "LAB3 F (L)"], "docente": ["S. CUSTODIO", "S. RODR\u00cdGUEZ", "A. ALTAMIRANO"]}, "B": {"horario": ["LU 10-12", "MI 10-12", "VI 10-12", "MA 16-19"], "aula": ["R1-125A", "R1-125A", "J3-162B (P)", "LAB3 F (L)"], "docente": ["M. BROCCA", "R. SALAZAR", "G. CORTEZ"]}, "C": {"horario": ["LU 08-10", "MI 08-10", "VI 10-12", "JU 08-11"], "aula": ["R1-401", "R1-401", "J3-232 (P)", "LAB3 F (L)"], "docente": ["J. AMORETTI", "NNF2", "G. CORTEZ"]}}}, "CF4E1": {"curso": ["LABORATORIO DE FISICA INTERMEDIA"], "codigo": "CF4E1", "seccion": {"A": {"horario": ["MA 08-09", "MA 09-12", "JU 08-12"], "aula": ["LAB FI", "LAB FI", "LAB FI"], "docente": ["S. PETRICK", "C. ONCEBAY", "S. PETRICK", "C. ONCEBAY"]}, "B": {"horario": ["MI 08-09", "MI 09-12", "MI 09-12", "VI 08-12"], "aula": ["LAB FI", "LAB FI (P)", "LAB FI", "LAB FI (L)"], "docente": ["B. PUJADA", "R. SALAZAR", "B. PUJADA", "R. SALAZAR", "S. PETRICK"]}}}, "CF4E2": {"curso": ["LABORATORIO DE FISICA AVANZADA"], "codigo": "CF4E2", "seccion": {"A": {"horario": ["LU 08-10", "LU 10-12", "MI 08-12"], "aula": ["LAB FA", "LAB FA", "LAB FA"], "docente": ["A. VALERA", "A. VALERA"]}, "B": {"horario": ["LU 08-10", "LU 10-12", "MI 10-14"], "aula": ["LAB FI", "LAB FI", "LAB FA"], "docente": ["R. PUGA", "R. PUGA"]}}}, "CF2B2": {"curso": ["OPTICA CLASICA"], "codigo": "CF2B2", "seccion": {"A": {"horario": ["LU 14-16", "MI 14-16", "VI 10-12", "MA 10-13"], "aula": ["R1-450", "R1-430", "J3-242 (P)", "LAB4 F (L)"], "docente": ["C. CASTROMONTE", "A. ALTAMIRANO", "C. EYZAGUIRRE"]}, "B": {"horario": ["MI 14-16", "VI 14-16", "VI 10-12", "LU 13-16"], "aula": ["R1-411", "R1-440", "J3-222 (P)", "LAB4 F (L)"], "docente": ["M. ZEVALLOS", "M. ZEVALLOS", "C. EYZAGUIRRE"]}}}, "CF1C2": {"curso": ["\u00c1LGEBRA LINEAL PARA F\u00cdSICOS I"], "codigo": "CF1C2", "seccion": {"A": {"horario": ["MA 10-12", "JU 10-12", "MI 07-10"], "aula": ["J3-222", "J3-222", "J3-182A"], "docente": ["E. VIDAL\u00d3N", "A. PAREDES", "A. ALTAMIRANO"]}, "B": {"horario": ["MA 10-12", "JU 10-12", "MI 07-10"], "aula": ["J3-232", "J3-162B", "J3-242"], "docente": ["A. PAREDES", "A. ZEGARRA", "G. RIVERA"]}}}, "CF2C1": {"curso": ["ALGEBRA LINEAL PARA FISICOS II"], "codigo": "CF2C1", "seccion": {"A": {"horario": ["MA 16-18", "VI 16-18", "LU 16-19"], "aula": ["R1-125A", "R1-421", "J3-232"], "docente": ["A. D. PAREDES", "A. D. PAREDES", "NNF2"]}}}, "CF2C2": {"curso": ["METODOS MATEMATICOS PARA F\u00cdSICOS I"], "codigo": "CF2C2", "seccion": {"A": {"horario": ["LU 08-10", "MI 08-10", "VI 08-10", "MA 14-17"], "aula": ["J3-222", "R1-411", "J3-162A", "J3-222"], "docente": ["H. D\u00cdAZ", "A. ALTAMIRANO"]}}}, "CF3F1": {"curso": ["MEC\u00c1NICA CL\u00c1SICA"], "codigo": "CF3F1", "seccion": {"A": {"horario": ["LU 08-10", "MI 08-10", "VI 08-10", "SA 08-11"], "aula": ["R1-460", "R1-460", "R1-421", "R1-460"], "docente": ["J. TELLO", "A. ZEGARRA", "A. ALTAMIRANO"]}, "B": {"horario": ["LU 08-10", "MI 08-10", "VI 08-10", "SA 08-11"], "aula": ["R1-411", "R1-430", "J3-222", "R1-411"], "docente": ["R. OCHOA", "NNF1"]}}}, "CF3F2": {"curso": ["MEC\u00c1NICA CU\u00c1NTICA I"], "codigo": "CF3F2", "seccion": {"A": {"horario": ["MA 10-12", "JU 10-12", "MI 16-20"], "aula": ["R1-411", "R1-421", "R1-411"], "docente": ["O. CASTILLO", "C. RIVERA"]}}}, "CF3F3": {"curso": ["FISICA MODERNA"], "codigo": "CF3F3", "seccion": {"A": {"horario": ["LU 14-16", "MI 14-16", "VI 15-18"], "aula": ["R1-430", "R1-215", "J3-242"], "docente": ["D. SOTO", "NNF2"]}}}, "CF3E1": {"curso": ["CIRCUITOS ELECTRONICOS ANALOGICOS"], "codigo": "CF3E1", "seccion": {"A": {"horario": ["MA 08-12", "JU 08-12"], "aula": ["R2-323", "R2-323"], "docente": ["D. RUEDA", "R. SALAZAR"]}, "B": {"horario": ["MA 14-18", "VI 14-18"], "aula": ["R2-323", "R2-323"], "docente": ["C. RIVERA", "R. PUGA"]}}}, "CF3C1": {"curso": ["METODOS MATEMATICOS PARA FISICOS II"], "codigo": "CF3C1", "seccion": {"A": {"horario": ["LU 10-12", "MI 10-12", "VI 10-12", "JU 16-19"], "aula": ["R1-460", "R3-123C", "R3-123C", "R1-440"], "docente": ["E. VIDAL\u00d3N", "NNF1", "D. SOTO"]}}}, "CF3F4": {"curso": ["ELECTROMAGNETISMO I"], "codigo": "CF3F4", "seccion": {"A": {"horario": ["LU 08-10", "MA 08-10", "JU 08-10", "LU 14-18"], "aula": ["R1-215", "R1-450", "R1-440", "R1-460"], "docente": ["G. RIVERA", "NNF1"]}}}, "CF4F1": {"curso": ["TERMODINAMICA Y MECANICA ESTADISTICA"], "codigo": "CF4F1", "seccion": {"A": {"horario": ["LU 08-10", "MI 08-10", "VI 08-10", "MA 14-18"], "aula": ["R3-209", "R3-123C", "R3-123B", "R3-209"], "docente": ["D. SOTO", "S. CUSTODIO"]}}}, "CF4F3": {"curso": ["MECANICA CUANTICA II"], "codigo": "CF4F3", "seccion": {"A": {"horario": ["MI 10-12", "VI 10-12", "VI 14-18"], "aula": ["R1-450", "R1-460", "J3-162B"], "docente": ["O. PEREYRA", "NNF1"]}}}, "CF4F2": {"curso": ["FISICA ATOMICA Y MOLECULAR"], "codigo": "CF4F2", "seccion": {"A": {"horario": ["LU 16-18", "JU 16-18", "VI 14-17"], "aula": ["J3-162A", "J3-162A", "J3-252"], "docente": ["J. BELTR\u00c1N", "J. BELTR\u00c1N"]}}}, "CF5F1": {"curso": ["FISICA DEL ESTADO SOLIDO I"], "codigo": "CF5F1", "seccion": {"A": {"horario": ["LU 16-18", "MI 16-18", "VI 16-20"], "aula": ["R1-421", "R1-401", "R1-411"], "docente": ["M. LE\u00d3N", "S. CUSTODIO", "A. ORCCOHUARANCCA"]}}}, "CF4D2": {"curso": ["PROYECTO DE TESIS I"], "codigo": "CF4D2", "seccion": {"A": {"horario": ["MA 10-12", "DO 10-12", "DO 16-18", "MA 14-16", "\u200e"], "aula": ["R1-303 / R3-306", "R1-305 / LAB FA", "R3-306 / R1-306", "R1-250B / R1-250A", "Coordinar con", "el asesor"], "docente": ["A. ORCCOHUARANCCA", "H. LORO", "D. SOTO", "O. CASTILLO", "A. VALERA", "M. ZEVALLOS", "J. TELLO", "A. LOPEZ"]}}}, "CF5D1": {"curso": ["PROYECTO DE TESIS II"], "codigo": "CF5D1", "seccion": {"A": {"horario": ["JU 16-18", "LU 10-12", "JU 10-12", "\u200e"], "aula": ["R1-250A", "R3-306 / R306", "R1-240B / R3-306 / LAB FA", "Coordinar con", "el asesor"], "docente": ["M. LE\u00d3N", "C. CASTROMONTE", "B. PUJADA", "O. PEREYRA", "R. OCHOA", "A. VALERA"]}}}, "CF5F3": {"curso": ["FISICA NUCLEAR Y DE PARTICULAS"], "codigo": "CF5F3", "seccion": {"A": {"horario": ["LU 18-20", "MA 18-20", "JU 18-20", "MI 18-21"], "aula": ["R1-430", "R3-123B", "R3-123C", "R3-123C"], "docente": ["J. AMORETTI", "A. LOPEZ"]}}}, "CF5T3": {"curso": ["TALLER DE INVESTIGACI\u00d3N"], "codigo": "CF5T3", "seccion": {"A": {"horario": ["VI 10-12", "MI 10-12", "LU 10-12", "JU 10-12", "MI 14-16", "VI 16-18", "MA 14-16", "\u200e"], "aula": ["R1-250A / R3-306", "R1-250A", "R3-116", "R3-306", "R1-240A", "R1-240A", "R3-306", "Coordinar con", "el asesor"], "docente": ["B. PUJADA", "H. D\u00cdAZ", "C. CASTROMONTE", "H. LORO", "O. PEREYRA", "C. EYZAGUIRRE", "J. TELLO", "D. SOTO"]}}}, "CF045": {"curso": ["MECANICA CELESTE"], "codigo": "CF045", "seccion": {"A": {"horario": ["LU 12-14", "MI 13-15", "JU 16-18"], "aula": ["R1-411", "R1-460", "J3-182B"], "docente": ["J. TELLO", "J. TELLO"]}}}, "CF076": {"curso": ["INTRODUCCI\u00d3N A LA ELECTRODIN\u00c1MICA CU\u00c1NTICA"], "codigo": "CF076", "seccion": {"A": {"horario": ["SA 10-12", "LU 10-12", "MA 14-16"], "aula": ["R1-440", "R1-250B", "R1-240B"], "docente": ["H. D\u00cdAZ"]}}}, "CF001": {"curso": ["T\u00d3PICOS ESPECIALES I"], "codigo": "CF001", "seccion": {"A": {"horario": ["LU 10-11", "VI 13-16"], "aula": ["R1-240A", "R1-250B"], "docente": ["C. EYZAGUIRRE", "C. EYZAGUIRRE"]}}}, "BMA01": {"curso": ["C\u00c1LCULO DIFERENCIAL"], "codigo": "BMA01", "seccion": {"A": {"horario": ["LU 08-10", "MI 08-10", "SA 10-12"], "aula": ["J3-162B", "J3-232", "R3-123C"], "docente": ["R. ACU\u00d1A", "F. VILLANUEVA", "E. ORE"]}, "B": {"horario": ["MI 16-18", "VI 17-19", "SA 10-12"], "aula": ["J3-222", "J3-222", "J3-182B"], "docente": ["J. CRIBILLERO", "J. CRIBILLERO", "L. LA ROSA"]}, "C": {"horario": ["LU 10-12", "JU 14-16", "SA 10-12"], "aula": ["R1-430", "R1-440", "J3-232"], "docente": ["J. ZAMUDIO", "J. ZAMUDIO", "R. ACU\u00d1A"]}, "D": {"horario": ["LU 08-10", "MI 08-10", "SA 10-12"], "aula": ["R1-450", "J3-162B", "J3-162A"], "docente": ["L. ROCA", "H. CASTILLO", "V. L\u00d3PEZ"]}, "E": {"horario": ["LU 12-14", "MI 14-16", "SA 10-12"], "aula": ["J3-182A", "J3-162B", "J3-162B"], "docente": ["M. QUI\u00d1ONES", "A. CHULLUNCUY", "R. PAUCAR"]}}}, "BMA03": {"curso": ["\u00c1LGEBRA LINEAL"], "codigo": "BMA03", "seccion": {"A": {"horario": ["JU 07-10", "SA 08-10"], "aula": ["J3-162B", "J3-182A"], "docente": ["A. CHULLUNCUY", "R. PAUCAR", "D. ABANTO"]}, "B": {"horario": ["MI 07-10", "SA 08-10"], "aula": ["R1-450", "J3-182B"], "docente": ["B. OSTOS", "J. SULCA", "B. OSTOS"]}, "C": {"horario": ["MI 15-18", "SA 08-10"], "aula": ["J3-252", "J3-222"], "docente": ["R. ACU\u00d1A", "H. CASTILLO", "J. CRIBILLERO"]}, "D": {"horario": ["JU 10-13", "SA 08-10"], "aula": ["J3-182B", "J3-242"], "docente": ["J. PALACIOS", "C. SALINAS", "L. LA ROSA"]}, "E": {"horario": ["JU 16-19", "SA 08-10"], "aula": ["J3-182A", "J3-252"], "docente": ["J. SULCA", "R. ACU\u00d1A", "J. ZAMUDIO"]}}}, "BMA02": {"curso": ["C\u00c1LCULO INTEGRAL"], "codigo": "BMA02", "seccion": {"A": {"horario": ["MI 16-18", "SA 10-12", "LU 08-10"], "aula": ["J3-182A", "J3-242", "J3-182A"], "docente": ["C. SALINAS", "D. CAYTUIRO", "J. ZAMUDIO"]}, "B": {"horario": ["MI 12-14", "SA 10-12", "LU 08-10"], "aula": ["J3-182A", "J3-182A", "J3-232"], "docente": ["F. NAVARRO", "R. MAS", "D. ABANTO"]}, "C": {"horario": ["LU 16-18", "MI 16-18", "LU 08-10"], "aula": ["J3-242", "J3-162B", "J3-242"], "docente": ["L. PAREDES", "F. NAVARRO", "J. CRIBILLERO"]}}}, "CM1B2": {"curso": ["\u00c1LGEBRA LINEAL I"], "codigo": "CM1B2", "seccion": {"A": {"horario": ["VI 17-19", "JU 12-14", "MI 08-10"], "aula": ["J3-142", "J3-242", "J3-162A"], "docente": ["R. MAS", "V. L\u00d3PEZ"]}, "B": {"horario": ["MA 16-18", "JU 16-18", "MI 08-10"], "aula": ["R1-421", "R1-460", "J3-252"], "docente": ["R. PEREZ", "R. PAUCAR"]}, "C": {"horario": ["VI 17-19", "JU 10-12", "MI 08-10"], "aula": ["J3-252", "J3-162A", "J3-182B"], "docente": ["L. ROCA", "L. PAREDES"]}}}, "CM1A2": {"curso": ["L\u00d3GICA Y TEOR\u00cdA DE CONJUNTOS"], "codigo": "CM1A2", "seccion": {"A": {"horario": ["LU 18-20", "MA 18-19", "JU 18-20"], "aula": ["J3-252", "J3-182B", "R1-411"], "docente": ["H. CASTILLO", "H. CASTILLO", "J. ZAMUDIO"]}}}, "CM1H2": {"curso": ["C\u00c1LCULO DE PROBABILIDADES"], "codigo": "CM1H2", "seccion": {"A": {"horario": ["JU 16-18", "MA 10-12"], "aula": ["R1-401", "SALA 2 / R1-421"], "docente": ["F. JARA", "J. ZAMUDIO"]}, "B": {"horario": ["JU 16-18", "MA 10-12"], "aula": ["R1-421", "R1-430 / SALA 3"], "docente": ["J. MAYTA", "L. ROCA"]}, "C": {"horario": ["MI 18-20", "MA 10-12"], "aula": ["R1-430", "R1-460 / SALA 4"], "docente": ["M. QUI\u00d1ONES", "F. NAVARRO"]}}}, "CM2H1": {"curso": ["MATEM\u00c1TICA DISCRETA"], "codigo": "CM2H1", "seccion": {"A": {"horario": ["MI 16-18", "LU 19-21", "VI 19-21"], "aula": ["J3-242", "R1-440", "R1-450"], "docente": ["R. RAMOS", "R. PAUCAR"]}, "B": {"horario": ["MI 18-20", "SA 12-14", "VI 19-21"], "aula": ["R1-440", "J3-242", "R1-460"], "docente": ["C. SALINAS", "C. SALINAS"]}}}, "CM2F1": {"curso": ["PROGRAMACI\u00d3N ESTRUCTURADA"], "codigo": "CM2F1", "seccion": {"A": {"horario": ["LU 08-10", "JU 08-10", "JU 10-12"], "aula": ["R3-123C", "SALA 2", "SALA 3"], "docente": ["R. PEREZ", "R. PEREZ"]}}}, "CM2A1": {"curso": ["C\u00c1LCULO DIFERENCIAL E INTEGRAL AVANZADO"], "codigo": "CM2A1", "seccion": {"A": {"horario": ["MA 14-16", "MI 14-16", "VI 14-16", "LU 14-16"], "aula": ["J3-232", "J3-222", "J3-222", "J3-252"], "docente": ["J. VALVERDE", "J. ZAMUDIO", "H. CASTILLO"]}, "B": {"horario": ["MA 08-10", "JU 14-16", "SA 14-16", "LU 14-16"], "aula": ["J3-182A", "J3-182A", "J3-182A", "J3-242"], "docente": ["J. SULCA", "F. JARA", "E. ORE"]}}}, "CM2B1": {"curso": ["\u00c1LGEBRA LINEAL II"], "codigo": "CM2B1", "seccion": {"A": {"horario": ["MI 10-12", "VI 10-12", "JU 16-18"], "aula": ["J3-162B", "J3-182B", "J3-252"], "docente": ["R. PAUCAR", "R. MAS"]}}}, "CM2H2": {"curso": ["ESTADISTICA INFERENCIAL"], "codigo": "CM2H2", "seccion": {"A": {"horario": ["LU 16-18", "JU 16-18"], "aula": ["J3-162B", "J3-162B / SALA 4 / J3-232 / SALA 3"], "docente": ["G. PANIZO", "G. PANIZO", "J. UGARTE"]}}}, "CM2A2": {"curso": ["ANALISIS REAL"], "codigo": "CM2A2", "seccion": {"A": {"horario": ["MA 19-21", "MI 18-20", "VI 16-18", "JU 08-10"], "aula": ["J3-242", "J3-252", "R1-460", "J3-252"], "docente": ["J. MUNGUIA", "H. CASTILLO", "B. OSTOS"]}}}, "CM2F2": {"curso": ["PROCESADOR DE TEXTO Y PROGRAMACION"], "codigo": "CM2F2", "seccion": {"A": {"horario": ["LU 18-19", "MI 07-10", "LU 20-21"], "aula": ["SALA 5", "SALA 1", "SALA 5"], "docente": ["J. CRIBILLERO", "J. CRIBILLERO"]}}}, "CM2G2": {"curso": ["INTRODUCCION A LAS ECUACIONES DIFERENCIALES ORDINARIAS"], "codigo": "CM2G2", "seccion": {"A": {"horario": ["LU 14-16", "MI 14-16", "VI 18-20"], "aula": ["R1-421", "R1-450", "R1-440"], "docente": ["R. RAMOS", "A. CHULLUNCUY", "D. CAYTUIRO"]}}}, "CM2I2": {"curso": ["ESTRUCTURAS ALGEBRAICAS"], "codigo": "CM2I2", "seccion": {"A": {"horario": ["MA 08-10", "JU 10-12", "LU 10-12"], "aula": ["R1-460", "J3-152", "J3-162A"], "docente": ["R. MAS", "H. CASTILLO"]}}}, "CM3A1": {"curso": ["AN\u00c1LISIS COMPLEJO"], "codigo": "CM3A1", "seccion": {"A": {"horario": ["MA 10-12", "MI 10-12", "JU 10-12"], "aula": ["R1-440", "R1-250B", "R1-460"], "docente": ["F. ESCALANTE", "J. TAMARA"]}}}, "CM3C1": {"curso": ["ANALISIS EN RN"], "codigo": "CM3C1", "seccion": {"A": {"horario": ["MA 16-18", "JU 16-18", "SA 12-14"], "aula": ["SALA 4", "R1-215", "J3-162B"], "docente": ["F. VILLANUEVA", "A. CHULLUNCUY"]}}}, "CM3I1": {"curso": ["TEOR\u00cdA LOCAL DE SUPERFICIES"], "codigo": "CM3I1", "seccion": {"A": {"horario": ["LU 16-18", "MA 14-16", "JU 08-10"], "aula": ["R1-440", "R1-460", "R1-450"], "docente": ["D. ABANTO", "D. ABANTO"]}}}, "CM3C2": {"curso": ["TEORIA DE LA MEDIDA"], "codigo": "CM3C2", "seccion": {"A": {"horario": ["MA 16-18", "JU 18-20", "VI 10-12"], "aula": ["R1-240B", "R1-401", "R1-240B"], "docente": ["J. MAYTA", "J. MAYTA"]}}}, "CM3E2": {"curso": ["ANALISIS CONVEXO"], "codigo": "CM3E2", "seccion": {"A": {"horario": ["LU 08-10", "MA 08-10", "MI 18-20"], "aula": ["J3-142", "J3-142", "J3-142"], "docente": ["E. ORE", "E. ORE"]}}}, "CM3G2": {"curso": ["ECUACIONES DIFERENCIALES ORDINARIAS I"], "codigo": "CM3G2", "seccion": {"A": {"horario": ["LU 14-16", "MA 14-16", "MI 14-16"], "aula": ["R1-401", "R1-401", "R1-421"], "docente": ["F. ESCALANTE", "F. ESCALANTE", "R. PAUCAR"]}}}, "CM3I2": {"curso": ["TOPOLOGIA"], "codigo": "CM3I2", "seccion": {"A": {"horario": ["LU 16-18", "MI 16-18", "VI 16-18"], "aula": ["R1-450", "R1-450", "R1-250A"], "docente": ["R. METZGER", "R. METZGER"]}}}, "CM4C1": {"curso": ["ANALISIS FUNCIONAL I"], "codigo": "CM4C1", "seccion": {"A": {"horario": ["LU 10-12", "MA 10-12", "VI 14-16"], "aula": ["J3-152", "J3-152", "R1-430"], "docente": ["H. GUIMARAY", "H. GUIMARAY"]}}}, "CM4H1": {"curso": ["TEORIA DE LA PROBABILIDAD"], "codigo": "CM4H1", "seccion": {"A": {"horario": ["LU 16-18", "MI 16-18", "JU 18-20"], "aula": ["R1-430", "R1-430", "R1-430"], "docente": ["J. UGARTE", "J. UGARTE"]}}}, "CM4E1": {"curso": ["PROGRAMACION LINEAL Y FLUJO EN REDES"], "codigo": "CM4E1", "seccion": {"A": {"horario": ["LU 18-20", "MI 18-20", "VI 18-20"], "aula": ["R1-421", "R1-421", "SALA 5"], "docente": ["L. FLORES", "L. FLORES"]}}}, "CM4F1": {"curso": ["ANALISIS Y MODELAMIENTO NUMERICO I"], "codigo": "CM4F1", "seccion": {"A": {"horario": ["MA 18-20", "VI 16-18", "MI 10-12"], "aula": ["J3-232", "J3-232", "SALA 2 / J3-252"], "docente": ["D. CAYTUIRO", "L. ROCA"]}, "B": {"horario": ["MA 16-18", "VI 10-12", "MI 10-12"], "aula": ["J3-162A", "SALA 1", "SALA 4 / J3-182B"], "docente": ["J. MUNGUIA", "L. LA ROSA"]}, "C": {"horario": ["MA 18-20", "VI 16-18", "MI 10-12"], "aula": ["R1-215", "R1-215", "SALA 1 / J3-182A"], "docente": ["I. MANTILLA", "A. RAMIREZ"]}}}, "CM4G2": {"curso": ["ECUACIONES DIFERENCIALES PARCIALES I"], "codigo": "CM4G2", "seccion": {"A": {"horario": ["MA 14-16", "VI 14-16", "MI 14-16"], "aula": ["R1-215", "R1-215", "J3-232"], "docente": ["I. MANTILLA", "I. MANTILLA"]}}}, "CM4C2": {"curso": ["AN\u00c1LISIS FUNCIONAL II"], "codigo": "CM4C2", "seccion": {"A": {"horario": ["MA 10-12", "JU 10-12", "JU 08-10"], "aula": ["R3-123C", "R3-123B", "R1-460"], "docente": ["E. OCA\u00d1A", "J. TAMARA"]}}}, "CM4E2": {"curso": ["PROGRAMACI\u00d3N NO LINEAL"], "codigo": "CM4E2", "seccion": {"A": {"horario": ["LU 08-10", "MA 08-10", "VI 08-10", "MI 16-18"], "aula": ["R1-421", "R1-240A", "R1-240A", "J3-162A"], "docente": ["P. CANALES", "F. NAVARRO"]}}}, "CM5H1": {"curso": ["INTRODUCCI\u00d3N A LOS PROCESOS ESTOC\u00c1STICOS"], "codigo": "CM5H1", "seccion": {"A": {"horario": ["MA 18-20", "JU 18-20", "VI 16-18"], "aula": ["R3-209", "R3-209", "R3-209"], "docente": ["W. ECHEGARAY", "W. ECHEGARAY"]}}}, "CM5F1": {"curso": ["AN\u00c1LISIS Y MODELAMIENTO NUM\u00c9RICO II"], "codigo": "CM5F1", "seccion": {"A": {"horario": ["LU 10-12", "MI 10-12", "JU 16-18"], "aula": ["R1-401", "R1-401", "R1-240B / SALA 1"], "docente": ["L. PAREDES", "L. PAREDES"]}}}, "CM4D2": {"curso": ["PROYECTO DE TESIS I"], "codigo": "CM4D2", "seccion": {"A": {"horario": ["\u200e"], "aula": ["Coordinar con", "el asesor"], "docente": ["F. ESCALANTE", "J. UGARTE", "J. MAYTA", "E. OCA\u00d1A", "E. ORE"]}}}, "CM5D1": {"curso": ["PROYECTO DE TESIS II"], "codigo": "CM5D1", "seccion": {"A": {"horario": ["\u200e"], "aula": ["Coordinar con", "el asesor"], "docente": ["J. PALACIOS", "J. UGARTE", "I. MANTILLA", "J. MUNGUIA", "J. MAYTA", "F. JARA", "G. PANIZO", "W. ECHEGARAY", "E. OCA\u00d1A"]}}}, "CM5T3": {"curso": ["TALLER DE INVESTIGACI\u00d3N"], "codigo": "CM5T3", "seccion": {"A": {"horario": ["\u200e"], "aula": ["Coordinar con", "el asesor"], "docente": ["J. PALACIOS", "H. VILLAVICENCIO", "W. ECHEGARAY", "D. ABANTO", "F. NAVARRO", "A. CHULLUNCUY", "R. PEREZ"]}}}, "CM050": {"curso": ["AN\u00c1LISIS FUNCIONAL III"], "codigo": "CM050", "seccion": {"A": {"horario": ["MA 18-20", "JU 18-20", "LU 16-18"], "aula": ["SALA 4", "R1-215", "R3-209"], "docente": ["F. VILLANUEVA", "F. VILLANUEVA"]}}}, "CM0E8": {"curso": ["PROGRAMACI\u00d3N ENTERA"], "codigo": "CM0E8", "seccion": {"A": {"horario": ["LU 16-18", "MI 16-18", "VI 16-18"], "aula": ["R1-411", "R1-440", "SALA 2"], "docente": ["L. FLORES", "L. FLORES"]}}}, "CM424": {"curso": ["INTRODUCCI\u00d3N A LOS SISTEMAS DIN\u00c1MICOS"], "codigo": "CM424", "seccion": {"A": {"horario": ["MA 17-20", "JU 17-18", "JU 18-20"], "aula": ["J3-142", "J3-142", "J3-142"], "docente": ["H. VILLAVICENCIO", "H. VILLAVICENCIO"]}}}, "BQU01": {"curso": ["QU\u00cdMICA I"], "codigo": "BQU01", "seccion": {"A": {"horario": ["LU 16-18", "MA 15-17", "MI 13-15"], "aula": ["J3-182A", "J3-182A", "LAB 33C"], "docente": ["J. FLORES", "M. D\u00c1VILA", "J. FLORES"]}, "B": {"horario": ["LU 16-18", "MA 15-17", "MI 17-19"], "aula": ["J3-182A", "J3-182A", "LAB 33C"], "docente": ["J. FLORES", "J. FLORES", "A. CORZO"]}, "C": {"horario": ["LU 08-10", "MI 10-12", "VI 10-12"], "aula": ["J3-182B", "J3-232", "LAB 12"], "docente": ["K. DURAND", "M. D\u00c1VILA", "E. CARPIO"]}, "D": {"horario": ["LU 08-10", "MI 10-12", "LU 10-12"], "aula": ["J3-182B", "J3-232", "LAB 12"], "docente": ["K. DURAND", "R. SAY\u00c1N", "M. D\u00c1VILA"]}, "E": {"horario": ["MA 10-12", "JU 10-12", "MA 13-15"], "aula": ["J3-182A", "J3-182A", "LAB 12"], "docente": ["R. SAY\u00c1N", "R. SAY\u00c1N", "J. FLORES"]}, "F": {"horario": ["MA 10-12", "JU 10-12", "MA 17-19"], "aula": ["J3-182A", "J3-182A", "LAB 12"], "docente": ["R. SAY\u00c1N", "R. SAY\u00c1N", "J. FLORES"]}, "G": {"horario": ["MA 10-12", "JU 10-12", "MA 13-15"], "aula": ["R3-123B", "R1-440", "LAB 12 bis"], "docente": ["G. MUEDAS", "E. CARPIO"]}, "H": {"horario": ["MA 10-12", "JU 10-12", "MA 15-17"], "aula": ["R3-123B", "R1-440", "LAB 12 / LAB 12 bis"], "docente": ["G. MUEDAS", "R. SAY\u00c1N", "E. CARPIO"]}, "I": {"horario": ["LU 16-18", "MA 15-17", "MA 08-10"], "aula": ["J3-182A", "J3-182A", "LAB 12"], "docente": ["J. FLORES", "V. TORPOCO"]}, "J": {"horario": ["LU 08-10", "MI 10-12", "MA 10-12"], "aula": ["J3-182B", "J3-232", "LAB 12"], "docente": ["K. DURAND", "R. PASTRANA"]}}}, "CQ132": {"curso": ["QU\u00cdMICA CIENCIA Y TECNOLOG\u00cdA"], "codigo": "CQ132", "seccion": {"A": {"horario": ["MI 14-16"], "aula": ["M8-501"], "docente": ["A. LA ROSA TORO"]}}}, "CQ102": {"curso": ["QU\u00cdMICA EXPERIMENTAL"], "codigo": "CQ102", "seccion": {"A": {"horario": ["VI 08-12"], "aula": ["LAB 33C"], "docente": ["G. BERETTA"]}}}, "CQ221": {"curso": ["INTRODUCCI\u00d3N A LA ELECTRICIDAD Y MAGNETISMO"], "codigo": "CQ221", "seccion": {"A": {"horario": ["MA 12-14", "SA 08-10", "VI 13-15", "VI 13-15"], "aula": ["R3-123C", "zoom21", "J3-152 (P)", "LAB F (L)"], "docente": ["C. SOLANO", "H. APAZA"]}, "B": {"horario": ["JU 16-18", "SA 10-12", "VI 15-17", "VI 15-17"], "aula": ["R3-123C", "zoom21", "J3-182B (P)", "LAB F (L)"], "docente": ["C. SOLANO", "H. APAZA"]}, "C": {"horario": ["JU 16-18", "SA 10-12", "VI 17-19", "VI 17-19"], "aula": ["R3-123C", "zoom21", "J3-182B (P)", "LAB F (L)"], "docente": ["C. SOLANO", "H. APAZA"]}}}, "CQ241": {"curso": ["ELEMENTOS QU\u00cdMICOS, PROPIEDADES Y APLICACIONES"], "codigo": "CQ241", "seccion": {"A": {"horario": ["MA 16-18", "VI 08-10", "MI 08-12"], "aula": ["R1-460", "R1-460", "LAB 12"], "docente": ["H. GONTARUK", "H. GONTARUK"]}}}, "CQ261": {"curso": ["HIDROCARBUROS ALIF\u00c1TICOS, ALCOHOLES Y DERIVADOS"], "codigo": "CQ261", "seccion": {"A": {"horario": ["MA 10-12", "VI 15-17", "LU 14-18"], "aula": ["AULA 33C", "AULA 33C", "LAB 12"], "docente": ["V. TORPOCO", "K. DURAND"]}}}, "CQ271": {"curso": ["PRINCIPIOS DE FISICOQU\u00cdMICA"], "codigo": "CQ271", "seccion": {"A": {"horario": ["MA 14-16", "MI 16-18", "JU 08-12"], "aula": ["R1-421", "R3-209", "LAB 33R2"], "docente": ["R. L\u00d3PEZ", "R. L\u00d3PEZ"]}}}, "CQ242": {"curso": ["ESTRUCTURA QU\u00cdMICA Y REACTIVIDAD"], "codigo": "CQ242", "seccion": {"A": {"horario": ["MA 18-20", "LU 08-10", "VI 14-18"], "aula": ["R1-421", "R3-123B", "LAB 12"], "docente": ["G. BERETTA", "G. BERETTA"]}}}, "CQ262": {"curso": ["COMPUESTOS CARBON\u00cdLICOS Y AROM\u00c1TICOS"], "codigo": "CQ262", "seccion": {"A": {"horario": ["LU 10-12", "MI 13-15", "JU 08-12"], "aula": ["AULA 33C", "AULA 33C", "LAB 12"], "docente": ["V. TORPOCO", "V. TORPOCO"]}}}, "CQ272": {"curso": ["FUNDAMENTOS DE ELECTROQU\u00cdMICA"], "codigo": "CQ272", "seccion": {"A": {"horario": ["MA 14-16", "JU 16-18", "MI 15-19"], "aula": ["R1-125A", "J3-152", "LAB 33R1"], "docente": ["J. MORALES", "J. MORALES", "M. FERN\u00c1NDEZ"]}}}, "CQ300": {"curso": ["METODOS NUMERICOS APLICADOS A LA QUIMICA"], "codigo": "CQ300", "seccion": {"A": {"horario": ["MI 10-13", "MA 16-18"], "aula": ["R1-440", "J3-182B"], "docente": ["R. ACU\u00d1A", "R. ACU\u00d1A"]}}}, "CQ381": {"curso": ["TRATAMIENTO ESTADISTICO EN QUIMICA ANALITICA"], "codigo": "CQ381", "seccion": {"A": {"horario": ["MA 16-18", "JU 10-12"], "aula": ["R1-440", "SALA 1"], "docente": ["J. CCONISLLA", "J. CCONISLLA"]}}}, "CQ301": {"curso": ["QUIMICA DE COORDINACION"], "codigo": "CQ301", "seccion": {"A": {"horario": ["MA 14-16", "VI 08-10", "MI 08-12"], "aula": ["R1-430", "R1-125A", "LAB 33C"], "docente": ["M. CARLOS", "M. CARLOS"]}}}, "CQ371": {"curso": ["CINETICA QUIMICA Y FENOMENOS DE SUPERFICIE"], "codigo": "CQ371", "seccion": {"A": {"horario": ["MA 08-10", "JU 08-10", "JU 16-20"], "aula": ["R3-123B", "R3-123C", "LAB 33R1"], "docente": ["A. DAMIAN", "M. FERN\u00c1NDEZ"]}}}, "CQ372": {"curso": ["QUIMICA DE COLOIDES Y NANOPARTICULAS"], "codigo": "CQ372", "seccion": {"A": {"horario": ["MA 08-10", "JU 10-12", "MA 10-13"], "aula": ["R3-209", "R1-411", "LAB 33R2 / R1-250B"], "docente": ["J. VEGA", "A. DAMIAN"]}}}, "CQ2E2": {"curso": ["QU\u00cdMICA ANAL\u00cdTICA"], "codigo": "CQ2E2", "seccion": {"A": {"horario": ["MA 10-12", "VI 10-12", "MI 08-12"], "aula": ["R1-450", "R1-440", "LAB 33R1"], "docente": ["P. L\u00d3PEZ", "J. CCONISLLA"]}}}, "CQ302": {"curso": ["QUIMICA INORGANICA APLICADA"], "codigo": "CQ302", "seccion": {"A": {"horario": ["MA 14-16", "VI 08-10", "LU 08-12"], "aula": ["R1-440", "R1-450", "LAB 33C"], "docente": ["A. VALDERRAMA", "H. GONTARUK"]}}}, "CQ4E1": {"curso": ["QUIMICA CUANTICA"], "codigo": "CQ4E1", "seccion": {"A": {"horario": ["MI 14-16", "JU 16-18", "JU 18-20"], "aula": ["R3-209", "R1-411", "R1-421"], "docente": ["A. CORZO", "A. CORZO"]}}}, "CQ382": {"curso": ["TECNICAS ESPECTROSCOPICAS EN QUIMICA ANALITICA"], "codigo": "CQ382", "seccion": {"A": {"horario": ["LU 14-16", "JU 16-18", "VI 14-18"], "aula": ["R3-209", "R3-209", "LAB 33R2"], "docente": ["C. JACINTO", "J. CCONISLLA"]}}}, "CQ361": {"curso": ["CARBOHIDRATOS, AMINOACIDOS Y HETEROCICLICOS"], "codigo": "CQ361", "seccion": {"A": {"horario": ["MA 10-12", "VI 10-12", "MI 14-18"], "aula": ["R3-209", "AULA 33C", "LAB 12"], "docente": ["V. REYNA", "V. REYNA"]}}}, "CQ401": {"curso": ["MICROBIOLOGIA"], "codigo": "CQ401", "seccion": {"A": {"horario": ["MA 19-21", "MI 08-10"], "aula": ["zoom21", "R1-421"], "docente": ["J. PRIETO", "J. PRIETO"]}}}, "CQ491": {"curso": ["TECNICAS ELECTROQUIMICAS Y CROMATOGRAFICAS EN QUIMICA ANALITICA"], "codigo": "CQ491", "seccion": {"A": {"horario": ["LU 14-16", "VI 16-18", "LU 08-12"], "aula": ["R1-411", "R3-123B", "LAB 33R1"], "docente": ["U. QUIROZ", "J. CCONISLLA", "A. CORZO"]}}}, "CQ392": {"curso": ["IDENTIFICACION ESPECTROSCOPICA DE COMPUESTOS ORGANICOS"], "codigo": "CQ392", "seccion": {"A": {"horario": ["MI 14-16", "VI 10-12", "LU 16-19"], "aula": ["R1-250B", "R1-411", "AULA 33C"], "docente": ["E. C\u00d3NDOR", "E. C\u00d3NDOR"]}}}, "CQ402": {"curso": ["T\u00c9CNICAS DE CARACTERIZACI\u00d3N DE MATERIALES"], "codigo": "CQ402", "seccion": {"A": {"horario": ["MI 14-16", "MI 16-18"], "aula": ["R1-125A", "R1-421"], "docente": ["J. VEGA", "J. VEGA"]}}}, "CQ431": {"curso": ["QUIMICA Y GESTION AMBIENTAL"], "codigo": "CQ431", "seccion": {"A": {"horario": ["MA 14-16", "JU 11-13", "VI 09-13", "VI 09-12", "VI 12-13"], "aula": ["R3-123C", "R1-450", "LAB 33R1", "SALA 2", "LAB 33R2"], "docente": ["P. L\u00d3PEZ", "I. MAZA"]}}}, "CQ461": {"curso": ["SEMINARIO DE ELABORACION DE LA TESIS PROFESIONAL"], "codigo": "CQ461", "seccion": {"A": {"horario": ["MI 16-18", "MI 18-19"], "aula": ["M8-501", "M8-501"], "docente": ["A. BAENA", "A. BAENA"]}}}, "CQ472": {"curso": ["QUIMICA DE MATERIALES"], "codigo": "CQ472", "seccion": {"A": {"horario": ["MA 16-18", "JU 16-18", "LU 16-20"], "aula": ["R3-123B", "R1-430", "LAB 33R2"], "docente": ["H. ALARC\u00d3N", "M. FERN\u00c1NDEZ"]}}}, "CQ501": {"curso": ["PROCESOS QUIMICOS INDUSTRIALES"], "codigo": "CQ501", "seccion": {"A": {"horario": ["LU 18-20", "MA 17-19", "VI 17-19"], "aula": ["R1-411", "R1-411", "R1-430"], "docente": ["M. D\u00c1VILA", "M. D\u00c1VILA"]}}}, "CQ482": {"curso": ["GESTION DE LA CALIDAD DE LABORATORIOS"], "codigo": "CQ482", "seccion": {"A": {"horario": ["MA 10-12", "VI 10-12"], "aula": ["R1-401", "R1-421"], "docente": ["K. CHANGANAQUI", "K. CHANGANAQUI"]}}}, "CQ511": {"curso": ["DISE\u00d1O ORGANIZACIONAL Y SEGURIDAD EN EL LABORATORIO"], "codigo": "CQ511", "seccion": {"A": {"horario": ["JU 17-19", "MI 17-19"], "aula": ["zoom22", "R1-125A"], "docente": ["K. CHANGANAQUI", "K. CHANGANAQUI"]}}}, "CQ4E2": {"curso": ["PROYECTO DE TESIS EN QUIMICA I"], "codigo": "CQ4E2", "seccion": {"A": {"horario": ["DO 08-10", "\u200e"], "aula": ["R1-401 / R1-125A / R1-125B / R5-201 / R1-192 / R1-240A / R1-240B / R1-411 / R1-421"], "docente": ["M. CARLOS", "I. MAZA", "A. LA ROSA TORO", "J. MORALES", "R. PASTRANA", "G. PICASSO", "U. QUIROZ", "A. VALDERRAMA"]}}}, "CQ541": {"curso": ["PROYECTO DE TESIS EN QUIMICA II"], "codigo": "CQ541", "seccion": {"A": {"horario": ["SA 18-20", "\u200e"], "aula": ["R3-123B / R3-209 / R1-460 / R1-450 / R1-440 / R1-430"], "docente": ["H. ALARC\u00d3N", "A. BAENA", "M. CARLOS", "E. C\u00d3NDOR", "G. MUEDAS", "V. REYNA"]}}}, "CQ5T3": {"curso": ["TALLER DE INVESTIGACI\u00d3N"], "codigo": "CQ5T3", "seccion": {"A": {"horario": ["SA 18-20", "\u200e"], "aula": ["R1-421 / R1-411 / R1-401 / R1-125A / R1-125B / R1-240A / R1-240B"], "docente": ["A. BAENA", "J. CCONISLLA", "K. CHANGANAQUI", "C. JACINTO", "J. MORALES", "U. QUIROZ", "A. VALDERRAMA"]}}}, "CQ001": {"curso": ["TOPICOS DE QUIMICA ESPECIALIZADA I"], "codigo": "CQ001", "seccion": {"A": {"horario": ["MA 10-12", "MI 11-12"], "aula": ["R1-250A", "R3-209"], "docente": ["G. PICASSO"]}}}, "CQ002": {"curso": ["TOPICOS DE QUIMICA ESPECIALIZADA II"], "codigo": "CQ002", "seccion": {"A": {"horario": ["MI 14-16", "VI 15-17"], "aula": ["M8-501", "M8-501"], "docente": ["A. BAENA"]}}}, "CQ004": {"curso": ["TOPICOS DE QUIMICA ESPECIALIZADA IV"], "codigo": "CQ004", "seccion": {"A": {"horario": ["MA 14-16", "JU 14-16", "VI 13-17"], "aula": ["R1-411", "R1-411", "LAB 33C"], "docente": ["R. PASTRANA", "R. PASTRANA"]}}}, "CQ085": {"curso": ["QUIMIOMETR\u00cdA"], "codigo": "CQ085", "seccion": {"A": {"horario": ["LU 16-19", "JU 18-21"], "aula": ["R3-123B", "R3-123B"], "docente": ["C. JACINTO", "C. JACINTO"]}}}, "CQ047": {"curso": ["S\u00cdNTESIS ORG\u00c1NICA"], "codigo": "CQ047", "seccion": {"A": {"horario": ["JU 09-12", "MA 08-12"], "aula": ["R1-401", "LAB 12"], "docente": ["E. C\u00d3NDOR", "K. DURAND"]}}}, "IF242": {"curso": ["INTRODUCCI\u00d3N A LA METROLOG\u00cdA (tambi\u00e9n CF002)"], "codigo": "IF242", "seccion": {"A": {"horario": ["JU 10-12", "MI 16-19"], "aula": ["R1-125B", "R1-125B"], "docente": ["C. LUYO", "C. LUYO"]}}}, "IF281": {"curso": ["DIBUJO Y DISE\u00d1O PARA INGENIERIA"], "codigo": "IF281", "seccion": {"A": {"horario": ["LU 18-20", "VI 16-20"], "aula": ["SALA 2", "SALA 3"], "docente": ["D. HUAMAN\u00cd", "D. HUAMAN\u00cd"]}, "B": {"horario": ["MA 10-12", "SA 08-12"], "aula": ["SALA 1", "SALA 3"], "docente": ["H. HUANCA", "H. HUANCA"]}}}, "IF252": {"curso": ["M\u00c9TODOS MATEM\u00c1TICOS PARA INGENIER\u00cdA"], "codigo": "IF252", "seccion": {"A": {"horario": ["LU 19-21", "MI 18-20", "VI 18-20", "JU 16-20"], "aula": ["R3-209", "R3-209", "R3-209", "R1-450"], "docente": ["J. D\u00cdAZ", "A, HUAM\u00c1N"]}}}, "IF292": {"curso": ["INGENIER\u00cdA DE PROCESOS MEC\u00c1NICOS"], "codigo": "IF292", "seccion": {"A": {"horario": ["MI 08-09", "MI 10-13"], "aula": ["R2-152", "R2-152"], "docente": ["H. HUANCA", "H. HUANCA"]}}}, "IF294": {"curso": ["INGENIER\u00cdA DE INSTALACIONES INDUSTRIALES"], "codigo": "IF294", "seccion": {"A": {"horario": ["LU 08-09", "LU 09-12"], "aula": ["R1-192", "R1-192"], "docente": ["O. ROJAS", "O. ROJAS"]}}}, "IF321": {"curso": ["C\u00c1LCULO NUM\u00c9RICO I"], "codigo": "IF321", "seccion": {"A": {"horario": ["MI 14-16", "VI 14-16", "LU 12-16"], "aula": ["SALA 1", "SALA 2", "J3-162B"], "docente": ["D. LAURA", "D. LAURA"]}}}, "IF325": {"curso": ["FISICA TERMICA II"], "codigo": "IF325", "seccion": {"A": {"horario": ["JU 14-16", "MA 16-18"], "aula": ["R3-209", "R1-450"], "docente": ["M. QUINTANA", "C. LUYO"]}}}, "IF352": {"curso": ["FISICA TERMICA I"], "codigo": "IF352", "seccion": {"A": {"horario": ["LU 10-12", "VI 10-12", "JU 16-18"], "aula": ["R3-209", "R3-209", "R3-123B"], "docente": ["W. ESTRADA", "R. ADRIANO"]}}}, "IF3B2": {"curso": ["PROCESAMIENTO DE SE\u00d1ALES Y DATOS"], "codigo": "IF3B2", "seccion": {"A": {"horario": ["LU 16-18", "MI 08-11"], "aula": ["R1-125B", "SALA 3"], "docente": ["G. COMINA", "L. S\u00c1NCHEZ"]}}}, "IF372": {"curso": ["ELECTROMAGNETISMO PARA INGENIER\u00cdA"], "codigo": "IF372", "seccion": {"A": {"horario": ["LU 08-10", "MI 14-16", "MA 16-18"], "aula": ["J3-152", "J3-152", "J3-232"], "docente": ["R. PEREZ", "L. S\u00c1NCHEZ"]}}}, "IF392": {"curso": ["C\u00c1LCULO NUMERICO II"], "codigo": "IF392", "seccion": {"A": {"horario": ["JU 08-11", "JU 12-15"], "aula": ["R1-125A", "SALA 3"], "docente": ["P. RAMOS", "P. RAMOS"]}}}, "IF3A2": {"curso": ["INGENIERIA ECONOMICA"], "codigo": "IF3A2", "seccion": {"A": {"horario": ["JU 08-10"], "aula": ["SALA 1"], "docente": ["C. CERVANTES"]}}}, "IF411": {"curso": ["MEC\u00c1NICA CU\u00c1NTICA"], "codigo": "IF411", "seccion": {"A": {"horario": ["LU 10-13", "VI 12-15", "JU 16-19"], "aula": ["J3-222", "R1-411", "J3-242"], "docente": ["R. PEREZ", "A, HUAM\u00c1N", "R. PEREZ"]}}}, "IF462": {"curso": ["TEOR\u00cdA DE CONTROL"], "codigo": "IF462", "seccion": {"A": {"horario": ["LU 16-18", "JU 16-18", "MI 16-18"], "aula": ["R1-125A", "R1-125A", "J3-182B"], "docente": ["L. S\u00c1NCHEZ", "L. S\u00c1NCHEZ"]}}}, "IF471": {"curso": ["SISTEMAS DIGITALES"], "codigo": "IF471", "seccion": {"A": {"horario": ["LU 14-15", "LU 15-16", "LU 16-18", "MI 16-18", "MI 14-16"], "aula": ["R2-323", "R2-323", "R2-323", "R2-323", "R2-323"], "docente": ["G. CASTILLO", "G. CASTILLO", "R. ADRIANO"]}, "B": {"horario": ["MI 08-09", "MI 09-12", "VI 08-12", "VI 09-12"], "aula": ["R2-323", "R2-323", "R2-323", "R2-323"], "docente": ["G. CASTILLO", "G. CASTILLO", "H. HUANCA"]}}}, "IF482": {"curso": ["INTRODUCCI\u00d3N A LA CIENCIA E INGENIER\u00cdA DE LOS MATERIALES"], "codigo": "IF482", "seccion": {"A": {"horario": ["MI 08-10", "JU 08-10", "VI 14-16"], "aula": ["R3-123B", "R3-123B", "R1-450"], "docente": ["J. SOLIS", "P. RAMOS"]}}}, "IF492": {"curso": ["INGENIER\u00cdA SOLAR"], "codigo": "IF492", "seccion": {"A": {"horario": ["MA 10-12", "MI 10-12", "JU 14-16"], "aula": ["R1-125A", "R3-123B", "R1-430"], "docente": ["J. MOLINA", "J. MOLINA"]}}}, "IF4A1": {"curso": ["MECANICA DE FLUIDOS"], "codigo": "IF4A1", "seccion": {"A": {"horario": ["VI 16-18", "VI 18-19"], "aula": ["R3-123C", "R3-123C"], "docente": ["C. PAUCARCHUCO", "C. PAUCARCHUCO"]}}}, "IF4A2": {"curso": ["PROYECTO DE TESIS I"], "codigo": "IF4A2", "seccion": {"A": {"horario": ["LU 08-10", "LU 10-12"], "aula": ["R1-250B", "R1-240B"], "docente": ["J. RODR\u00cdGUEZ", "J. RODR\u00cdGUEZ"]}}}, "IF4B1": {"curso": ["METODOLOGIA DE LA INVESTIGACION CIENTIFICA"], "codigo": "IF4B1", "seccion": {"A": {"horario": ["MA 13-15", "MA 15-16"], "aula": ["R3-123B", "R3-123B"], "docente": ["M. MONTOYA", "M. MONTOYA"]}, "B": {"horario": ["MI 13-15", "MI 15-16"], "aula": ["R3-123C", "R3-123C"], "docente": ["M. GOMEZ", "M. GOMEZ"]}}}, "IF511": {"curso": ["PROYECTO DE INSTRUMENTACI\u00d3N ELECTR\u00d3NICA"], "codigo": "IF511", "seccion": {"A": {"horario": ["MI 08-12", "MI 08-10", "VI 08-12"], "aula": ["R1-125B", "R1-125B / zoom69", "R1-125B / zoom156"], "docente": ["J. D\u00cdAZ", "A, HUAM\u00c1N", "J. D\u00cdAZ", "P. RAMOS"]}}}, "IF543": {"curso": ["PROYECTO DE TESIS II"], "codigo": "IF543", "seccion": {"A": {"horario": ["\u200e"], "aula": ["Coordinar con", "el asesor"], "docente": ["M. GOMEZ", "M. QUINTANA", "J. SOLIS", "A. GUTARRA", "G. COMINA", "W. ESTRADA", "P. RAMOS", "J. RODR\u00cdGUEZ"]}}}, "IF5T3": {"curso": ["TALLER DE INVESTIGACI\u00d3N"], "codigo": "IF5T3", "seccion": {"A": {"horario": ["\u200e"], "aula": ["Coordinar con", "el asesor"], "docente": ["J. D\u00cdAZ", "M. GOMEZ", "C. LUYO", "M. QUINTANA", "J. MOLINA", "J. RODR\u00cdGUEZ", "J. SOLIS"]}}}, "IF562": {"curso": ["T\u00c9CNICAS F\u00cdSICAS PARA LA INDUSTRIA"], "codigo": "IF562", "seccion": {"A": {"horario": ["JU 08-10", "JU 10-12", "MA 08-12", "JU 08-11"], "aula": ["R1-192", "R1-192", "R1-192", "R1-192"], "docente": ["A. GUTARRA", "A. GUTARRA", "C. PAUCARCHUCO"]}}}, "IFE18": {"curso": ["LABORATORIO DE ENERGIA RENOVABLES"], "codigo": "IFE18", "seccion": {"A": {"horario": ["JU 09-13"], "aula": ["CER UNI"], "docente": ["O. ROJAS"]}}}, "IFE23": {"curso": ["TOPICOS ESPECIALES DE INGENIERIA FISICA II"], "codigo": "IFE23", "seccion": {"A": {"horario": ["JU 08-12", "VI 08-10"], "aula": ["R1-240A", "R1-240B"], "docente": ["M. MONTOYA", "M. MONTOYA"]}}}, "IFE26": {"curso": ["TOPICOS ESPECIALES DE INGENIERIA FISICA V"], "codigo": "IFE26", "seccion": {"A": {"horario": ["LU 14-17", "MI 14-16"], "aula": ["SALA 1", "R3-123B"], "docente": ["C. LUYO", "H. HUANCA"]}}}, "IFE29": {"curso": ["TOPICOS ESPECIALES DE INGENIERIA FISICA VIII"], "codigo": "IFE29", "seccion": {"A": {"horario": ["MA 10-12", "JU 08-10"], "aula": ["R1-125B", "R1-125B"], "docente": ["D. LAURA", "D. LAURA"]}}}, "IFE24": {"curso": ["TOPICOS ESPECIALES DE INGENIERIA FISICA III"], "codigo": "IFE24", "seccion": {"A": {"horario": ["MA 14-17", "MA 17-19"], "aula": ["R1-192", "R1-192"], "docente": ["O. ROJAS", "O. ROJAS"]}}}, "IFE30": {"curso": ["TOPICOS ESPECIALES DE INGENIERIA FISICA IX"], "codigo": "IFE30", "seccion": {"A": {"horario": ["MA 15-16", "MA 16-18"], "aula": ["R1-125B", "R1-125B"], "docente": ["G. COMINA", "G. COMINA"]}}}, "BIC01": {"curso": ["INTRODUCCI\u00d3N A LA COMPUTACI\u00d3N"], "codigo": "BIC01", "seccion": {"A": {"horario": ["MA 07-08", "MA 08-10"], "aula": ["SALA 5", "SALA 5"], "docente": ["A. CHULLUNCUY", "A. CHULLUNCUY"]}, "B": {"horario": ["JU 07-08", "MA 08-10"], "aula": ["SALA 4", "SALA 3"], "docente": ["C. DIAZ", "C. NU\u00d1EZ"]}, "C": {"horario": ["MA 07-08", "MA 08-10"], "aula": ["SALA 4", "SALA 4"], "docente": ["C. DIAZ", "C. DIAZ"]}, "D": {"horario": ["JU 07-08", "JU 08-10"], "aula": ["SALA 5", "SALA 5"], "docente": ["A. CHULLUNCUY", "R. HUAROTE"]}, "E": {"horario": ["JU 07-08", "JU 08-10"], "aula": ["SALA 3", "SALA 3"], "docente": ["J. SEGOVIA", "J. SEGOVIA"]}, "F": {"horario": ["JU 12-13", "JU 08-10"], "aula": ["SALA 1", "SALA 4"], "docente": ["C. DIAZ", "S. VALER"]}, "G": {"horario": ["SA 13-14", "SA 14-16"], "aula": ["SALA 3", "SALA 3"], "docente": ["J. SEGOVIA", "J. SEGOVIA"]}, "H": {"horario": ["SA 13-14", "SA 14-16"], "aula": ["SALA 1", "SALA 1"], "docente": ["G. ARRUN\u00c1TEGUI", "G. ARRUN\u00c1TEGUI"]}}}, "CC112": {"curso": ["FUNDAMENTOS DE PROGRAMACI\u00d3N"], "codigo": "CC112", "seccion": {"A": {"horario": ["MI 11-13", "MA 12-16"], "aula": ["SALA 3", "SALA 1"], "docente": ["A. CHULLUNCUY", "A. CHULLUNCUY"]}, "B": {"horario": ["MI 08-10", "MA 12-16"], "aula": ["SALA 5", "SALA 5 / zoom21"], "docente": ["C.ERNESTO", "C.ERNESTO"]}, "C": {"horario": ["VI 11-13", "MA 12-16"], "aula": ["SALA 3", "SALA 3"], "docente": ["Z. MAMANI", "Z. MAMANI"]}, "D": {"horario": ["VI 13-15", "MA 12-16"], "aula": ["SALA 5", "SALA 4"], "docente": ["A. CHULLUNCUY", "C. DIAZ"]}, "E": {"horario": ["VI 15-17", "MA 12-16"], "aula": ["SALA 5", "SALA 2"], "docente": ["P. MONTALVO", "L. ROCA"]}}}, "CC211": {"curso": ["PROGRAMACION ORIENTADA A OBJETOS"], "codigo": "CC211", "seccion": {"A": {"horario": ["LU 08-10", "LU 10-11", "VI 08-11"], "aula": ["SALA 5", "SALA 5 (P)", "SALA 5 (L)"], "docente": ["C. BAZ\u00c1N", "C. BAZ\u00c1N"]}}}, "CC221": {"curso": ["ARQUITECTURA DE COMPUTADORES"], "codigo": "CC221", "seccion": {"A": {"horario": ["MA 16-19", "JU 19-22"], "aula": ["SALA 5", "zoom21"], "docente": ["C. CRUZ", "C. CRUZ"]}}}, "CC202": {"curso": ["BASE DE DATOS"], "codigo": "CC202", "seccion": {"A": {"horario": ["MA 07-10", "JU 18-21"], "aula": ["SALA 1 / zoom23", "SALA 2 / zoom23"], "docente": ["V. MELCHOR", "V. MELCHOR"]}}}, "CC222": {"curso": ["SISTEMAS OPERATIVOS"], "codigo": "CC222", "seccion": {"A": {"horario": ["MI 07-10", "JU 11-14"], "aula": ["SALA 4", "SALA 5"], "docente": ["C. BAZ\u00c1N", "C. BAZ\u00c1N"]}}}, "CC232": {"curso": ["ALGORITMOS Y ESTRUCTURAS DE DATOS"], "codigo": "CC232", "seccion": {"A": {"horario": ["LU 07-10", "VI 08-11"], "aula": ["SALA 3", "SALA 3"], "docente": ["Z. MAMANI", "Z. MAMANI"]}}}, "CC371": {"curso": ["ANALISIS Y DISE\u00d1O DE ALGORITMOS"], "codigo": "CC371", "seccion": {"A": {"horario": ["LU 14-17", "JU 11-14"], "aula": ["SALA 4", "SALA 4"], "docente": ["J. OSORIO", "J. OSORIO"]}}}, "CC332": {"curso": ["PROGRAMACION PARALELA"], "codigo": "CC332", "seccion": {"A": {"horario": ["LU 08-11", "VI 08-11"], "aula": ["SALA 2", "SALA 4"], "docente": ["PABLO L\u00d3PEZ", "PABLO L\u00d3PEZ"]}}}, "CC311": {"curso": ["COMPUTACION CENTRADA EN REDES"], "codigo": "CC311", "seccion": {"A": {"horario": ["LU 18-21", "MI 18-21"], "aula": ["SALA 1", "SALA 5"], "docente": ["R. MARTINEZ", "R. MARTINEZ"]}}}, "CC321": {"curso": ["TEORIA DE AUTOMATAS, LENGUAJES Y COMPUTACION"], "codigo": "CC321", "seccion": {"A": {"horario": ["LU 07-10", "VI 13-16"], "aula": ["SALA 4 / zoom22", "SALA 3 / zoom22"], "docente": ["V. MELCHOR", "V. MELCHOR"]}}}, "CC3M2": {"curso": ["MATEMATICA COMPUTACIONAL"], "codigo": "CC3M2", "seccion": {"A": {"horario": ["MI 14-17", "LU 17-20"], "aula": ["SALA 3", "SALA 4"], "docente": ["J. OSORIO", "J. OSORIO"]}}}, "CC3S2": {"curso": ["DESARROLLO DE SOFTWARE"], "codigo": "CC3S2", "seccion": {"A": {"horario": ["MI 07-10", "LU 13-16"], "aula": ["zoom23", "SALA 3"], "docente": ["C. LARA", "C. LARA"]}}}, "CC411": {"curso": ["SEGURIDAD EN SISTEMAS INFORMATICOS"], "codigo": "CC411", "seccion": {"A": {"horario": ["VI 15-18", "SA 15-18"], "aula": ["SALA 1", "SALA 4"], "docente": ["S. VALER", "S. VALER"]}}}, "CC431": {"curso": ["COMPUTACION GRAFICA"], "codigo": "CC431", "seccion": {"A": {"horario": ["JU 18-20", "VI 11-15"], "aula": ["R1-460", "SALA 4"], "docente": ["P. MONTALVO", "P. MONTALVO"]}}}, "CC421": {"curso": ["INTELIGENCIA ARTIFICIAL"], "codigo": "CC421", "seccion": {"A": {"horario": ["LU 11-14", "MI 17-20"], "aula": ["SALA 5", "SALA 4"], "docente": ["M. ALANIA", "M. ALANIA"]}}}, "CC4P1": {"curso": ["PROGRAMACION CONCURRENTE Y DISTRIBUIDA"], "codigo": "CC4P1", "seccion": {"A": {"horario": ["JU 15-18", "MA 14-17"], "aula": ["SALA 5", "zoom24"], "docente": ["Y. NU\u00d1EZ", "Y. NU\u00d1EZ"]}}}, "CC451": {"curso": ["INTERACCION HUMANO-COMPUTADOR"], "codigo": "CC451", "seccion": {"A": {"horario": ["LU 14-17", "MI 14-17"], "aula": ["SALA 2", "SALA 4"], "docente": ["C. NU\u00d1EZ", "C. NU\u00d1EZ"]}}}, "CC341": {"curso": ["INGENIERIA DE SOFTWARE"], "codigo": "CC341", "seccion": {"A": {"horario": ["VI 07-09", "MI 13-17"], "aula": ["SALA 2", "SALA 5"], "docente": ["G. ARRUN\u00c1TEGUI", "G. ARRUN\u00c1TEGUI"]}}}, "CC312": {"curso": ["ADMINISTRACION DE REDES"], "codigo": "CC312", "seccion": {"A": {"horario": ["JU 10-12", "SA 10-14"], "aula": ["SALA 2", "SALA 5"], "docente": ["Y. CCOICCA", "Y. CCOICCA"]}}}, "CC412": {"curso": ["PROYECTO DE TESIS I"], "codigo": "CC412", "seccion": {"A": {"horario": ["\u200e"], "aula": ["Coordinar con", "el asesor"], "docente": ["J. SEGOVIA", "M. MEJIA"]}, "B": {"horario": ["MI 13-15"], "aula": ["zoom22"], "docente": ["A. CHULLUNCUY"]}, "C": {"horario": ["LU 16-18", "MI 10-12"], "aula": ["zoom21", "IMCA"], "docente": ["C.ERNESTO", "O. VEL\u00c1SQUEZ"]}}}, "CC422": {"curso": ["INFRAESTRUCTURAS DE COMPUTACION"], "codigo": "CC422", "seccion": {"A": {"horario": ["LU 08-11", "SA 07-10"], "aula": ["SALA 1", "SALA 2"], "docente": ["Y. CCOICCA", "Y. CCOICCA"]}}}, "CC432": {"curso": ["ROBOTICA"], "codigo": "CC432", "seccion": {"A": {"horario": ["MA 16-19", "VI 16-19"], "aula": ["SALA 2", "SALA 4"], "docente": ["C. DIAZ", "C. CRUZ"]}}}, "CC442": {"curso": ["MINERIA DE DATOS"], "codigo": "CC442", "seccion": {"A": {"horario": ["MI 18-21", "LU 18-21"], "aula": ["SALA 1", "SALA 3"], "docente": ["L. NAVARRO", "L. NAVARRO"]}}}, "CC511": {"curso": ["PROYECTO DE TESIS II"], "codigo": "CC511", "seccion": {"A": {"horario": ["\u200e"], "aula": ["Coordinar con", "el asesor"], "docente": ["J. SEGOVIA"]}, "B": {"horario": ["MI 15-17"], "aula": ["zoom23"], "docente": ["A. CHULLUNCUY"]}, "C": {"horario": ["VI 14-16"], "aula": ["zoom23"], "docente": ["M. ALANIA"]}}}, "CC521": {"curso": ["PROGRAMACION EVOLUTIVA"], "codigo": "CC521", "seccion": {"A": {"horario": ["MI 08-10", "LU 14-18"], "aula": ["SALA 2 / zoom25", "SALA 5"], "docente": ["M. ALANIA", "M. ALANIA"]}}}, "CC531": {"curso": ["ANALISIS EN MACRODATOS"], "codigo": "CC531", "seccion": {"A": {"horario": ["MI 18-21", "MA 17-20"], "aula": ["zoom23", "SALA 1"], "docente": ["Y. CCOICCA", "Y. NU\u00d1EZ"]}}}, "CC5T3": {"curso": ["TALLER DE INVESTIGACI\u00d3N"], "codigo": "CC5T3", "seccion": {"A": {"horario": ["\u200e"], "aula": ["Coordinar con", "el asesor"], "docente": ["Y. CCOICCA"]}, "B": {"horario": ["VI 16-18"], "aula": ["zoom23"], "docente": ["M. ALANIA"]}, "C": {"horario": ["SA 16-18"], "aula": ["zoom23"], "docente": ["C. SOLANO"]}}}, "CC0F6": {"curso": ["TOPICOS DE CIENCIA DE LA COMPUTACION III"], "codigo": "CC0F6", "seccion": {"A": {"horario": ["LU 20-22", "SA 07-11"], "aula": ["zoom25", "SALA 1"], "docente": ["G. ARRUN\u00c1TEGUI", "G. ARRUN\u00c1TEGUI"]}}}, "CC0A2": {"curso": ["PROGRAMACION DE DISPOSITIVOS MOVILES"], "codigo": "CC0A2", "seccion": {"A": {"horario": ["MI 10-12", "MA 18-22"], "aula": ["SALA 5", "zoom23"], "docente": ["R. HUAROTE", "R. HUAROTE"]}}}, "CC0C2": {"curso": ["PROCESAMIENTO DEL LENGUAJE NATURAL"], "codigo": "CC0C2", "seccion": {"A": {"horario": ["JU 16-18", "SA 14-18"], "aula": ["SALA 2", "SALA 2"], "docente": ["C. LARA", "C. LARA"]}}}, "CC0E5": {"curso": ["ALGORITMOS Y ESTRUCTURAS DE DATOS AVANZADOS"], "codigo": "CC0E5", "seccion": {"A": {"horario": ["MA 10-12", "JU 12-14", "MI 20-22"], "aula": ["SALA 5", "SALA 2", "zoom21"], "docente": ["C. LARA", "C. LARA"]}}}, "CC0F3": {"curso": ["BIOLOGIA COMPUTACIONAL"], "codigo": "CC0F3", "seccion": {"A": {"horario": ["MI 14-18", "MA 16-18"], "aula": ["SALA 2", "SALA 3"], "docente": ["J. SEGOVIA", "J. SEGOVIA"]}}}, "CC0S2": {"curso": ["MODELAMIENTO Y SIMULACION"], "codigo": "CC0S2", "seccion": {"A": {"horario": ["VI 20-23", "SA 20-23"], "aula": ["zoom22", "zoom22"], "docente": ["L. NAVARRO", "L. NAVARRO"]}}}, "BEF01": {"curso": ["\u00c9TICA Y FILOSOF\u00cdA POL\u00cdTICA"], "codigo": "BEF01", "seccion": {"A": {"horario": ["VI 11-12", "VI 12-14"], "aula": ["R1-450", "R1-450"], "docente": ["J. ROMERO", "J. ROMERO"]}, "B": {"horario": ["MI 16-17", "MI 17-19"], "aula": ["R1-460", "R1-460"], "docente": ["J. ROMERO", "J. ROMERO"]}, "C": {"horario": ["VI 20-22"], "aula": ["zoom24"], "docente": ["J. ROMERO"]}}}, "BEG01": {"curso": ["ECONOM\u00cdA GENERAL"], "codigo": "BEG01", "seccion": {"A": {"horario": ["LU 16-18", "MA 17-19"], "aula": ["R3-123C", "R3-123C"], "docente": ["J. SOLORZANO", "J. SOLORZANO"]}, "B": {"horario": ["VI 08-10", "LU 17-19"], "aula": ["R1-411", "R1-401"], "docente": ["J. SOLORZANO", "J. SOLORZANO"]}, "C": {"horario": ["LU 16-18", "MA 16-18"], "aula": ["J3-182B", "J3-242"], "docente": ["J. CONTRERAS", "J. CONTRERAS"]}, "D": {"horario": ["LU 10-12", "MI 10-12"], "aula": ["J3-162B", "J3-162A"], "docente": ["J. SOLORZANO", "J. SOLORZANO"]}}}, "BRC01": {"curso": ["REDACCI\u00d3N Y COMUNICACI\u00d3N"], "codigo": "BRC01", "seccion": {"A": {"horario": ["MA 07-08", "MA 08-10"], "aula": ["J3-162A", "J3-162A"], "docente": ["E. EVANGELISTA", "E. EVANGELISTA"]}, "B": {"horario": ["MA 13-14", "MA 14-16"], "aula": ["J3-252", "J3-162A"], "docente": ["E. EVANGELISTA", "E. EVANGELISTA"]}, "C": {"horario": ["LU 13-14", "LU 14-16"], "aula": ["J3-162A", "J3-162A"], "docente": ["E. EVANGELISTA", "E. EVANGELISTA"]}, "D": {"horario": ["SA 13-14", "SA 14-16"], "aula": ["R1-450", "R1-450"], "docente": ["E. EVANGELISTA", "E. EVANGELISTA"]}}}, "BRN01": {"curso": ["REALIDAD NACIONAL, CONSTITUCI\u00d3N Y DERECHOS HUMANOS"], "codigo": "BRN01", "seccion": {"A": {"horario": ["SA 14-16", "SA 16-18"], "aula": ["R1-430", "R1-430"], "docente": ["R. CLAVIJO", "R. CLAVIJO"]}, "B": {"horario": ["SA 08-10", "SA 10-12"], "aula": ["R1-421", "R1-421"], "docente": ["R. CLAVIJO", "R. CLAVIJO"]}, "C": {"horario": ["MA 18-20", "MA 20-22"], "aula": ["R1-401", "R1-401"], "docente": ["R. CLAVIJO", "R. CLAVIJO"]}, "D": {"horario": ["VI 16-18", "VI 18-20"], "aula": ["J3-162A", "J3-162A"], "docente": ["P. CCANRE", "P. CCANRE"]}, "E": {"horario": ["JU 16-18", "JU 18-20"], "aula": ["J3-222", "J3-222"], "docente": ["P. CCANRE", "P. CCANRE"]}}}, "CC4H1": {"curso": ["METODOLOGIA DE LA INVESTIGACION (tambi\u00e9n CH033)"], "codigo": "CC4H1", "seccion": {"A": {"horario": ["SA 07-08", "SA 08-10"], "aula": ["R1-125A", "R1-125A"], "docente": ["M. MEJIA", "M. MEJIA"]}, "B": {"horario": ["SA 11-12", "SA 12-14"], "aula": ["R1-125A", "R1-125A"], "docente": ["M. MEJIA", "M. MEJIA"]}}}, "CH061": {"curso": ["BIOLOG\u00cdA"], "codigo": "CH061", "seccion": {"A": {"horario": ["MA 08-10", "MA 10-12"], "aula": ["R3-123C", "LAB 33R1"], "docente": ["NNIF", "NNIF"]}, "B": {"horario": ["MA 08-10", "MA 14-16"], "aula": ["R3-123C", "LAB 33R1"], "docente": ["NNIF", "NNIF"]}}}, "CH033": {"curso": ["METODOLOG\u00cdA DE LA INVESTIGACI\u00d3N CIENT\u00cdFICA"], "codigo": "CH033", "seccion": {"A": {"horario": ["SA 07-08", "SA 08-10"], "aula": ["R1-125A", "R1-125A"], "docente": ["M. MEJIA", "M. MEJIA"]}, "B": {"horario": ["SA 11-12", "SA 12-14"], "aula": ["R1-125A", "R1-125A"], "docente": ["M. MEJIA", "M. MEJIA"]}}}, "CL002": {"curso": ["INGL\u00c9S I"], "codigo": "CL002", "seccion": {"A": {"horario": ["LU 20-22", "LU 10-12"], "aula": ["zoom24", "SALA 3"], "docente": ["C. CCAHUANCAMA", "C. CCAHUANCAMA"]}, "B": {"horario": ["SA 19-21", "SA 15-17"], "aula": ["zoom24", "R1-401"], "docente": ["C. CCAHUANCAMA", "C. CCAHUANCAMA"]}, "C": {"horario": ["MA 20-22", "MA 08-10"], "aula": ["zoom24", "R1-440"], "docente": ["C. CCAHUANCAMA", "C. CCAHUANCAMA"]}, "D": {"horario": ["VI 20-22", "VI 08-10"], "aula": ["zoom23", "R3-123C"], "docente": ["C. CCAHUANCAMA", "C. CCAHUANCAMA"]}}}, "DM918": {"curso": ["SEMINARIO DE INVESTIGACI\u00d3N I"], "codigo": "DM918", "seccion": {"A": {"horario": [], "aula": [], "docente": []}}}}
+{
+  "BFI01": {
+    "curso": "FÍSICA I",
+    "codigo": "BFI01",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 10-12",
+          "MI 10-12",
+          "VI 08-10",
+          "VI 13-15"
+        ],
+        "aula": [
+          "R1-450 R1-460",
+          "J3-182A (P) LAB F (L)"
+        ],
+        "docente": [
+          "M. BROCCA",
+          "R. SALAZAR",
+          "S. RODRÍGUEZ"
+        ]
+      },
+      "B": {
+        "horario": [
+          "LU 14-16",
+          "MI 14-16",
+          "VI 08-10",
+          "VI 08-10"
+        ],
+        "aula": [
+          "J3-182B J3-182A",
+          "J3-232 (P) LAB F (L)"
+        ],
+        "docente": [
+          "S. CUSTODIO",
+          "A. ORCCOHUARANCCA",
+          "D. RUEDA"
+        ]
+      },
+      "C": {
+        "horario": [
+          "JU 08-10",
+          "MA 08-10",
+          "VI 08-10",
+          "VI 10-12"
+        ],
+        "aula": [
+          "J3-242 J3-232",
+          "J3-162B (P) LAB F (L)"
+        ],
+        "docente": [
+          "M. ZEVALLOS",
+          "A. ZEGARRA",
+          "J. AMORETTI"
+        ]
+      },
+      "D": {
+        "horario": [
+          "MA 10-12",
+          "VI 10-12",
+          "VI 08-10",
+          "JU 10-12"
+        ],
+        "aula": [
+          "J3-182B R1-430",
+          "J3-242 (P) LAB F (L)"
+        ],
+        "docente": [
+          "C. RIVERA",
+          "G. CORTEZ",
+          "M. ZEVALLOS"
+        ]
+      },
+      "E": {
+        "horario": [
+          "LU 10-12",
+          "MI 10-12",
+          "VI 08-10",
+          "VI 15-17"
+        ],
+        "aula": [
+          "R1-440 R1-430",
+          "J3-182B (P) LAB F (L)"
+        ],
+        "docente": [
+          "A. ORCCOHUARANCCA",
+          "C. CASTROMONTE",
+          "A. ALTAMIRANO"
+        ]
+      },
+      "F": {
+        "horario": [
+          "LU 10-12",
+          "MI 10-12",
+          "VI 08-10",
+          "MI 16-18"
+        ],
+        "aula": [
+          "R1-411 J3-162A",
+          "J3-252 (P) LAB F (L)"
+        ],
+        "docente": [
+          "M. ZEVALLOS",
+          "H. PAUCAR",
+          "S. RODRÍGUEZ"
+        ]
+      },
+      "G": {
+        "horario": [
+          "LU 14-16",
+          "MI 14-16",
+          "VI 08-10",
+          "JU 14-16"
+        ],
+        "aula": [
+          "R1-440 R1-401",
+          "J3-222 (P) LAB F (L)"
+        ],
+        "docente": [
+          "A. ORCCOHUARANCCA",
+          "A. PAREDES",
+          "G. RIVERA"
+        ]
+      }
+    }
+  },
+  "CF1B2": {
+    "curso": "FÍSICA II",
+    "codigo": "CF1B2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 10-12",
+          "MI 10-12",
+          "VI 08-10",
+          "VI 14-17"
+        ],
+        "aula": [
+          "R1-421 R1-421",
+          "R1-440 (P) LAB2 F (L)"
+        ],
+        "docente": [
+          "J. TELLO",
+          "E. VIDALÓN",
+          "G. CORTEZ"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MA 08-10",
+          "JU 08-10",
+          "VI 08-10",
+          "MA 13-16"
+        ],
+        "aula": [
+          "R1-430 R1-421",
+          "R1-401 (P) LAB2 F (L)"
+        ],
+        "docente": [
+          "H. LORO",
+          "M. ZEVALLOS",
+          "S. RODRÍGUEZ"
+        ]
+      }
+    }
+  },
+  "CF2B1": {
+    "curso": "FISICA III",
+    "codigo": "CF2B1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-10",
+          "MI 08-10",
+          "VI 10-12",
+          "JU 16-19"
+        ],
+        "aula": [
+          "R1-125A R1-125A",
+          "J3-162A (P) LAB3 F (L)"
+        ],
+        "docente": [
+          "M. BROCCA",
+          "S. RODRÍGUEZ",
+          "A. ALTAMIRANO"
+        ]
+      },
+      "B": {
+        "horario": [
+          "LU 10-12",
+          "MI 10-12",
+          "VI 10-12",
+          "MA 16-19"
+        ],
+        "aula": [
+          "R1-125A R1-125A",
+          "J3-162B (P) LAB3 F (L)"
+        ],
+        "docente": [
+          "S. CUSTODIO",
+          "LUIS. CARO",
+          "G. CORTEZ"
+        ]
+      }
+    }
+  },
+  "CF4E1": {
+    "curso": "LABORATORIO DE FISICA INTERMEDIA",
+    "codigo": "CF4E1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 08-09",
+          "MA 09-12",
+          "JU 08-12"
+        ],
+        "aula": [
+          "LAB FI",
+          "LAB FI LAB FI"
+        ],
+        "docente": [
+          "B. PUJADA",
+          "C. ONCEBAY",
+          "B. PUJADA",
+          "C. ONCEBAY"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MI 08-09",
+          "MI 09-12",
+          "VI 08-12",
+          "VI 10-12"
+        ],
+        "aula": [
+          "LAB FI",
+          "LAB FI LAB FI LAB FI"
+        ],
+        "docente": [
+          "C. EYZAGUIRRE",
+          "R. SALAZAR",
+          "C. EYZAGUIRRE",
+          "R. SALAZAR"
+        ]
+      }
+    }
+  },
+  "CF4E2": {
+    "curso": "LABORATORIO DE FISICA AVANZADA",
+    "codigo": "CF4E2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-10",
+          "LU 10-12",
+          "MI 08-12"
+        ],
+        "aula": [
+          "LAB FA",
+          "LAB FA LAB FA"
+        ],
+        "docente": [
+          "A. VALERA",
+          "A. VALERA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "LU 08-10",
+          "LU 10-12",
+          "MI 10-14",
+          "MI 13-15"
+        ],
+        "aula": [
+          "LAB FI",
+          "LAB FI",
+          "LAB (3er piso R2)",
+          "LAB FA"
+        ],
+        "docente": [
+          "R. PUGA",
+          "R. PUGA",
+          "A. VALERA"
+        ]
+      }
+    }
+  },
+  "CF2B2": {
+    "curso": "OPTICA CLASICA",
+    "codigo": "CF2B2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 14-16",
+          "MI 14-16",
+          "VI 10-12",
+          "MA 10-13"
+        ],
+        "aula": [
+          "R1-450 R1-430",
+          "J3-242 (P) LAB4 F (L)"
+        ],
+        "docente": [
+          "J. AMORETTI",
+          "A. ALTAMIRANO",
+          "C. CASTROMONTE"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MI 14-16",
+          "VI 14-16",
+          "VI 10-12",
+          "LU 13-16"
+        ],
+        "aula": [
+          "R1-411 R1-440",
+          "J3-222 (P) LAB4 F (L)"
+        ],
+        "docente": [
+          "C. CASTROMONTE",
+          "G. CORTEZ"
+        ]
+      }
+    }
+  },
+  "CF1C2": {
+    "curso": "ÁLGEBRA LINEAL PARA FÍSICOS I",
+    "codigo": "CF1C2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 10-12",
+          "JU 10-12",
+          "MI 07-10"
+        ],
+        "aula": [
+          "J3-222 J3-222",
+          "J3-182A"
+        ],
+        "docente": [
+          "A. PAREDES",
+          "A. PAREDES",
+          "A. ALTAMIRANO"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MA 10-12",
+          "JU 10-12",
+          "MI 07-10"
+        ],
+        "aula": [
+          "J3-232 J3-162B",
+          "J3-242"
+        ],
+        "docente": [
+          "E. VIDALÓN",
+          "A. ZEGARRA"
+        ]
+      }
+    }
+  },
+  "CF2C1": {
+    "curso": "ALGEBRA LINEAL PARA FISICOS II",
+    "codigo": "CF2C1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 16-18",
+          "VI 16-18",
+          "LU 16-19"
+        ],
+        "aula": [
+          "R1-125A R1-421",
+          "J3-232"
+        ],
+        "docente": [
+          "A. D. PAREDES",
+          "A. D. PAREDES LUIS. CARO"
+        ]
+      }
+    }
+  },
+  "CF2C2": {
+    "curso": "METODOS MATEMATICOS PARA FÍSICOS I",
+    "codigo": "CF2C2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-10",
+          "MI 08-10",
+          "VI 08-10",
+          "MA 14-17"
+        ],
+        "aula": [
+          "J3-222 R1-411 R1-421",
+          "J3-222"
+        ],
+        "docente": [
+          "H. DÍAZ",
+          "A. ALTAMIRANO"
+        ]
+      }
+    }
+  },
+  "CF3F1": {
+    "curso": "MECÁNICA CLÁSICA",
+    "codigo": "CF3F1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-10",
+          "MI 08-10",
+          "VI 08-10",
+          "SA 08-11"
+        ],
+        "aula": [
+          "J3-252 J3-252 J3-162A",
+          "R1-460"
+        ],
+        "docente": [
+          "J. TELLO",
+          "A. ZEGARRA",
+          "A. ALTAMIRANO"
+        ]
+      },
+      "B": {
+        "horario": [
+          "LU 08-10",
+          "MI 08-10",
+          "VI 08-10",
+          "SA 08-11"
+        ],
+        "aula": [
+          "R1-411 R1-450 R1-430",
+          "R1-411"
+        ],
+        "docente": [
+          "LUIS. CARO",
+          "H. PAUCAR",
+          "A. LOPEZ"
+        ]
+      }
+    }
+  },
+  "CF3F2": {
+    "curso": "MECÁNICA CUÁNTICA I",
+    "codigo": "CF3F2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 10-12",
+          "JU 10-12",
+          "MI 16-20"
+        ],
+        "aula": [
+          "R1-411 R1-421",
+          "R1-411"
+        ],
+        "docente": [
+          "O. CASTILLO",
+          "G. RIVERA"
+        ]
+      }
+    }
+  },
+  "CF3F3": {
+    "curso": "FISICA MODERNA",
+    "codigo": "CF3F3",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 14-16",
+          "MI 14-16",
+          "VI 15-18"
+        ],
+        "aula": [
+          "R1-430 R1-215",
+          "J3-242"
+        ],
+        "docente": [
+          "S. PETRICK",
+          "LUIS. CARO",
+          "S. PETRICK"
+        ]
+      }
+    }
+  },
+  "CF3E1": {
+    "curso": "CIRCUITOS ELECTRONICOS ANALOGICOS",
+    "codigo": "CF3E1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 08-12",
+          "JU 08-12"
+        ],
+        "aula": [
+          "R2-305 R2-305"
+        ],
+        "docente": [
+          "A. ORCCOHUARANCCA",
+          "R. SALAZAR"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MA 14-18",
+          "VI 14-18"
+        ],
+        "aula": [
+          "R2-323 R2-323"
+        ],
+        "docente": [
+          "C. RIVERA",
+          "R. PUGA"
+        ]
+      }
+    }
+  },
+  "CF3C1": {
+    "curso": "METODOS MATEMATICOS PARA FISICOS II",
+    "codigo": "CF3C1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 10-12",
+          "MI 10-12",
+          "VI 10-12",
+          "JU 16-19"
+        ],
+        "aula": [
+          "R1-460 R3-123C R3-123C",
+          "R1-440"
+        ],
+        "docente": [
+          "E. VIDALÓN",
+          "H. PAUCAR LUIS. CARO"
+        ]
+      }
+    }
+  },
+  "CF3F4": {
+    "curso": "ELECTROMAGNETISMO I",
+    "codigo": "CF3F4",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-10",
+          "MA 08-10",
+          "JU 08-10",
+          "LU 14-18"
+        ],
+        "aula": [
+          "R1-215 R1-450 R1-440",
+          "R1-460"
+        ],
+        "docente": [
+          "G. RIVERA",
+          "H. PAUCAR",
+          "A. ZEGARRA"
+        ]
+      }
+    }
+  },
+  "CF4F1": {
+    "curso": "TERMODINAMICA Y MECANICA ESTADISTICA",
+    "codigo": "CF4F1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-10",
+          "MI 08-10",
+          "VI 08-10",
+          "MA 14-18"
+        ],
+        "aula": [
+          "R3-209 R3-209 R3-123B",
+          "R3-209"
+        ],
+        "docente": [
+          "D. SOTO",
+          "S. CUSTODIO"
+        ]
+      }
+    }
+  },
+  "CF4F3": {
+    "curso": "MECANICA CUANTICA II",
+    "codigo": "CF4F3",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 10-12",
+          "VI 10-12",
+          "VI 14-18"
+        ],
+        "aula": [
+          "R1-450 R1-460",
+          "J3-162B"
+        ],
+        "docente": [
+          "R. OCHOA",
+          "H. PAUCAR"
+        ]
+      }
+    }
+  },
+  "CF4F2": {
+    "curso": "FISICA ATOMICA Y MOLECULAR",
+    "codigo": "CF4F2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 16-18",
+          "JU 16-18",
+          "VI 14-17"
+        ],
+        "aula": [
+          "J3-162A R3-123B",
+          "J3-252"
+        ],
+        "docente": [
+          "J. BELTRÁN",
+          "J. BELTRÁN"
+        ]
+      }
+    }
+  },
+  "CF5F1": {
+    "curso": "FISICA DEL ESTADO SOLIDO I",
+    "codigo": "CF5F1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 16-18",
+          "MI 16-18",
+          "VI 16-20"
+        ],
+        "aula": [
+          "R1-421 R1-401",
+          "R1-411"
+        ],
+        "docente": [
+          "M. LEÓN",
+          "S. CUSTODIO"
+        ]
+      }
+    }
+  },
+  "CF4D2": {
+    "curso": "PROYECTO DE TESIS I",
+    "codigo": "CF4D2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 10-12",
+          "MA 10-12",
+          "VI 16-18",
+          "JU 10-12",
+          "LU 17-19",
+          "LU 10-12",
+          "MI 14-16",
+          "n.d."
+        ],
+        "aula": [
+          "R1-305 R3-306 R3-306 LAB FA R1-250B R1-250A R1-240A",
+          "Coordinar con el asesor"
+        ],
+        "docente": [
+          "H. LORO",
+          "D. SOTO",
+          "G. RIVERA",
+          "O. CASTILLO",
+          "A. VALERA",
+          "A. LOPEZ",
+          "H. DÍAZ",
+          "C. RIVERA",
+          "n.d."
+        ]
+      }
+    }
+  },
+  "CF5D1": {
+    "curso": "PROYECTO DE TESIS II",
+    "codigo": "CF5D1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 13-15",
+          "LU 10-12",
+          "VI 08-10",
+          "MI 10-12",
+          "JU 10-12",
+          "VI 10-12",
+          "n.d."
+        ],
+        "aula": [
+          "R3-306 R3-306 / R306 R1-250A R1-240A",
+          "R3-306 / R1- 240A",
+          "R3-306",
+          "Coordinar con el asesor"
+        ],
+        "docente": [
+          "D. SOTO",
+          "C. CASTROMONTE",
+          "M. LEÓN",
+          "B. PUJADA",
+          "O. PEREYRA",
+          "R. OCHOA",
+          "G. RIVERA",
+          "H. DÍAZ",
+          "n.d."
+        ]
+      }
+    }
+  },
+  "CF5F3": {
+    "curso": "FISICA NUCLEAR Y DE PARTICULAS",
+    "codigo": "CF5F3",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 18-20",
+          "MA 18-20",
+          "JU 18-20",
+          "MI 18-21"
+        ],
+        "aula": [
+          "R1-430 R3-123B R3-123C",
+          "R3-123C"
+        ],
+        "docente": [
+          "J. AMORETTI",
+          "A. LOPEZ"
+        ]
+      }
+    }
+  },
+  "CF5T3": {
+    "curso": "TALLER DE INVESTIGACIÓN",
+    "codigo": "CF5T3",
+    "seccion": {
+      "A": {
+        "horario": [
+          "VI 10-12",
+          "MI 10-12",
+          "LU 10-12",
+          "LU 09-11",
+          "JU 10-12",
+          "VI 16-18",
+          "n.d."
+        ],
+        "aula": [
+          "R1-250A R1-250A R3-116 R1-240A R3-306 R1-240A",
+          "Coordinar con el asesor"
+        ],
+        "docente": [
+          "B. PUJADA",
+          "C. CASTROMONTE",
+          "H. LORO",
+          "C. ONCEBAY",
+          "O. PEREYRA",
+          "J. TELLO",
+          "n.d."
+        ]
+      }
+    }
+  },
+  "CF004": {
+    "curso": "TÓPICOS ESPECIALES IV",
+    "codigo": "CF004",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 14-16",
+          "MI 14-16",
+          "SA 10-13"
+        ],
+        "aula": [
+          "J3-152 R1-460",
+          "R1-430"
+        ],
+        "docente": [
+          "D. SOTO",
+          "D. SOTO"
+        ]
+      }
+    }
+  },
+  "CF082": {
+    "curso": "TÓPICOS ESPECIALES II B",
+    "codigo": "CF082",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 10-12",
+          "MI 13-16"
+        ],
+        "aula": [
+          "R1-250B",
+          "R1-250B"
+        ],
+        "docente": [
+          "D. RUEDA",
+          "D. RUEDA"
+        ]
+      }
+    }
+  },
+  "CF002": {
+    "curso": "TÓPICOS ESPECIALES II\n(Fotovoltaico)",
+    "codigo": "CF002",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 17-19",
+          "MA 14-17",
+          "MA 14-16"
+        ],
+        "aula": [
+          "R1-192",
+          "R1-192 R1-192"
+        ],
+        "docente": [
+          "O. ROJAS",
+          "O. ROJAS",
+          "G. CORTEZ"
+        ]
+      }
+    }
+  },
+  "CF001": {
+    "curso": "TÓPICOS ESPECIALES I",
+    "codigo": "CF001",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 20-21",
+          "SA 13-16"
+        ],
+        "aula": [
+          "R3-123C",
+          "R1-430"
+        ],
+        "docente": [
+          "A. ZEGARRA",
+          "A. ZEGARRA"
+        ]
+      }
+    }
+  },
+  "BMA01": {
+    "curso": "CÁLCULO DIFERENCIAL",
+    "codigo": "BMA01",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-10",
+          "JU 10-12",
+          "MI 08-10"
+        ],
+        "aula": [
+          "J3-242 J3-182B",
+          "R3-123C"
+        ],
+        "docente": [
+          "L. PAREDES",
+          "E. ORE"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MA 10-12",
+          "VI 10-12",
+          "MI 08-10"
+        ],
+        "aula": [
+          "J3-162B J3-182A",
+          "J3-182B"
+        ],
+        "docente": [
+          "O. VELÁSQUEZ",
+          "R. ACUÑA"
+        ]
+      },
+      "C": {
+        "horario": [
+          "LU 16-18",
+          "VI 16-18",
+          "MI 08-10"
+        ],
+        "aula": [
+          "J3-182B R1-440",
+          "J3-232"
+        ],
+        "docente": [
+          "J. CRIBILLERO",
+          "D. ABANTO"
+        ]
+      },
+      "D": {
+        "horario": [
+          "LU 14-16",
+          "VI 14-16",
+          "MI 08-10"
+        ],
+        "aula": [
+          "J3-252 J3-222",
+          "J3-162A"
+        ],
+        "docente": [
+          "J. SULCA",
+          "L. LA ROSA"
+        ]
+      },
+      "E": {
+        "horario": [
+          "LU 14-16",
+          "JU 14-16",
+          "MI 08-10"
+        ],
+        "aula": [
+          "J3-182A R1-460",
+          "J3-162B"
+        ],
+        "docente": [
+          "I. MANTILLA",
+          "F. NAVARRO"
+        ]
+      },
+      "F": {
+        "horario": [
+          "LU 12-14",
+          "VI 13-15",
+          "MI 08-10"
+        ],
+        "aula": [
+          "J3-182B J3-232",
+          "R1-430"
+        ],
+        "docente": [
+          "J. TAMARA",
+          "R. MAS"
+        ]
+      },
+      "G": {
+        "horario": [
+          "MA 16-18",
+          "JU 16-18",
+          "MI 08-10"
+        ],
+        "aula": [
+          "J3-162B R1-411",
+          "R1-440"
+        ],
+        "docente": [
+          "L. LA ROSA",
+          "R. RAMOS"
+        ]
+      }
+    }
+  },
+  "BMA03": {
+    "curso": "ÁLGEBRA LINEAL",
+    "codigo": "BMA03",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 10-13",
+          "JU 16-18"
+        ],
+        "aula": [
+          "J3-252",
+          "J3-182A"
+        ],
+        "docente": [
+          "R. ACUÑA",
+          "R. ACUÑA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "LU 08-11",
+          "JU 16-18"
+        ],
+        "aula": [
+          "R1-430",
+          "J3-182B"
+        ],
+        "docente": [
+          "A. RAMIREZ",
+          "J. TAMARA"
+        ]
+      },
+      "C": {
+        "horario": [
+          "SA 09-12",
+          "JU 16-18"
+        ],
+        "aula": [
+          "R1-440",
+          "J3-232"
+        ],
+        "docente": [
+          "H. VILLAVICENCIO",
+          "F. NAVARRO"
+        ]
+      },
+      "D": {
+        "horario": [
+          "MI 15-18",
+          "JU 16-18"
+        ],
+        "aula": [
+          "J3-252",
+          "J3-162B"
+        ],
+        "docente": [
+          "C. SALINAS",
+          "J. SULCA"
+        ]
+      },
+      "E": {
+        "horario": [
+          "VI 10-13",
+          "JU 16-18"
+        ],
+        "aula": [
+          "J3-252",
+          "J3-252"
+        ],
+        "docente": [
+          "R. ACUÑA",
+          "L. PAREDES"
+        ]
+      },
+      "F": {
+        "horario": [
+          "VI 15-18",
+          "JU 16-18"
+        ],
+        "aula": [
+          "J3-152",
+          "J3-152"
+        ],
+        "docente": [
+          "A. CHULLUNCUY",
+          "A. CHULLUNCUY"
+        ]
+      },
+      "G": {
+        "horario": [
+          "SA 09-12",
+          "JU 16-18"
+        ],
+        "aula": [
+          "R1-450",
+          "J3-162A"
+        ],
+        "docente": [
+          "V. LÓPEZ",
+          "R. PAUCAR"
+        ]
+      }
+    }
+  },
+  "BMA02": {
+    "curso": "CÁLCULO INTEGRAL",
+    "codigo": "BMA02",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 16-18",
+          "VI 17-19",
+          "JU 12-14"
+        ],
+        "aula": [
+          "J3-222 J3-182A",
+          "J3-182A"
+        ],
+        "docente": [
+          "C. SALINAS",
+          "J. ZAMUDIO"
+        ]
+      },
+      "B": {
+        "horario": [
+          "LU 18-20",
+          "VI 17-19",
+          "JU 12-14"
+        ],
+        "aula": [
+          "R3-123C J3-182B",
+          "J3-242"
+        ],
+        "docente": [
+          "F. VILLANUEVA",
+          "J. TAMARA"
+        ]
+      },
+      "C": {
+        "horario": [
+          "LU 08-10",
+          "MI 08-10",
+          "JU 12-14"
+        ],
+        "aula": [
+          "J3-232 J3-222",
+          "J3-232"
+        ],
+        "docente": [
+          "M. TORIBIO",
+          "M. TORIBIO"
+        ]
+      },
+      "D": {
+        "horario": [
+          "LU 08-10",
+          "MI 08-10",
+          "JU 12-14"
+        ],
+        "aula": [
+          "R1-401 R1-401",
+          "J3-222"
+        ],
+        "docente": [
+          "M. QUIÑONES",
+          "A. CHULLUNCUY"
+        ]
+      }
+    }
+  },
+  "CM1B2": {
+    "curso": "ÁLGEBRA LINEAL I",
+    "codigo": "CM1B2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 16-18",
+          "JU 14-16",
+          "MI 16-18"
+        ],
+        "aula": [
+          "J3-242 R1-401",
+          "J3-232"
+        ],
+        "docente": [
+          "F. NAVARRO",
+          "F. NAVARRO"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MA 16-18",
+          "JU 16-18",
+          "MI 16-18"
+        ],
+        "aula": [
+          "R1-430 R1-421",
+          "J3-242"
+        ],
+        "docente": [
+          "R. PEREZ",
+          "NNMAT1"
+        ]
+      },
+      "C": {
+        "horario": [
+          "MA 16-18",
+          "JU 10-12",
+          "MI 16-18"
+        ],
+        "aula": [
+          "J3-252 J3-232",
+          "J3-182A"
+        ],
+        "docente": [
+          "D. CAYTUIRO",
+          "L. LA ROSA"
+        ]
+      }
+    }
+  },
+  "CM1A2": {
+    "curso": "LÓGICA Y TEORÍA DE CONJUNTOS",
+    "codigo": "CM1A2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 17-20",
+          "JU 18-20"
+        ],
+        "aula": [
+          "J3-252",
+          "R1-411"
+        ],
+        "docente": [
+          "H. CASTILLO",
+          "H. CASTILLO"
+        ]
+      }
+    }
+  },
+  "CM1H2": {
+    "curso": "CÁLCULO DE PROBABILIDADES",
+    "codigo": "CM1H2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 08-10",
+          "MA 10-12"
+        ],
+        "aula": [
+          "R1-401",
+          "SALA 2"
+        ],
+        "docente": [
+          "L. LA ROSA",
+          "L. LA ROSA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "JU 16-18",
+          "MA 10-12"
+        ],
+        "aula": [
+          "R1-460",
+          "SALA 3"
+        ],
+        "docente": [
+          "L. FLORES",
+          "J. ZAMUDIO"
+        ]
+      },
+      "C": {
+        "horario": [
+          "JU 16-18",
+          "MA 10-12"
+        ],
+        "aula": [
+          "R1-401",
+          "SALA 4"
+        ],
+        "docente": [
+          "J. MAYTA",
+          "D. CAYTUIRO"
+        ]
+      }
+    }
+  },
+  "CM2H1": {
+    "curso": "MATEMÁTICA DISCRETA",
+    "codigo": "CM2H1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 10-12",
+          "MA 10-12",
+          "VI 16-18"
+        ],
+        "aula": [
+          "J3-242 R1-440",
+          "J3-222"
+        ],
+        "docente": [
+          "R. MAS",
+          "M. QUIÑONES"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MI 18-20",
+          "LU 18-20",
+          "VI 16-18"
+        ],
+        "aula": [
+          "R1-430 R1-450",
+          "J3-232"
+        ],
+        "docente": [
+          "C. SALINAS",
+          "D. CAYTUIRO"
+        ]
+      }
+    }
+  },
+  "CM2F1": {
+    "curso": "PROGRAMACIÓN ESTRUCTURADA",
+    "codigo": "CM2F1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 10-12",
+          "JU 08-10",
+          "VI 08-10"
+        ],
+        "aula": [
+          "R3-123B",
+          "SALA 2",
+          "SALA 3"
+        ],
+        "docente": [
+          "R. PEREZ",
+          "R. PEREZ"
+        ]
+      }
+    }
+  },
+  "CM2A1": {
+    "curso": "CÁLCULO DIFERENCIAL E INTEGRAL AVANZADO",
+    "codigo": "CM2A1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 14-16",
+          "MI 14-16",
+          "VI 14-16",
+          "LU 14-16"
+        ],
+        "aula": [
+          "R1-411 R1-440 R1-460",
+          "J3-222"
+        ],
+        "docente": [
+          "J. VALVERDE",
+          "R. PAUCAR"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MA 14-16",
+          "JU 14-16",
+          "VI 12-14",
+          "LU 14-16"
+        ],
+        "aula": [
+          "J3-162B J3-182A J3-182A",
+          "J3-232"
+        ],
+        "docente": [
+          "J. SULCA",
+          "L. ROCA"
+        ]
+      },
+      "C": {
+        "horario": [
+          "MA 14-16",
+          "MI 14-16",
+          "VI 14-16",
+          "LU 14-16"
+        ],
+        "aula": [
+          "J3-182B J3-182B J3-182A",
+          "J3-242"
+        ],
+        "docente": [
+          "V. LÓPEZ",
+          "H. CASTILLO",
+          "J. TAMARA",
+          "M. QUIÑONES"
+        ]
+      },
+      "D": {
+        "horario": [
+          "LU 10-12",
+          "MA 08-10",
+          "JU 08-10",
+          "LU 14-16"
+        ],
+        "aula": [
+          "J3-242 J3-242 J3-252",
+          "R3-209"
+        ],
+        "docente": [
+          "J. ZAMUDIO",
+          "NNMAT1"
+        ]
+      }
+    }
+  },
+  "CM2B1": {
+    "curso": "ÁLGEBRA LINEAL II",
+    "codigo": "CM2B1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 10-12",
+          "VI 10-12",
+          "JU 12-14"
+        ],
+        "aula": [
+          "J3-182A J3-182B",
+          "J3-162B"
+        ],
+        "docente": [
+          "R. PAUCAR",
+          "R. PAUCAR"
+        ]
+      }
+    }
+  },
+  "CM2H2": {
+    "curso": "ESTADISTICA INFERENCIAL",
+    "codigo": "CM2H2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 16-18",
+          "JU 16-18"
+        ],
+        "aula": [
+          "J3-162B",
+          "SALA 2"
+        ],
+        "docente": [
+          "F. JARA",
+          "V. LÓPEZ"
+        ]
+      },
+      "B": {
+        "horario": [
+          "LU 16-18",
+          "JU 16-18"
+        ],
+        "aula": [
+          "J3-162B",
+          "SALA 3"
+        ],
+        "docente": [
+          "F. JARA",
+          "NNMAT1"
+        ]
+      }
+    }
+  },
+  "CM2A2": {
+    "curso": "ANALISIS REAL",
+    "codigo": "CM2A2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 13-16",
+          "VI 13-16",
+          "MI 16-18"
+        ],
+        "aula": [
+          "J3-182B J3-182B",
+          "J3-162A"
+        ],
+        "docente": [
+          "J. MUNGUIA",
+          "F. JARA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MA 08-10",
+          "JU 08-10",
+          "VI 16-18",
+          "MI 16-18"
+        ],
+        "aula": [
+          "J3-182A J3-182A R1-460",
+          "J3-162B"
+        ],
+        "docente": [
+          "B. OSTOS",
+          "R. RAMOS"
+        ]
+      }
+    }
+  },
+  "CM2F2": {
+    "curso": "PROCESADOR DE TEXTO Y PROGRAMACION",
+    "codigo": "CM2F2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "VI 18-19",
+          "MI 08-10",
+          "VI 19-21"
+        ],
+        "aula": [
+          "SALA 4",
+          "SALA 1",
+          "SALA 1"
+        ],
+        "docente": [
+          "J. CRIBILLERO",
+          "J. CRIBILLERO"
+        ]
+      }
+    }
+  },
+  "CM2G2": {
+    "curso": "INTRODUCCION A LAS ECUACIONES DIFERENCIALES ORDINARIAS",
+    "codigo": "CM2G2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 18-20",
+          "JU 18-20",
+          "MA 18-20"
+        ],
+        "aula": [
+          "R3-123B R3-123B",
+          "R3-209"
+        ],
+        "docente": [
+          "F. VILLANUEVA",
+          "F. VILLANUEVA"
+        ]
+      }
+    }
+  },
+  "CM2I2": {
+    "curso": "ESTRUCTURAS ALGEBRAICAS",
+    "codigo": "CM2I2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 10-12",
+          "JU 10-12",
+          "LU 10-12"
+        ],
+        "aula": [
+          "J3-242 J3-162A",
+          "J3-162A"
+        ],
+        "docente": [
+          "M. TORIBIO",
+          "M. TORIBIO",
+          "M. QUIÑONES"
+        ]
+      }
+    }
+  },
+  "CM3A1": {
+    "curso": "ANÁLISIS COMPLEJO",
+    "codigo": "CM3A1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 10-12",
+          "MI 10-12",
+          "JU 10-12"
+        ],
+        "aula": [
+          "J3-162A J3-162B",
+          "R1-460"
+        ],
+        "docente": [
+          "F. ESCALANTE",
+          "J. TAMARA"
+        ]
+      }
+    }
+  },
+  "CM3C1": {
+    "curso": "ANALISIS EN RN",
+    "codigo": "CM3C1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 14-16",
+          "LU 14-16",
+          "MA 14-16"
+        ],
+        "aula": [
+          "J3-222 R3-123C",
+          "J3-232"
+        ],
+        "docente": [
+          "F. JARA",
+          "R. RAMOS"
+        ]
+      }
+    }
+  },
+  "CM3I1": {
+    "curso": "TEORÍA LOCAL DE SUPERFICIES",
+    "codigo": "CM3I1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 08-10",
+          "MA 08-10",
+          "LU 16-18"
+        ],
+        "aula": [
+          "R1-450 R1-460",
+          "R1-440"
+        ],
+        "docente": [
+          "D. ABANTO",
+          "D. ABANTO"
+        ]
+      }
+    }
+  },
+  "CM3C2": {
+    "curso": "TEORIA DE LA MEDIDA",
+    "codigo": "CM3C2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 16-18",
+          "JU 18-20",
+          "VI 10-12"
+        ],
+        "aula": [
+          "R1-401 R1-401",
+          "R1-401"
+        ],
+        "docente": [
+          "J. MAYTA",
+          "J. MAYTA"
+        ]
+      }
+    }
+  },
+  "CM3E2": {
+    "curso": "ANALISIS CONVEXO",
+    "codigo": "CM3E2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-10",
+          "MA 08-10",
+          "MI 18-20"
+        ],
+        "aula": [
+          "R1-440 R1-440",
+          "R1-440"
+        ],
+        "docente": [
+          "E. ORE",
+          "E. ORE"
+        ]
+      }
+    }
+  },
+  "CM3G2": {
+    "curso": "ECUACIONES DIFERENCIALES ORDINARIAS I",
+    "codigo": "CM3G2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 14-16",
+          "MA 14-16",
+          "MI 14-16"
+        ],
+        "aula": [
+          "R1-401 R1-401",
+          "R1-421"
+        ],
+        "docente": [
+          "F. ESCALANTE",
+          "R. RAMOS"
+        ]
+      }
+    }
+  },
+  "CM3I2": {
+    "curso": "TOPOLOGIA",
+    "codigo": "CM3I2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 16-18",
+          "MI 16-18",
+          "VI 16-18"
+        ],
+        "aula": [
+          "R1-450 R1-450",
+          "R1-401"
+        ],
+        "docente": [
+          "R. METZGER",
+          "R. METZGER"
+        ]
+      }
+    }
+  },
+  "CM4C1": {
+    "curso": "ANALISIS FUNCIONAL I",
+    "codigo": "CM4C1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 10-12",
+          "MA 10-12",
+          "VI 14-16"
+        ],
+        "aula": [
+          "SALA 4 R1-460",
+          "R1-430"
+        ],
+        "docente": [
+          "H. GUIMARAY",
+          "H. GUIMARAY"
+        ]
+      }
+    }
+  },
+  "CM4H1": {
+    "curso": "TEORIA DE LA PROBABILIDAD",
+    "codigo": "CM4H1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 14-16",
+          "MI 14-16",
+          "JU 11-13"
+        ],
+        "aula": [
+          "R1-421 R3-209",
+          "R1-430"
+        ],
+        "docente": [
+          "J. UGARTE",
+          "J. UGARTE"
+        ]
+      }
+    }
+  },
+  "CM4E1": {
+    "curso": "PROGRAMACION LINEAL Y FLUJO EN REDES",
+    "codigo": "CM4E1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 16-18",
+          "MI 16-18",
+          "VI 16-18"
+        ],
+        "aula": [
+          "J3-242 J3-222",
+          "SALA 5"
+        ],
+        "docente": [
+          "L. FLORES",
+          "L. FLORES"
+        ]
+      }
+    }
+  },
+  "CM4F1": {
+    "curso": "ANALISIS Y MODELAMIENTO NUMERICO I",
+    "codigo": "CM4F1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 16-18",
+          "JU 16-18",
+          "MI 10-12"
+        ],
+        "aula": [
+          "J3-162A R3-209",
+          "SALA 2 / J3- 252"
+        ],
+        "docente": [
+          "L. ROCA",
+          "L. ROCA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "JU 09-11",
+          "VI 10-12",
+          "MI 10-12"
+        ],
+        "aula": [
+          "R1-430 SALA 1",
+          "SALA 4 / J3- 182B"
+        ],
+        "docente": [
+          "J. MUNGUIA",
+          "J. CRIBILLERO"
+        ]
+      }
+    }
+  },
+  "CM4G2": {
+    "curso": "ECUACIONES DIFERENCIALES PARCIALES I",
+    "codigo": "CM4G2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 14-16",
+          "VI 14-16",
+          "MI 14-16"
+        ],
+        "aula": [
+          "R1-215 R1-215",
+          "J3-232"
+        ],
+        "docente": [
+          "I. MANTILLA",
+          "I. MANTILLA"
+        ]
+      }
+    }
+  },
+  "CM4C2": {
+    "curso": "ANÁLISIS FUNCIONAL II",
+    "codigo": "CM4C2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 10-12",
+          "JU 10-12",
+          "MA 16-18"
+        ],
+        "aula": [
+          "R1-240B R3-123B",
+          "R1-421"
+        ],
+        "docente": [
+          "E. OCAÑA",
+          "V. LÓPEZ"
+        ]
+      }
+    }
+  },
+  "CM4E2": {
+    "curso": "PROGRAMACIÓN NO LINEAL",
+    "codigo": "CM4E2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-10",
+          "MA 08-10",
+          "VI 08-10",
+          "MI 16-18"
+        ],
+        "aula": [
+          "R1-421 R1-401 R3-123C",
+          "R1-421"
+        ],
+        "docente": [
+          "P. CANALES",
+          "E. ORE"
+        ]
+      }
+    }
+  },
+  "CM5H1": {
+    "curso": "INTRODUCCIÓN A LOS PROCESOS ESTOCÁSTICOS",
+    "codigo": "CM5H1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 18-20",
+          "JU 18-20",
+          "VI 16-18"
+        ],
+        "aula": [
+          "R1-421 R3-209",
+          "R3-209"
+        ],
+        "docente": [
+          "W. ECHEGARAY",
+          "W. ECHEGARAY"
+        ]
+      }
+    }
+  },
+  "CM5F1": {
+    "curso": "ANÁLISIS Y MODELAMIENTO NUMÉRICO II",
+    "codigo": "CM5F1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 10-12",
+          "MI 10-12",
+          "VI 14-16"
+        ],
+        "aula": [
+          "R1-401 R1-401",
+          "CTIC LAB"
+        ],
+        "docente": [
+          "L. PAREDES",
+          "L. PAREDES"
+        ]
+      }
+    }
+  },
+  "CM4D2": {
+    "curso": "PROYECTO DE TESIS I",
+    "codigo": "CM4D2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "n.d."
+        ],
+        "aula": [
+          "Coordinar con el asesor"
+        ],
+        "docente": [
+          "M. QUIÑONES",
+          "F. ESCALANTE",
+          "J. MAYTA",
+          "J. PALACIOS",
+          "L. FLORES",
+          "O. VELÁSQUEZ"
+        ]
+      }
+    }
+  },
+  "CM5D1": {
+    "curso": "PROYECTO DE TESIS II",
+    "codigo": "CM5D1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "n.d."
+        ],
+        "aula": [
+          "Coordinar con el asesor"
+        ],
+        "docente": [
+          "J. PALACIOS",
+          "L. FLORES",
+          "E. ORE",
+          "I. MANTILLA",
+          "H. VILLAVICENCIO",
+          "A. RAMIREZ",
+          "G. PANIZO",
+          "J. UGARTE",
+          "J. MUNGUIA",
+          "J. MAYTA"
+        ]
+      }
+    }
+  },
+  "CM5T3": {
+    "curso": "TALLER DE INVESTIGACIÓN",
+    "codigo": "CM5T3",
+    "seccion": {
+      "A": {
+        "horario": [
+          "n.d."
+        ],
+        "aula": [
+          "Coordinar con el asesor"
+        ],
+        "docente": [
+          "F. JARA",
+          "E. OCAÑA",
+          "G. PANIZO",
+          "R. PEREZ"
+        ]
+      }
+    }
+  },
+  "CM071": {
+    "curso": "TEORÍA DEL PUNTO FIJO",
+    "codigo": "CM071",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 16-18",
+          "MI 16-18",
+          "VI 18-20"
+        ],
+        "aula": [
+          "SALA 3 R1-440",
+          "R1-125B"
+        ],
+        "docente": [
+          "W. ECHEGARAY",
+          "F. JARA"
+        ]
+      }
+    }
+  },
+  "CM098": {
+    "curso": "MODELOS MATEMÁTICOS PARA ECONOMÍA",
+    "codigo": "CM098",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 14-16",
+          "VI 14-16",
+          "MA 13-15"
+        ],
+        "aula": [
+          "J3-162B R1-421",
+          "R1-460"
+        ],
+        "docente": [
+          "J. UGARTE",
+          "J. UGARTE"
+        ]
+      }
+    }
+  },
+  "CM060": {
+    "curso": "ESTRUCTURAS ALGEBRAICAS I",
+    "codigo": "CM060",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 12-14",
+          "MI 08-10",
+          "JU 14-16"
+        ],
+        "aula": [
+          "J3-182A R1-421",
+          "R1-430"
+        ],
+        "docente": [
+          "R. PAUCAR",
+          "R. PAUCAR"
+        ]
+      }
+    }
+  },
+  "CM062": {
+    "curso": "TEORÍA DE NÚMEROS",
+    "codigo": "CM062",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 08-10",
+          "MI 18-20",
+          "LU 16-18"
+        ],
+        "aula": [
+          "R1-460 R1-401",
+          "R1-430"
+        ],
+        "docente": [
+          "J. PALACIOS",
+          "J. PALACIOS"
+        ]
+      }
+    }
+  },
+  "BQU01": {
+    "curso": "QUÍMICA I",
+    "codigo": "BQU01",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 16-18",
+          "MA 15-17",
+          "MI 13-15"
+        ],
+        "aula": [
+          "J3-182A J3-182A",
+          "LAB 33C"
+        ],
+        "docente": [
+          "J. FLORES",
+          "M. DÁVILA",
+          "J. FLORES"
+        ]
+      },
+      "B": {
+        "horario": [
+          "LU 16-18",
+          "MA 15-17",
+          "MI 17-19"
+        ],
+        "aula": [
+          "J3-182A J3-182A",
+          "LAB 33C"
+        ],
+        "docente": [
+          "J. FLORES",
+          "J. FLORES",
+          "A. CORZO"
+        ]
+      },
+      "C": {
+        "horario": [
+          "LU 08-10",
+          "MI 10-12",
+          "VI 10-12"
+        ],
+        "aula": [
+          "J3-182B J3-232",
+          "LAB 33C"
+        ],
+        "docente": [
+          "K. DURAND",
+          "M. DÁVILA",
+          "E. CARPIO"
+        ]
+      },
+      "D": {
+        "horario": [
+          "LU 08-10",
+          "MI 10-12",
+          "LU 10-12"
+        ],
+        "aula": [
+          "J3-182B J3-232",
+          "LAB 12"
+        ],
+        "docente": [
+          "K. DURAND",
+          "R. SAYÁN",
+          "M. DÁVILA"
+        ]
+      },
+      "E": {
+        "horario": [
+          "MA 10-12",
+          "JU 10-12",
+          "MA 13-15"
+        ],
+        "aula": [
+          "J3-182A J3-182A",
+          "LAB 12"
+        ],
+        "docente": [
+          "R. SAYÁN",
+          "R. SAYÁN",
+          "J. FLORES"
+        ]
+      },
+      "F": {
+        "horario": [
+          "MA 10-12",
+          "JU 10-12",
+          "MA 17-19"
+        ],
+        "aula": [
+          "J3-182A J3-182A",
+          "LAB 12"
+        ],
+        "docente": [
+          "R. SAYÁN",
+          "R. SAYÁN",
+          "J. FLORES"
+        ]
+      },
+      "G": {
+        "horario": [
+          "MA 10-12",
+          "JU 10-12",
+          "MA 13-15"
+        ],
+        "aula": [
+          "R1-430 R1-440",
+          "LAB 12 bis"
+        ],
+        "docente": [
+          "G. MUEDAS",
+          "E. CARPIO"
+        ]
+      },
+      "H": {
+        "horario": [
+          "MA 10-12",
+          "JU 10-12",
+          "MA 15-17"
+        ],
+        "aula": [
+          "R3-123B R1-440",
+          "LAB 12 / LAB",
+          "12 bis"
+        ],
+        "docente": [
+          "G. MUEDAS",
+          "R. SAYÁN",
+          "E. CARPIO"
+        ]
+      },
+      "I": {
+        "horario": [
+          "LU 16-18",
+          "MA 15-17",
+          "MA 08-10"
+        ],
+        "aula": [
+          "J3-182A J3-182A",
+          "LAB 12"
+        ],
+        "docente": [
+          "J. FLORES",
+          "R. SAYÁN",
+          "K. DURAND"
+        ]
+      },
+      "J": {
+        "horario": [
+          "LU 08-10",
+          "MI 10-12",
+          "MA 10-12"
+        ],
+        "aula": [
+          "J3-182B J3-232",
+          "LAB 12"
+        ],
+        "docente": [
+          "K. DURAND",
+          "R. PASTRANA",
+          "K. DURAND"
+        ]
+      }
+    }
+  },
+  "CQ132": {
+    "curso": "QUÍMICA CIENCIA Y TECNOLOGÍA",
+    "codigo": "CQ132",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 14-16"
+        ],
+        "aula": [
+          "M8-501"
+        ],
+        "docente": [
+          "A. BAENA"
+        ]
+      }
+    }
+  },
+  "CQ102": {
+    "curso": "QUÍMICA EXPERIMENTAL",
+    "codigo": "CQ102",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 16-20"
+        ],
+        "aula": [
+          "LAB 12"
+        ],
+        "docente": [
+          "G. BERETTA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "VI 08-12"
+        ],
+        "aula": [
+          "LAB 12"
+        ],
+        "docente": [
+          "R. PASTRANA"
+        ]
+      }
+    }
+  },
+  "CQ221": {
+    "curso": "INTRODUCCIÓN A LA ELECTRICIDAD Y MAGNETISMO",
+    "codigo": "CQ221",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 12-14",
+          "SA 08-10",
+          "VI 13-15"
+        ],
+        "aula": [
+          "R3-123C",
+          "zoom21",
+          "LAB F"
+        ],
+        "docente": [
+          "C. SOLANO",
+          "H. APAZA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "JU 16-18",
+          "SA 10-12",
+          "VI 15-17"
+        ],
+        "aula": [
+          "R3-123C",
+          "zoom21",
+          "LAB F"
+        ],
+        "docente": [
+          "C. SOLANO",
+          "H. APAZA"
+        ]
+      },
+      "C": {
+        "horario": [
+          "JU 16-18",
+          "SA 10-12",
+          "VI 17-19"
+        ],
+        "aula": [
+          "R3-123C",
+          "zoom21",
+          "LAB F"
+        ],
+        "docente": [
+          "C. SOLANO",
+          "H. APAZA"
+        ]
+      }
+    }
+  },
+  "CQ241": {
+    "curso": "ELEMENTOS QUÍMICOS, PROPIEDADES Y APLICACIONES",
+    "codigo": "CQ241",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 16-18",
+          "VI 08-10",
+          "MI 08-12"
+        ],
+        "aula": [
+          "R1-460 R1-460",
+          "LAB 12"
+        ],
+        "docente": [
+          "H. GONTARUK",
+          "H. GONTARUK"
+        ]
+      }
+    }
+  },
+  "CQ261": {
+    "curso": "HIDROCARBUROS ALIFÁTICOS, ALCOHOLES Y DERIVADOS",
+    "codigo": "CQ261",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 10-12",
+          "VI 15-17",
+          "LU 14-18"
+        ],
+        "aula": [
+          "AULA 33C AULA 33C",
+          "LAB 12"
+        ],
+        "docente": [
+          "E. CÓNDOR",
+          "E. CÓNDOR",
+          "K. DURAND"
+        ]
+      }
+    }
+  },
+  "CQ271": {
+    "curso": "PRINCIPIOS DE FISICOQUÍMICA",
+    "codigo": "CQ271",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 08-10",
+          "JU 08-10",
+          "JU 10-14"
+        ],
+        "aula": [
+          "R3-209 R3-209",
+          "LAB 33R2"
+        ],
+        "docente": [
+          "R. LÓPEZ",
+          "J. VEGA"
+        ]
+      }
+    }
+  },
+  "CQ242": {
+    "curso": "ESTRUCTURA QUÍMICA Y REACTIVIDAD",
+    "codigo": "CQ242",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 16-18",
+          "VI 08-10",
+          "VI 14-18"
+        ],
+        "aula": [
+          "R1-250B R3-209",
+          "LAB 12"
+        ],
+        "docente": [
+          "G. BERETTA",
+          "G. BERETTA"
+        ]
+      }
+    }
+  },
+  "CQ262": {
+    "curso": "COMPUESTOS CARBONÍLICOS Y AROMÁTICOS",
+    "codigo": "CQ262",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 10-12",
+          "MA 08-10",
+          "JU 08-12"
+        ],
+        "aula": [
+          "AULA 33C AULA 33C",
+          "LAB 12"
+        ],
+        "docente": [
+          "V. TORPOCO",
+          "V. REYNA",
+          "K. DURAND"
+        ]
+      }
+    }
+  },
+  "CQ272": {
+    "curso": "FUNDAMENTOS DE ELECTROQUÍMICA",
+    "codigo": "CQ272",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 14-16",
+          "JU 16-18",
+          "MI 15-19"
+        ],
+        "aula": [
+          "R1-125A R1-250B",
+          "LAB 33R1"
+        ],
+        "docente": [
+          "W. VALENZUELA",
+          "W. VALENZUELA"
+        ]
+      }
+    }
+  },
+  "CQ300": {
+    "curso": "METODOS NUMERICOS APLICADOS A LA QUIMICA",
+    "codigo": "CQ300",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 10-13",
+          "MA 16-18"
+        ],
+        "aula": [
+          "R3-209",
+          "J3-182B"
+        ],
+        "docente": [
+          "R. ACUÑA",
+          "R. ACUÑA"
+        ]
+      }
+    }
+  },
+  "CQ381": {
+    "curso": "TRATAMIENTO ESTADISTICO EN QUIMICA ANALITICA",
+    "codigo": "CQ381",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 16-18",
+          "VI 16-18"
+        ],
+        "aula": [
+          "R1-440",
+          "R1-125A"
+        ],
+        "docente": [
+          "J. CCONISLLA",
+          "J. CCONISLLA"
+        ]
+      }
+    }
+  },
+  "CQ301": {
+    "curso": "QUIMICA DE COORDINACION",
+    "codigo": "CQ301",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 14-16",
+          "VI 08-10",
+          "MI 08-12"
+        ],
+        "aula": [
+          "R1-430 R1-125A",
+          "LAB 33C"
+        ],
+        "docente": [
+          "M. CARLOS",
+          "R. PASTRANA"
+        ]
+      }
+    }
+  },
+  "CQ371": {
+    "curso": "CINETICA QUIMICA Y FENOMENOS DE SUPERFICIE",
+    "codigo": "CQ371",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 08-10",
+          "JU 08-10",
+          "JU 16-20"
+        ],
+        "aula": [
+          "R3-123B R3-123C",
+          "LAB 33R1"
+        ],
+        "docente": [
+          "J. VEGA",
+          "M. FERNÁNDEZ"
+        ]
+      }
+    }
+  },
+  "CQ372": {
+    "curso": "QUIMICA DE COLOIDES Y NANOPARTICULAS",
+    "codigo": "CQ372",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 08-10",
+          "JU 10-12",
+          "MA 10-13",
+          "MA 10-13"
+        ],
+        "aula": [
+          "R1-250A R1-411",
+          "R1-250A (P) LAB 33R2 (L)"
+        ],
+        "docente": [
+          "A. DAMIAN",
+          "A. DAMIAN"
+        ]
+      }
+    }
+  },
+  "CQ2E2": {
+    "curso": "QUÍMICA ANALÍTICA",
+    "codigo": "CQ2E2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 10-12",
+          "VI 10-12",
+          "MI 08-12"
+        ],
+        "aula": [
+          "R1-421 R1-440",
+          "LAB 33R1"
+        ],
+        "docente": [
+          "P. LÓPEZ",
+          "J. CCONISLLA"
+        ]
+      }
+    }
+  },
+  "CQ302": {
+    "curso": "QUIMICA INORGANICA APLICADA",
+    "codigo": "CQ302",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 14-16",
+          "VI 08-10",
+          "LU 08-12"
+        ],
+        "aula": [
+          "R1-440 R1-450",
+          "LAB 33C"
+        ],
+        "docente": [
+          "A. VALDERRAMA",
+          "H. GONTARUK"
+        ]
+      }
+    }
+  },
+  "CQ4E1": {
+    "curso": "QUIMICA CUANTICA",
+    "codigo": "CQ4E1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 14-16",
+          "JU 16-18",
+          "JU 18-20"
+        ],
+        "aula": [
+          "R1-450 J3-142",
+          "R1-421"
+        ],
+        "docente": [
+          "A. CORZO",
+          "A. CORZO"
+        ]
+      }
+    }
+  },
+  "CQ382": {
+    "curso": "TECNICAS ESPECTROSCOPICAS EN QUIMICA ANALITICA",
+    "codigo": "CQ382",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 18-20",
+          "VI 14-16",
+          "LU 14-18"
+        ],
+        "aula": [
+          "R1-450 R3-209",
+          "LAB 33R2"
+        ],
+        "docente": [
+          "C. JACINTO",
+          "J. CCONISLLA",
+          "A. CÁRDENAS"
+        ]
+      }
+    }
+  },
+  "CQ361": {
+    "curso": "CARBOHIDRATOS, AMINOACIDOS Y HETEROCICLICOS",
+    "codigo": "CQ361",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 10-12",
+          "VI 10-12",
+          "MI 14-18"
+        ],
+        "aula": [
+          "R3-209 R1-411",
+          "LAB 12"
+        ],
+        "docente": [
+          "V. TORPOCO",
+          "V. TORPOCO"
+        ]
+      }
+    }
+  },
+  "CQ401": {
+    "curso": "MICROBIOLOGIA",
+    "codigo": "CQ401",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 08-10",
+          "MI 10-12"
+        ],
+        "aula": [
+          "R1-411",
+          "R1-440"
+        ],
+        "docente": [
+          "J. PRIETO",
+          "J. PRIETO"
+        ]
+      }
+    }
+  },
+  "CQ491": {
+    "curso": "TECNICAS ELECTROQUIMICAS Y CROMATOGRAFICAS EN QUIMICA ANALITICA",
+    "codigo": "CQ491",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 14-16",
+          "VI 14-16",
+          "LU 08-12"
+        ],
+        "aula": [
+          "R1-411 R1-401",
+          "LAB 33R2"
+        ],
+        "docente": [
+          "U. QUIROZ",
+          "J. RUIZ",
+          "A. CÁRDENAS"
+        ]
+      }
+    }
+  },
+  "CQ392": {
+    "curso": "IDENTIFICACION ESPECTROSCOPICA DE COMPUESTOS ORGANICOS",
+    "codigo": "CQ392",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 14-16",
+          "VI 10-12",
+          "JU 16-19"
+        ],
+        "aula": [
+          "AULA 33C AULA 33C",
+          "AULA 33C"
+        ],
+        "docente": [
+          "V. REYNA",
+          "V. REYNA"
+        ]
+      }
+    }
+  },
+  "CQ402": {
+    "curso": "TÉCNICAS DE CARACTERIZACIÓN DE MATERIALES",
+    "codigo": "CQ402",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 16-18",
+          "VI 16-18"
+        ],
+        "aula": [
+          "R3-123B",
+          "R3-123B"
+        ],
+        "docente": [
+          "G. PICASSO",
+          "G. PICASSO"
+        ]
+      }
+    }
+  },
+  "CQ431": {
+    "curso": "QUIMICA Y GESTION AMBIENTAL",
+    "codigo": "CQ431",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 14-16",
+          "JU 10-12",
+          "VI 09-13",
+          "VI 09-13"
+        ],
+        "aula": [
+          "R3-123C R1-250A",
+          "SALA 2 (P) LAB 33R1 (L)"
+        ],
+        "docente": [
+          "P. LÓPEZ",
+          "I. MAZA"
+        ]
+      }
+    }
+  },
+  "CQ461": {
+    "curso": "SEMINARIO DE ELABORACION DE LA TESIS PROFESIONAL",
+    "codigo": "CQ461",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 16-17",
+          "MI 17-19"
+        ],
+        "aula": [
+          "M8-501",
+          "M8-501"
+        ],
+        "docente": [
+          "A. BAENA",
+          "A. BAENA"
+        ]
+      }
+    }
+  },
+  "CQ472": {
+    "curso": "QUIMICA DE MATERIALES",
+    "codigo": "CQ472",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 16-18",
+          "JU 16-18",
+          "LU 16-20"
+        ],
+        "aula": [
+          "R3-123B R1-430",
+          "LAB 33R1"
+        ],
+        "docente": [
+          "H. ALARCÓN",
+          "M. FERNÁNDEZ"
+        ]
+      }
+    }
+  },
+  "CQ501": {
+    "curso": "PROCESOS QUIMICOS INDUSTRIALES",
+    "codigo": "CQ501",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 18-20",
+          "MA 17-19",
+          "VI 17-19"
+        ],
+        "aula": [
+          "R1-411 R1-411",
+          "R1-430"
+        ],
+        "docente": [
+          "M. DÁVILA",
+          "M. DÁVILA"
+        ]
+      }
+    }
+  },
+  "CQ482": {
+    "curso": "GESTION DE LA CALIDAD DE LABORATORIOS",
+    "codigo": "CQ482",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 10-12",
+          "VI 10-12"
+        ],
+        "aula": [
+          "R1-401",
+          "R1-421"
+        ],
+        "docente": [
+          "K. CHANGANAQUI",
+          "K. CHANGANAQUI"
+        ]
+      }
+    }
+  },
+  "CQ511": {
+    "curso": "DISEÑO ORGANIZACIONAL Y SEGURIDAD EN EL LABORATORIO",
+    "codigo": "CQ511",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 17-19",
+          "MI 17-19"
+        ],
+        "aula": [
+          "zoom22 / R1- 240B",
+          "R1-125A"
+        ],
+        "docente": [
+          "K. CHANGANAQUI",
+          "K. CHANGANAQUI"
+        ]
+      }
+    }
+  },
+  "CQ4E2": {
+    "curso": "PROYECTO DE TESIS EN QUIMICA I",
+    "codigo": "CQ4E2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "SA 08-10",
+          "SA 18-20",
+          "n.d."
+        ],
+        "aula": [
+          "R1-430 / R1- 240B",
+          "R1-250A",
+          "n.d."
+        ],
+        "docente": [
+          "J. CCONISLLA",
+          "M. CARLOS",
+          "G. MUEDAS",
+          "R. PASTRANA",
+          "n.d."
+        ]
+      }
+    }
+  },
+  "CQ541": {
+    "curso": "PROYECTO DE TESIS EN QUIMICA II",
+    "codigo": "CQ541",
+    "seccion": {
+      "A": {
+        "horario": [
+          "SA 18-20",
+          "n.d."
+        ],
+        "aula": [
+          "R3-123B / R3- 209 / R1-460 / LAB 12 / R1- 430 / R1-440 / R1-450",
+          "n.d."
+        ],
+        "docente": [
+          "M. CARLOS",
+          "A. LA ROSA TORO",
+          "I. MAZA",
+          "R. PASTRANA",
+          "G. PICASSO",
+          "U. QUIROZ",
+          "A. VALDERRAMA",
+          "n.d."
+        ]
+      }
+    }
+  },
+  "CQ5T3": {
+    "curso": "TALLER DE INVESTIGACIÓN",
+    "codigo": "CQ5T3",
+    "seccion": {
+      "A": {
+        "horario": [
+          "SA 18-20",
+          "n.d."
+        ],
+        "aula": [
+          "R1-421 / R1- 411 / R1-401 / R1-125A / R1- 125B / R1-",
+          "240A",
+          "n.d."
+        ],
+        "docente": [
+          "H. ALARCÓN",
+          "A. BAENA",
+          "R. LÓPEZ",
+          "G. MUEDAS",
+          "G. PICASSO",
+          "U. QUIROZ",
+          "n.d."
+        ]
+      }
+    }
+  },
+  "CQ0L1": {
+    "curso": "METALES EN MEDICINA",
+    "codigo": "CQ0L1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 16-19",
+          "MA 08-12"
+        ],
+        "aula": [
+          "R1-250A",
+          "LAB 33C"
+        ],
+        "docente": [
+          "A. VALDERRAMA",
+          "A. VALDERRAMA"
+        ]
+      }
+    }
+  },
+  "CQ013": {
+    "curso": "ELECTROQUÍMICA APLICADA",
+    "codigo": "CQ013",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 14-16",
+          "VI 14-16",
+          "SA 09-13"
+        ],
+        "aula": [
+          "R1-125A R3-123C",
+          "LAB ELECTR"
+        ],
+        "docente": [
+          "A. LA ROSA TORO",
+          "J. RUIZ"
+        ]
+      }
+    }
+  },
+  "CQ046": {
+    "curso": "QUÍMICA DE PRODUCTOS NATURALES",
+    "codigo": "CQ046",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 13-16",
+          "JU 08-12"
+        ],
+        "aula": [
+          "AULA 33C",
+          "LAB 33C"
+        ],
+        "docente": [
+          "E. CÓNDOR",
+          "E. CÓNDOR"
+        ]
+      }
+    }
+  },
+  "CQ081": {
+    "curso": "DISEÑO Y OPTIMIZACIÓN DE EXPERIMENTOS",
+    "codigo": "CQ081",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 16-19",
+          "VI 16-19"
+        ],
+        "aula": [
+          "R3-123B",
+          "R1-450"
+        ],
+        "docente": [
+          "C. JACINTO",
+          "C. JACINTO"
+        ]
+      }
+    }
+  },
+  "IF242": {
+    "curso": "INTRODUCCIÓN A LA METROLOGÍA",
+    "codigo": "IF242",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 10-12",
+          "MI 16-19"
+        ],
+        "aula": [
+          "R1-125B",
+          "R1-125B"
+        ],
+        "docente": [
+          "C. LUYO",
+          "C. LUYO"
+        ]
+      }
+    }
+  },
+  "IF281": {
+    "curso": "DIBUJO Y DISEÑO PARA INGENIERIA",
+    "codigo": "IF281",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 18-20",
+          "VI 16-20"
+        ],
+        "aula": [
+          "SALA 2",
+          "SALA 3"
+        ],
+        "docente": [
+          "D. HUAMANÍ",
+          "D. HUAMANÍ"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MA 10-12",
+          "SA 08-12"
+        ],
+        "aula": [
+          "SALA 1",
+          "SALA 3"
+        ],
+        "docente": [
+          "H. HUANCA",
+          "H. HUANCA"
+        ]
+      }
+    }
+  },
+  "IF252": {
+    "curso": "MÉTODOS MATEMÁTICOS PARA INGENIERÍA",
+    "codigo": "IF252",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 18-20",
+          "MI 18-20",
+          "VI 18-20",
+          "JU 16-20"
+        ],
+        "aula": [
+          "R3-209 R3-209 R3-209",
+          "R1-450"
+        ],
+        "docente": [
+          "J. DÍAZ",
+          "H. RIVERA"
+        ]
+      }
+    }
+  },
+  "IF292": {
+    "curso": "INGENIERÍA DE PROCESOS MECÁNICOS",
+    "codigo": "IF292",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 08-09",
+          "MI 10-13"
+        ],
+        "aula": [
+          "R2-152",
+          "R2-152"
+        ],
+        "docente": [
+          "H. HUANCA",
+          "O. ROJAS",
+          "H. HUANCA",
+          "O. ROJAS"
+        ]
+      }
+    }
+  },
+  "IF294": {
+    "curso": "INGENIERÍA DE INSTALACIONES INDUSTRIALES",
+    "codigo": "IF294",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-09",
+          "LU 09-12"
+        ],
+        "aula": [
+          "R1-192",
+          "R1-192"
+        ],
+        "docente": [
+          "O. ROJAS",
+          "O. ROJAS"
+        ]
+      }
+    }
+  },
+  "IF321": {
+    "curso": "CÁLCULO NUMÉRICO I",
+    "codigo": "IF321",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 14-16",
+          "VI 14-16",
+          "LU 12-16"
+        ],
+        "aula": [
+          "SALA 1",
+          "SALA 2",
+          "J3-162B"
+        ],
+        "docente": [
+          "D. LAURA",
+          "D. LAURA"
+        ]
+      }
+    }
+  },
+  "IF325": {
+    "curso": "FISICA TERMICA II",
+    "codigo": "IF325",
+    "seccion": {
+      "A": {
+        "horario": [
+          "SA 08-10",
+          "MA 16-18"
+        ],
+        "aula": [
+          "zoom69",
+          "R1-450"
+        ],
+        "docente": [
+          "M. QUINTANA",
+          "C. LUYO"
+        ]
+      }
+    }
+  },
+  "IF352": {
+    "curso": "FISICA TERMICA I",
+    "codigo": "IF352",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 10-12",
+          "VI 10-12",
+          "VI 14-16"
+        ],
+        "aula": [
+          "R3-209 R3-209",
+          "R3-123B"
+        ],
+        "docente": [
+          "W. ESTRADA",
+          "A, HUAMÁN"
+        ]
+      }
+    }
+  },
+  "IF3B2": {
+    "curso": "PROCESAMIENTO DE SEÑALES Y DATOS",
+    "codigo": "IF3B2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 16-18",
+          "MI 08-11"
+        ],
+        "aula": [
+          "R1-125B",
+          "SALA 3"
+        ],
+        "docente": [
+          "G. COMINA",
+          "L. SÁNCHEZ"
+        ]
+      }
+    }
+  },
+  "IF372": {
+    "curso": "ELECTROMAGNETISMO PARA INGENIERÍA",
+    "codigo": "IF372",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-10",
+          "MI 14-16",
+          "MA 16-18"
+        ],
+        "aula": [
+          "J3-152 J3-152",
+          "J3-232"
+        ],
+        "docente": [
+          "R. PEREZ",
+          "R. ADRIANO"
+        ]
+      }
+    }
+  },
+  "IF392": {
+    "curso": "CÁLCULO NUMERICO II",
+    "codigo": "IF392",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 08-11",
+          "JU 11-14"
+        ],
+        "aula": [
+          "R1-125A",
+          "SALA 2"
+        ],
+        "docente": [
+          "P. RAMOS",
+          "P. RAMOS"
+        ]
+      }
+    }
+  },
+  "IF3A2": {
+    "curso": "INGENIERIA ECONOMICA",
+    "codigo": "IF3A2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 08-10"
+        ],
+        "aula": [
+          "SALA 1"
+        ],
+        "docente": [
+          "C. CERVANTES"
+        ]
+      }
+    }
+  },
+  "IF411": {
+    "curso": "MECÁNICA CUÁNTICA",
+    "codigo": "IF411",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 10-13",
+          "VI 12-15",
+          "JU 16-19"
+        ],
+        "aula": [
+          "J3-222 R1-411",
+          "J3-242"
+        ],
+        "docente": [
+          "R. PEREZ",
+          "A, HUAMÁN",
+          "R. PEREZ"
+        ]
+      }
+    }
+  },
+  "IF462": {
+    "curso": "TEORÍA DE CONTROL",
+    "codigo": "IF462",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 16-18",
+          "JU 16-18",
+          "MI 16-18"
+        ],
+        "aula": [
+          "R1-125A R1-125A",
+          "J3-182B"
+        ],
+        "docente": [
+          "L. SÁNCHEZ",
+          "L. SÁNCHEZ"
+        ]
+      }
+    }
+  },
+  "IF471": {
+    "curso": "SISTEMAS DIGITALES",
+    "codigo": "IF471",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 14-15",
+          "LU 15-16",
+          "LU 16-18",
+          "MI 16-18",
+          "MI 14-16"
+        ],
+        "aula": [
+          "R2-323",
+          "R2-323 R2-323 R2-323 R2-323"
+        ],
+        "docente": [
+          "G. CASTILLO",
+          "G. CASTILLO",
+          "R. ADRIANO"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MI 08-09",
+          "MI 09-12",
+          "VI 08-12",
+          "VI 09-12"
+        ],
+        "aula": [
+          "R2-323",
+          "R2-323 R2-323 R2-323"
+        ],
+        "docente": [
+          "G. CASTILLO",
+          "G. CASTILLO",
+          "H. HUANCA"
+        ]
+      }
+    }
+  },
+  "IF482": {
+    "curso": "INTRODUCCIÓN A LA CIENCIA E INGENIERÍA DE LOS MATERIALES",
+    "codigo": "IF482",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 08-10",
+          "JU 08-10",
+          "VI 14-16"
+        ],
+        "aula": [
+          "R3-123B R3-123B",
+          "R1-450"
+        ],
+        "docente": [
+          "J. SOLIS",
+          "P. RAMOS"
+        ]
+      }
+    }
+  },
+  "IF492": {
+    "curso": "INGENIERÍA SOLAR",
+    "codigo": "IF492",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 10-12",
+          "MI 10-12",
+          "LU 14-16"
+        ],
+        "aula": [
+          "R1-125A R3-123B",
+          "R3-123B"
+        ],
+        "docente": [
+          "J. MOLINA",
+          "J. MOLINA"
+        ]
+      }
+    }
+  },
+  "IF4A1": {
+    "curso": "MECANICA DE FLUIDOS",
+    "codigo": "IF4A1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "VI 16-18",
+          "VI 18-19"
+        ],
+        "aula": [
+          "R3-123C",
+          "R3-123C"
+        ],
+        "docente": [
+          "C. PAUCARCHUCO",
+          "C. PAUCARCHUCO"
+        ]
+      }
+    }
+  },
+  "IF4A2": {
+    "curso": "PROYECTO DE TESIS I",
+    "codigo": "IF4A2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-10",
+          "LU 10-12"
+        ],
+        "aula": [
+          "R1-250B",
+          "R1-240B"
+        ],
+        "docente": [
+          "J. RODRÍGUEZ",
+          "J. RODRÍGUEZ"
+        ]
+      }
+    }
+  },
+  "IF4B1": {
+    "curso": "METODOLOGIA DE LA INVESTIGACION CIENTIFICA",
+    "codigo": "IF4B1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 13-15",
+          "MA 15-16"
+        ],
+        "aula": [
+          "R3-123B",
+          "R3-123B"
+        ],
+        "docente": [
+          "M. MONTOYA",
+          "M. MONTOYA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MI 13-15",
+          "MI 15-16"
+        ],
+        "aula": [
+          "R3-123C",
+          "R3-123C"
+        ],
+        "docente": [
+          "M. GOMEZ",
+          "M. GOMEZ"
+        ]
+      }
+    }
+  },
+  "IF511": {
+    "curso": "PROYECTO DE INSTRUMENTACIÓN ELECTRÓNICA",
+    "codigo": "IF511",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 08-12",
+          "VI 08-10",
+          "MI 08-10",
+          "VI 08-12"
+        ],
+        "aula": [
+          "R1-125B R1-125B",
+          "R1-125B /",
+          "zoom69 R1-125B /",
+          "zoom156"
+        ],
+        "docente": [
+          "J. DÍAZ A, HUAMÁN",
+          "J. DÍAZ",
+          "H. RIVERA A, HUAMÁN",
+          "P. RAMOS"
+        ]
+      }
+    }
+  },
+  "IF543": {
+    "curso": "PROYECTO DE TESIS II",
+    "codigo": "IF543",
+    "seccion": {
+      "A": {
+        "horario": [
+          "n.d."
+        ],
+        "aula": [
+          "Coordinar con el asesor"
+        ],
+        "docente": [
+          "M. GOMEZ",
+          "M. QUINTANA",
+          "J. SOLIS",
+          "A. GUTARRA",
+          "G. COMINA",
+          "W. ESTRADA",
+          "P. RAMOS",
+          "J. RODRÍGUEZ"
+        ]
+      }
+    }
+  },
+  "IF5T3": {
+    "curso": "TALLER DE INVESTIGACIÓN",
+    "codigo": "IF5T3",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 12-14",
+          "n.d."
+        ],
+        "aula": [
+          "R3-205F",
+          "Coordinar con el asesor"
+        ],
+        "docente": [
+          "W. ESTRADA",
+          "J. DÍAZ",
+          "M. GOMEZ",
+          "C. LUYO",
+          "M. QUINTANA",
+          "J. MOLINA",
+          "J. RODRÍGUEZ",
+          "J. SOLIS"
+        ]
+      }
+    }
+  },
+  "IF562": {
+    "curso": "TÉCNICAS FÍSICAS PARA LA INDUSTRIA",
+    "codigo": "IF562",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 08-10",
+          "JU 10-12",
+          "MA 08-12",
+          "JU 08-11"
+        ],
+        "aula": [
+          "R1-192",
+          "R1-192 R1-192 R1-192"
+        ],
+        "docente": [
+          "A. GUTARRA",
+          "A. GUTARRA",
+          "C. PAUCARCHUCO"
+        ]
+      }
+    }
+  },
+  "IFE18": {
+    "curso": "LABORATORIO DE ENERGIA RENOVABLES",
+    "codigo": "IFE18",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 09-13"
+        ],
+        "aula": [
+          "CER UNI"
+        ],
+        "docente": [
+          "O. ROJAS"
+        ]
+      }
+    }
+  },
+  "IFE23": {
+    "curso": "TOPICOS ESPECIALES DE INGENIERIA FISICA II",
+    "codigo": "IFE23",
+    "seccion": {
+      "A": {
+        "horario": [
+          "VI 08-12",
+          "MI 14-16"
+        ],
+        "aula": [
+          "R1-240A",
+          "R1-240B"
+        ],
+        "docente": [
+          "M. MONTOYA",
+          "M. MONTOYA"
+        ]
+      }
+    }
+  },
+  "IFE26": {
+    "curso": "TOPICOS ESPECIALES DE INGENIERIA FISICA V",
+    "codigo": "IFE26",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 14-17",
+          "MI 14-16"
+        ],
+        "aula": [
+          "SALA 1",
+          "R3-123B"
+        ],
+        "docente": [
+          "C. LUYO",
+          "H. HUANCA"
+        ]
+      }
+    }
+  },
+  "IFE29": {
+    "curso": "TOPICOS ESPECIALES DE INGENIERIA FISICA VIII",
+    "codigo": "IFE29",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 10-12",
+          "JU 08-10"
+        ],
+        "aula": [
+          "R1-125B",
+          "R1-125B"
+        ],
+        "docente": [
+          "D. LAURA",
+          "D. LAURA"
+        ]
+      }
+    }
+  },
+  "IFE24": {
+    "curso": "TOPICOS ESPECIALES DE INGENIERIA\nFISICA III (Fotovoltaico)",
+    "codigo": "IFE24",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 17-19",
+          "MA 14-17"
+        ],
+        "aula": [
+          "R1-192",
+          "R1-192"
+        ],
+        "docente": [
+          "O. ROJAS",
+          "O. ROJAS"
+        ]
+      }
+    }
+  },
+  "IFE30": {
+    "curso": "TOPICOS ESPECIALES DE INGENIERIA FISICA IX",
+    "codigo": "IFE30",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 15-16",
+          "MA 16-18"
+        ],
+        "aula": [
+          "R1-125B",
+          "R1-125B"
+        ],
+        "docente": [
+          "G. COMINA",
+          "G. COMINA"
+        ]
+      }
+    }
+  },
+  "BIC01": {
+    "curso": "INTRODUCCIÓN A LA COMPUTACIÓN",
+    "codigo": "BIC01",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 07-08",
+          "MA 08-10"
+        ],
+        "aula": [
+          "SALA 5",
+          "SALA 5"
+        ],
+        "docente": [
+          "A. CHULLUNCUY",
+          "A. CHULLUNCUY"
+        ]
+      },
+      "B": {
+        "horario": [
+          "JU 07-08",
+          "MA 08-10"
+        ],
+        "aula": [
+          "SALA 4",
+          "SALA 3"
+        ],
+        "docente": [
+          "C. DIAZ",
+          "C. NUÑEZ"
+        ]
+      },
+      "C": {
+        "horario": [
+          "MA 07-08",
+          "MA 08-10"
+        ],
+        "aula": [
+          "SALA 4",
+          "SALA 4"
+        ],
+        "docente": [
+          "C. DIAZ",
+          "C. DIAZ"
+        ]
+      },
+      "D": {
+        "horario": [
+          "JU 07-08",
+          "JU 08-10"
+        ],
+        "aula": [
+          "SALA 5",
+          "SALA 5"
+        ],
+        "docente": [
+          "A. CHULLUNCUY",
+          "R. HUAROTE"
+        ]
+      },
+      "E": {
+        "horario": [
+          "JU 07-08",
+          "JU 08-10"
+        ],
+        "aula": [
+          "SALA 3",
+          "SALA 3"
+        ],
+        "docente": [
+          "J. SEGOVIA",
+          "J. SEGOVIA"
+        ]
+      },
+      "F": {
+        "horario": [
+          "JU 12-13",
+          "JU 08-10"
+        ],
+        "aula": [
+          "SALA 1",
+          "SALA 4"
+        ],
+        "docente": [
+          "C. DIAZ",
+          "S. VALER"
+        ]
+      },
+      "G": {
+        "horario": [
+          "SA 13-14",
+          "SA 14-16"
+        ],
+        "aula": [
+          "SALA 3",
+          "SALA 3"
+        ],
+        "docente": [
+          "J. SEGOVIA",
+          "J. SEGOVIA"
+        ]
+      },
+      "H": {
+        "horario": [
+          "SA 13-14",
+          "SA 14-16"
+        ],
+        "aula": [
+          "SALA 1",
+          "SALA 1"
+        ],
+        "docente": [
+          "G. ARRUNÁTEGUI",
+          "G. ARRUNÁTEGUI"
+        ]
+      }
+    }
+  },
+  "CC112": {
+    "curso": "FUNDAMENTOS DE PROGRAMACIÓN",
+    "codigo": "CC112",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 11-13",
+          "MA 12-16"
+        ],
+        "aula": [
+          "SALA 3",
+          "SALA 1"
+        ],
+        "docente": [
+          "A. CHULLUNCUY",
+          "A. CHULLUNCUY"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MI 08-10",
+          "MA 12-16"
+        ],
+        "aula": [
+          "SALA 5",
+          "SALA 5 /",
+          "zoom21"
+        ],
+        "docente": [
+          "E. CUADROS",
+          "E. CUADROS"
+        ]
+      },
+      "C": {
+        "horario": [
+          "VI 11-13",
+          "MA 12-16"
+        ],
+        "aula": [
+          "SALA 3",
+          "SALA 3"
+        ],
+        "docente": [
+          "Z. MAMANI",
+          "Z. MAMANI"
+        ]
+      },
+      "D": {
+        "horario": [
+          "VI 13-15",
+          "MA 12-16"
+        ],
+        "aula": [
+          "SALA 4",
+          "SALA 4"
+        ],
+        "docente": [
+          "A. CHULLUNCUY",
+          "C. DIAZ"
+        ]
+      },
+      "E": {
+        "horario": [
+          "JU 16-18",
+          "MA 12-16"
+        ],
+        "aula": [
+          "SALA 1",
+          "SALA 2"
+        ],
+        "docente": [
+          "P. MONTALVO",
+          "L. ROCA"
+        ]
+      }
+    }
+  },
+  "CC211": {
+    "curso": "PROGRAMACION ORIENTADA A OBJETOS",
+    "codigo": "CC211",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 07-09",
+          "LU 09-10",
+          "VI 08-11"
+        ],
+        "aula": [
+          "SALA 3",
+          "SALA 3 (P)",
+          "zoom22 (L)"
+        ],
+        "docente": [
+          "C. BAZÁN",
+          "C. BAZÁN"
+        ]
+      }
+    }
+  },
+  "CC221": {
+    "curso": "ARQUITECTURA DE COMPUTADORES",
+    "codigo": "CC221",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 16-19",
+          "JU 19-22"
+        ],
+        "aula": [
+          "SALA 5",
+          "zoom21"
+        ],
+        "docente": [
+          "C. CRUZ",
+          "C. CRUZ"
+        ]
+      }
+    }
+  },
+  "CC202": {
+    "curso": "BASE DE DATOS",
+    "codigo": "CC202",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 07-10",
+          "JU 18-21"
+        ],
+        "aula": [
+          "SALA 1 /",
+          "zoom23",
+          "SALA 2 /",
+          "zoom23"
+        ],
+        "docente": [
+          "V. MELCHOR",
+          "V. MELCHOR"
+        ]
+      }
+    }
+  },
+  "CC222": {
+    "curso": "SISTEMAS OPERATIVOS",
+    "codigo": "CC222",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 07-10",
+          "JU 11-14"
+        ],
+        "aula": [
+          "SALA 4",
+          "SALA 5"
+        ],
+        "docente": [
+          "C. BAZÁN",
+          "C. BAZÁN"
+        ]
+      }
+    }
+  },
+  "CC232": {
+    "curso": "ALGORITMOS Y ESTRUCTURAS DE DATOS",
+    "codigo": "CC232",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 07-10",
+          "VI 08-11"
+        ],
+        "aula": [
+          "SALA 5",
+          "SALA 5"
+        ],
+        "docente": [
+          "Z. MAMANI",
+          "Z. MAMANI"
+        ]
+      }
+    }
+  },
+  "CC371": {
+    "curso": "ANALISIS Y DISEÑO DE ALGORITMOS",
+    "codigo": "CC371",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 14-17",
+          "JU 11-14"
+        ],
+        "aula": [
+          "SALA 4",
+          "SALA 4"
+        ],
+        "docente": [
+          "J. OSORIO",
+          "J. OSORIO"
+        ]
+      }
+    }
+  },
+  "CC332": {
+    "curso": "PROGRAMACION PARALELA",
+    "codigo": "CC332",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-11",
+          "VI 08-11"
+        ],
+        "aula": [
+          "SALA 2 /",
+          "zoom21",
+          "SALA 4"
+        ],
+        "docente": [
+          "PABLO LÓPEZ",
+          "PABLO LÓPEZ"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MA 08-11",
+          "VI 08-11"
+        ],
+        "aula": [
+          "CTIC LAB",
+          "CTIC LAB"
+        ],
+        "docente": [
+          "R. HUAROTE",
+          "R. HUAROTE"
+        ]
+      }
+    }
+  },
+  "CC311": {
+    "curso": "COMPUTACION CENTRADA EN REDES",
+    "codigo": "CC311",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 18-21",
+          "MI 18-21"
+        ],
+        "aula": [
+          "SALA 1",
+          "SALA 5"
+        ],
+        "docente": [
+          "R. MARTINEZ",
+          "R. MARTINEZ"
+        ]
+      }
+    }
+  },
+  "CC321": {
+    "curso": "TEORIA DE AUTOMATAS, LENGUAJES Y COMPUTACION",
+    "codigo": "CC321",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 07-10",
+          "VI 13-16"
+        ],
+        "aula": [
+          "SALA 4 /",
+          "zoom22",
+          "SALA 3 /",
+          "zoom22"
+        ],
+        "docente": [
+          "V. MELCHOR",
+          "V. MELCHOR"
+        ]
+      }
+    }
+  },
+  "CC3M2": {
+    "curso": "MATEMATICA COMPUTACIONAL",
+    "codigo": "CC3M2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 14-17",
+          "LU 17-20"
+        ],
+        "aula": [
+          "SALA 5",
+          "SALA 4"
+        ],
+        "docente": [
+          "J. OSORIO",
+          "J. OSORIO"
+        ]
+      }
+    }
+  },
+  "CC3S2": {
+    "curso": "DESARROLLO DE SOFTWARE",
+    "codigo": "CC3S2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 07-10",
+          "LU 13-16"
+        ],
+        "aula": [
+          "zoom23",
+          "SALA 3"
+        ],
+        "docente": [
+          "C. LARA",
+          "C. LARA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "SA 07-10",
+          "VI 15-18"
+        ],
+        "aula": [
+          "zoom23",
+          "SALA 4"
+        ],
+        "docente": [
+          "P. MONTALVO",
+          "P. MONTALVO"
+        ]
+      }
+    }
+  },
+  "CC411": {
+    "curso": "SEGURIDAD EN SISTEMAS INFORMATICOS",
+    "codigo": "CC411",
+    "seccion": {
+      "A": {
+        "horario": [
+          "VI 15-18",
+          "SA 15-18"
+        ],
+        "aula": [
+          "SALA 1",
+          "SALA 4"
+        ],
+        "docente": [
+          "S. VALER",
+          "S. VALER"
+        ]
+      }
+    }
+  },
+  "CC431": {
+    "curso": "COMPUTACION GRAFICA",
+    "codigo": "CC431",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 18-20",
+          "VI 11-15"
+        ],
+        "aula": [
+          "R1-460",
+          "SALA 5"
+        ],
+        "docente": [
+          "P. MONTALVO",
+          "P. MONTALVO"
+        ]
+      }
+    }
+  },
+  "CC421": {
+    "curso": "INTELIGENCIA ARTIFICIAL",
+    "codigo": "CC421",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 11-14",
+          "MI 17-20"
+        ],
+        "aula": [
+          "SALA 5",
+          "SALA 4"
+        ],
+        "docente": [
+          "M. ALANIA",
+          "M. ALANIA"
+        ]
+      }
+    }
+  },
+  "CC4P1": {
+    "curso": "PROGRAMACION CONCURRENTE Y DISTRIBUIDA",
+    "codigo": "CC4P1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 15-18",
+          "MA 14-17"
+        ],
+        "aula": [
+          "SALA 5",
+          "zoom24"
+        ],
+        "docente": [
+          "Y. NUÑEZ",
+          "Y. NUÑEZ"
+        ]
+      }
+    }
+  },
+  "CC451": {
+    "curso": "INTERACCION HUMANO-COMPUTADOR",
+    "codigo": "CC451",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 14-17",
+          "MI 14-17"
+        ],
+        "aula": [
+          "SALA 2",
+          "SALA 4"
+        ],
+        "docente": [
+          "C. NUÑEZ",
+          "C. NUÑEZ"
+        ]
+      }
+    }
+  },
+  "CC341": {
+    "curso": "INGENIERIA DE SOFTWARE",
+    "codigo": "CC341",
+    "seccion": {
+      "A": {
+        "horario": [
+          "VI 07-09",
+          "MI 13-17"
+        ],
+        "aula": [
+          "SALA 2",
+          "SALA 3"
+        ],
+        "docente": [
+          "G. ARRUNÁTEGUI",
+          "G. ARRUNÁTEGUI"
+        ]
+      }
+    }
+  },
+  "CC312": {
+    "curso": "ADMINISTRACION DE REDES",
+    "codigo": "CC312",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 10-12",
+          "SA 10-14"
+        ],
+        "aula": [
+          "SALA 3",
+          "SALA 5"
+        ],
+        "docente": [
+          "Y. CCOICCA",
+          "Y. CCOICCA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MA 11-13",
+          "SA 10-14"
+        ],
+        "aula": [
+          "R1-450",
+          "SALA 5"
+        ],
+        "docente": [
+          "Y. CCOICCA",
+          "Y. CCOICCA"
+        ]
+      }
+    }
+  },
+  "CC412": {
+    "curso": "PROYECTO DE TESIS I",
+    "codigo": "CC412",
+    "seccion": {
+      "A": {
+        "horario": [
+          "n.d."
+        ],
+        "aula": [
+          "Coordinar con el asesor"
+        ],
+        "docente": [
+          "M. MEJIA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MI 13-15"
+        ],
+        "aula": [
+          "zoom22"
+        ],
+        "docente": [
+          "A. CHULLUNCUY"
+        ]
+      },
+      "C": {
+        "horario": [
+          "LU 18-20",
+          "SA 16-18"
+        ],
+        "aula": [
+          "zoom21 SALA 1"
+        ],
+        "docente": [
+          "E. CUADROS",
+          "G. ARRUNÁTEGUI"
+        ]
+      }
+    }
+  },
+  "CC422": {
+    "curso": "INFRAESTRUCTURAS DE COMPUTACION",
+    "codigo": "CC422",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-11",
+          "SA 07-10"
+        ],
+        "aula": [
+          "SALA 1",
+          "SALA 2"
+        ],
+        "docente": [
+          "Y. CCOICCA",
+          "Y. CCOICCA"
+        ]
+      }
+    }
+  },
+  "CC432": {
+    "curso": "ROBOTICA",
+    "codigo": "CC432",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 16-19",
+          "VI 16-19"
+        ],
+        "aula": [
+          "SALA 2",
+          "SALA 2"
+        ],
+        "docente": [
+          "C. DIAZ",
+          "C. CRUZ"
+        ]
+      }
+    }
+  },
+  "CC442": {
+    "curso": "MINERIA DE DATOS",
+    "codigo": "CC442",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 18-21",
+          "SA 10-13"
+        ],
+        "aula": [
+          "SALA 1",
+          "SALA 2"
+        ],
+        "docente": [
+          "L. NAVARRO",
+          "L. NAVARRO"
+        ]
+      }
+    }
+  },
+  "CC511": {
+    "curso": "PROYECTO DE TESIS II",
+    "codigo": "CC511",
+    "seccion": {
+      "A": {
+        "horario": [
+          "n.d."
+        ],
+        "aula": [
+          "Coordinar con el asesor"
+        ],
+        "docente": [
+          "M. ALANIA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MI 15-17"
+        ],
+        "aula": [
+          "zoom23"
+        ],
+        "docente": [
+          "A. CHULLUNCUY"
+        ]
+      }
+    }
+  },
+  "CC521": {
+    "curso": "PROGRAMACION EVOLUTIVA",
+    "codigo": "CC521",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 08-10",
+          "LU 14-18"
+        ],
+        "aula": [
+          "SALA 2 /",
+          "zoom25",
+          "SALA 5"
+        ],
+        "docente": [
+          "M. ALANIA",
+          "M. ALANIA"
+        ]
+      }
+    }
+  },
+  "CC531": {
+    "curso": "ANALISIS EN MACRODATOS",
+    "codigo": "CC531",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MI 17-20",
+          "JU 18-21"
+        ],
+        "aula": [
+          "SALA 3",
+          "SALA 3"
+        ],
+        "docente": [
+          "E. YAURI",
+          "E. YAURI"
+        ]
+      }
+    }
+  },
+  "CC5T3": {
+    "curso": "TALLER DE INVESTIGACIÓN",
+    "codigo": "CC5T3",
+    "seccion": {
+      "A": {
+        "horario": [
+          "n.d."
+        ],
+        "aula": [
+          "Coordinar con el asesor"
+        ],
+        "docente": [
+          "Y. CCOICCA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "VI 16-18"
+        ],
+        "aula": [
+          "zoom23"
+        ],
+        "docente": [
+          "M. ALANIA"
+        ]
+      },
+      "C": {
+        "horario": [
+          "SA 16-18"
+        ],
+        "aula": [
+          "zoom23"
+        ],
+        "docente": [
+          "C. SOLANO"
+        ]
+      }
+    }
+  },
+  "CC0A5": {
+    "curso": "CALIDAD DE SOFTWARE",
+    "codigo": "CC0A5",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 20-22",
+          "SA 07-11"
+        ],
+        "aula": [
+          "zoom25",
+          "SALA 1"
+        ],
+        "docente": [
+          "G. ARRUNÁTEGUI",
+          "G. ARRUNÁTEGUI"
+        ]
+      }
+    }
+  },
+  "CC0A2": {
+    "curso": "PROGRAMACION DE DISPOSITIVOS MOVILES",
+    "codigo": "CC0A2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "VI 11-13",
+          "MA 18-22"
+        ],
+        "aula": [
+          "SALA 4",
+          "zoom23"
+        ],
+        "docente": [
+          "R. HUAROTE",
+          "R. HUAROTE"
+        ]
+      }
+    }
+  },
+  "CC0C2": {
+    "curso": "PROCESAMIENTO DEL LENGUAJE NATURAL",
+    "codigo": "CC0C2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "JU 16-18",
+          "JU 18-19",
+          "SA 14-17"
+        ],
+        "aula": [
+          "SALA 4",
+          "SALA 4",
+          "SALA 2"
+        ],
+        "docente": [
+          "C. LARA",
+          "C. LARA"
+        ]
+      }
+    }
+  },
+  "CC0F3": {
+    "curso": "BIOLOGIA COMPUTACIONAL",
+    "codigo": "CC0F3",
+    "seccion": {
+      "A": {
+        "horario": [
+          "SA 07-11",
+          "SA 11-13"
+        ],
+        "aula": [
+          "SALA 4",
+          "SALA 4"
+        ],
+        "docente": [
+          "J. SEGOVIA",
+          "J. SEGOVIA"
+        ]
+      }
+    }
+  },
+  "CC0S2": {
+    "curso": "MODELAMIENTO Y SIMULACION",
+    "codigo": "CC0S2",
+    "seccion": {
+      "A": {
+        "horario": [
+          "VI 20-23",
+          "SA 20-23",
+          "n.d."
+        ],
+        "aula": [
+          "zoom22",
+          "zoom22",
+          "n.d."
+        ],
+        "docente": [
+          "L. NAVARRO",
+          "L. NAVARRO",
+          "n.d."
+        ]
+      }
+    }
+  },
+  "BEF01": {
+    "curso": "ÉTICA Y FILOSOFÍA POLÍTICA",
+    "codigo": "BEF01",
+    "seccion": {
+      "A": {
+        "horario": [
+          "VI 11-12",
+          "VI 12-14"
+        ],
+        "aula": [
+          "R1-450",
+          "R1-450"
+        ],
+        "docente": [
+          "J. ROMERO",
+          "J. ROMERO"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MI 16-17",
+          "MI 17-19"
+        ],
+        "aula": [
+          "R1-460",
+          "R1-460"
+        ],
+        "docente": [
+          "J. ROMERO",
+          "J. ROMERO"
+        ]
+      },
+      "C": {
+        "horario": [
+          "VI 19-20",
+          "VI 20-22"
+        ],
+        "aula": [
+          "zoom24",
+          "zoom24"
+        ],
+        "docente": [
+          "J. ROMERO",
+          "J. ROMERO"
+        ]
+      }
+    }
+  },
+  "BEG01": {
+    "curso": "ECONOMÍA GENERAL",
+    "codigo": "BEG01",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 16-18",
+          "MA 17-19"
+        ],
+        "aula": [
+          "R3-123C",
+          "R3-123C"
+        ],
+        "docente": [
+          "U.HUMALA",
+          "U.HUMALA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "VI 08-10",
+          "LU 17-19"
+        ],
+        "aula": [
+          "R1-411",
+          "R1-401"
+        ],
+        "docente": [
+          "J. SOLORZANO",
+          "J. SOLORZANO"
+        ]
+      },
+      "C": {
+        "horario": [
+          "LU 16-18",
+          "MA 16-18"
+        ],
+        "aula": [
+          "R1-411",
+          "SALA 4"
+        ],
+        "docente": [
+          "J. CONTRERAS",
+          "J. CONTRERAS"
+        ]
+      },
+      "D": {
+        "horario": [
+          "LU 10-12",
+          "MI 10-12"
+        ],
+        "aula": [
+          "R3-123C",
+          "R1-411"
+        ],
+        "docente": [
+          "J. SOLORZANO",
+          "J. SOLORZANO"
+        ]
+      }
+    }
+  },
+  "BRC01": {
+    "curso": "REDACCIÓN Y COMUNICACIÓN",
+    "codigo": "BRC01",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 07-08",
+          "MA 08-10"
+        ],
+        "aula": [
+          "J3-162A",
+          "J3-162A"
+        ],
+        "docente": [
+          "E. EVANGELISTA",
+          "E. EVANGELISTA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MA 13-14",
+          "MA 14-16"
+        ],
+        "aula": [
+          "J3-252",
+          "J3-162A"
+        ],
+        "docente": [
+          "E. EVANGELISTA",
+          "E. EVANGELISTA"
+        ]
+      },
+      "C": {
+        "horario": [
+          "LU 13-14",
+          "LU 14-16"
+        ],
+        "aula": [
+          "J3-162A",
+          "J3-162A"
+        ],
+        "docente": [
+          "E. EVANGELISTA",
+          "E. EVANGELISTA"
+        ]
+      },
+      "D": {
+        "horario": [
+          "SA 13-14",
+          "SA 14-16"
+        ],
+        "aula": [
+          "R1-450",
+          "R1-450"
+        ],
+        "docente": [
+          "E. EVANGELISTA",
+          "E. EVANGELISTA"
+        ]
+      }
+    }
+  },
+  "BRN01": {
+    "curso": "REALIDAD NACIONAL, CONSTITUCIÓN Y DERECHOS HUMANOS",
+    "codigo": "BRN01",
+    "seccion": {
+      "A": {
+        "horario": [
+          "SA 14-16",
+          "SA 16-18"
+        ],
+        "aula": [
+          "R1-430",
+          "R1-430"
+        ],
+        "docente": [
+          "R. CLAVIJO",
+          "R. CLAVIJO"
+        ]
+      },
+      "B": {
+        "horario": [
+          "SA 08-10",
+          "SA 10-12"
+        ],
+        "aula": [
+          "R1-421",
+          "R1-421"
+        ],
+        "docente": [
+          "R. CLAVIJO",
+          "R. CLAVIJO"
+        ]
+      },
+      "C": {
+        "horario": [
+          "MA 18-20",
+          "MA 20-22"
+        ],
+        "aula": [
+          "R1-401",
+          "R1-401"
+        ],
+        "docente": [
+          "R. CLAVIJO",
+          "R. CLAVIJO"
+        ]
+      },
+      "D": {
+        "horario": [
+          "VI 16-18",
+          "VI 18-20"
+        ],
+        "aula": [
+          "J3-162A",
+          "J3-162A"
+        ],
+        "docente": [
+          "P. CCANRE",
+          "P. CCANRE"
+        ]
+      },
+      "E": {
+        "horario": [
+          "JU 16-18",
+          "JU 18-20"
+        ],
+        "aula": [
+          "J3-222",
+          "J3-222"
+        ],
+        "docente": [
+          "P. CCANRE",
+          "P. CCANRE"
+        ]
+      }
+    }
+  },
+  "CC4H1": {
+    "curso": "METODOLOGIA DE LA INVESTIGACION\n(también CH033)",
+    "codigo": "CC4H1",
+    "seccion": {
+      "A": {
+        "horario": [
+          "SA 07-08",
+          "SA 08-10"
+        ],
+        "aula": [
+          "R1-125A",
+          "R1-125A"
+        ],
+        "docente": [
+          "M. MEJIA",
+          "M. MEJIA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "SA 11-12",
+          "SA 12-14"
+        ],
+        "aula": [
+          "R1-125A",
+          "R1-125A"
+        ],
+        "docente": [
+          "M. MEJIA",
+          "M. MEJIA"
+        ]
+      }
+    }
+  },
+  "CH061": {
+    "curso": "BIOLOGÍA",
+    "codigo": "CH061",
+    "seccion": {
+      "A": {
+        "horario": [
+          "MA 08-10",
+          "MA 10-12"
+        ],
+        "aula": [
+          "R3-123C",
+          "LAB 33R1"
+        ],
+        "docente": [
+          "L. PÉREZ",
+          "L. PÉREZ"
+        ]
+      },
+      "B": {
+        "horario": [
+          "MA 08-10",
+          "MA 14-16"
+        ],
+        "aula": [
+          "R3-123C",
+          "LAB 33R1"
+        ],
+        "docente": [
+          "L. PÉREZ",
+          "L. PÉREZ"
+        ]
+      }
+    }
+  },
+  "CH033": {
+    "curso": "METODOLOGÍA DE LA INVESTIGACIÓN CIENTÍFICA",
+    "codigo": "CH033",
+    "seccion": {
+      "A": {
+        "horario": [
+          "SA 07-08",
+          "SA 08-10"
+        ],
+        "aula": [
+          "R1-125A",
+          "R1-125A"
+        ],
+        "docente": [
+          "M. MEJIA",
+          "M. MEJIA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "SA 11-12",
+          "SA 12-14"
+        ],
+        "aula": [
+          "R1-125A",
+          "R1-125A"
+        ],
+        "docente": [
+          "M. MEJIA",
+          "M. MEJIA"
+        ]
+      }
+    }
+  },
+  "CL002": {
+    "curso": "INGLÉS I",
+    "codigo": "CL002",
+    "seccion": {
+      "A": {
+        "horario": [
+          "LU 08-10",
+          "LU 10-12"
+        ],
+        "aula": [
+          "R1-450",
+          "SALA 3"
+        ],
+        "docente": [
+          "C. CCAHUANCAMA",
+          "C. CCAHUANCAMA"
+        ]
+      },
+      "B": {
+        "horario": [
+          "VI 08-10",
+          "VI 10-12"
+        ],
+        "aula": [
+          "SALA 1",
+          "R3-123B"
+        ],
+        "docente": [
+          "C. CCAHUANCAMA",
+          "C. CCAHUANCAMA"
+        ]
+      },
+      "C": {
+        "horario": [
+          "MI 12-14",
+          "LU 12-14"
+        ],
+        "aula": [
+          "SALA 1",
+          "SALA 1"
+        ],
+        "docente": [
+          "C. CCAHUANCAMA",
+          "C. CCAHUANCAMA"
+        ]
+      }
+    }
+  }
+}
