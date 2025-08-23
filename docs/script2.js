@@ -18,7 +18,7 @@ var codes_selected = [];
 // Lista de los nombres de los cursos (esta como 'curso' en data )
 var names_courses = [];
 codes_data.forEach(function(code){
-    names_courses.push(DATA[code]['curso'][0]);
+    names_courses.push(DATA[code]['curso']);
 })
 
 // ==================================================================
@@ -74,7 +74,7 @@ function showCourses(codes_course) {
 
     codes_course.forEach(function(code) {
         var li_element = document.createElement('li');
-        course_name = DATA[code]['curso'][0]; // uso de DATA
+        course_name = DATA[code]['curso']; // uso de DATA
         li_element.textContent = course_name;
 
         var div_code = document.createElement('div');
@@ -177,6 +177,7 @@ generate_button.addEventListener('click',function () {
     allcourses_div = makeCoursesWithSection(codes_selected);
     main_section.appendChild(allcourses_div);
 })
+// =================================================================
 
 // Retorna una tabla(html) de horarios
 function makeTableCalendar(){
@@ -231,7 +232,7 @@ function makeCoursesWithSection(codes_s){
     courses.classList.add('allcourses')
 
     var title = document.createElement('h3');
-    title.textContent = "*eliga la sección de los cursos"; 
+    title.textContent = "*seleccione la sección de los cursos"; 
     title.style.fontWeight = "normal"; 
     courses.appendChild(title);
 
@@ -297,7 +298,7 @@ function addCourseSection(course_code){
 
 // ------------------------------------------------------------------
 
-// Pinta el curso-secc seleccionado(clickeado) 
+// Pinta el curso-sec seleccionado(clickeado) 
 function makeDivCourse(course_code, section){
     var schedules_data = DATA[course_code]['seccion'][section]['horario'];
     if (schedules_data.includes('n.d.')) {
@@ -310,7 +311,7 @@ function makeDivCourse(course_code, section){
         var day = hour_data.split(' ')[0];
         var hourStar = parseInt(hour_data.split(' ')[1].split('-')[0]);
         var hourEnd = parseInt(hour_data.split(' ')[1].split('-')[1]);
-        var course_name = DATA[course_code]['curso'][0];
+        var course_name = DATA[course_code]['curso'];
 
         for (var h = hourStar; h < hourEnd; h++){
             var cell = document.querySelector('#'+day+'-'+(h));
