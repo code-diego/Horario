@@ -263,6 +263,7 @@ GitHub.sublime-settings
 #carpetas locales
 env/
 __pycache__/
+_private/
 
 ### venv ###
 # Virtualenv
