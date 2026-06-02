@@ -18,6 +18,26 @@ var names_courses = codes_data.map(code => DATA[code]['curso']);
 // Funciones
 // ==================================================================
 
+// asigna un color CSS por prefijo de código de curso
+function colorKeyFor(code) {
+    const p = code.slice(0, 2).toLowerCase();
+    if (p[0] === 'b')          return 'basic'; // todos los b* son básicos
+    if (p === 'cm')            return 'mat';
+    if (p === 'cf')            return 'fis';
+    if (p === 'cq' || p === 'ch') return 'qui';
+    if (p === 'cc' || p === 'cl') return 'com';
+    if (p === 'if')            return 'inf';
+    return 'basic';            // fallback
+}
+const SCHOOL_NAME = {
+    basic: 'Básicos',
+    mat:   'Matemática',
+    fis:   'Física',
+    qui:   'Química',
+    com:   'Computación',
+    inf:   'Ing. Física',
+};
+
 // normaliza el texto a Unicode NFD
 function normalizeStr(str) {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -57,20 +77,6 @@ function loadSelectedCourses() {
     updateSelectedList();
 }
 
-// asigna un color CSS por prefijo de código de curso
-function colorKeyFor(code) {
-    const c = code.toLowerCase();
-    if (c.startsWith('bfi')) return 'fis';
-    if (c.startsWith('beg')) return 'eco';
-    if (c.startsWith('bef')) return 'eti';
-    if (c.startsWith('bic')) return 'com';
-    if (c === 'bma01') return 'cdi';
-    if (c === 'bma02') return 'cin';
-    if (c === 'bma03') return 'alg';
-    if (c.startsWith('bqu')) return 'qui';
-    return 'eco'; // fallback
-}
-
 // muestra los cursos de 'data'
 function showCourses(codes_course) {
     list_data_div.innerHTML = '';
@@ -93,10 +99,13 @@ function showCourses(codes_course) {
                 <div class="name">${course_name}</div>
                 <div class="tags">
                     <span class="code-chip">${code}</span>
+                    <span class="credit-chip">${SCHOOL_NAME[key]}</span>
                 </div>
             </div>
             <button class="add-btn" data-code="${code}">
-                ${isAdded ? '✔ Agregado' : '+ Agregar'}
+                ${isAdded
+                    ? `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg> Agregado`
+                    : `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 5v14M5 12h14"/></svg> Agregar`}
             </button>
         `;
 
@@ -163,7 +172,11 @@ function updateSelectedList() {
                 <div class="mi-name">${course_name}</div>
                 <div class="mi-code">${code}</div>
             </div>
-            <button class="remove" data-code="${code}" aria-label="Quitar">✖</button>
+            <button class="remove" data-code="${code}" aria-label="Quitar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                    <path d="M18 6 6 18M6 6l12 12"/>
+                </svg>
+            </button>
         `;
 
         item.querySelector('.remove').addEventListener('click', function() {

@@ -29,15 +29,15 @@
     --ink:       #2B2126;
     --ink-2:     #5A4F54;
     --muted:     #9A8E91;
-    /* Course colors — distinct, friendly, used as accents on tinted cards */
-    --c-fis: #4C63E0;  --c-fis-bg: #EDEFFC;
-    --c-eco: #149A86;  --c-eco-bg: #E4F4F1;
-    --c-eti: #8B54D8;  --c-eti-bg: #F1EAFB;
-    --c-com: #0E94BC;  --c-com-bg: #E2F2F8;
-    --c-cdi: #DD8214;  --c-cdi-bg: #FBEFDD;
-    --c-cin: #DB4A6B;  --c-cin-bg: #FBE7EC;
-    --c-alg: #3A9D4C;  --c-alg-bg: #E6F4E7;
-    --c-qui: #E0652A;  --c-qui-bg: #FBEADF;
+    /* Colores por escuela / categoría */
+    --c-basic: #97303F;  --c-basic-bg: #F6E9EB;   /* Básicos comunes (granate institucional) */
+    --c-mat:   #3A9D4C;  --c-mat-bg:   #E6F4E7;   /* Matemáticas */
+    --c-fis:   #4C63E0;  --c-fis-bg:   #EDEFFC;   /* Física */
+    --c-qui:   #E0652A;  --c-qui-bg:   #FBEADF;   /* Química */
+    --c-com:   #0E94BC;  --c-com-bg:   #E2F2F8;   /* Computación */
+    --c-inf:   #8B54D8;  --c-inf-bg:   #F1EAFB;   /* Ing. Física */
+    /* Color reservado para resaltar conflictos */
+    --c-cin:   #DB4A6B;  --c-cin-bg:   #FBE7EC;
     /* Shape */
     --r-sm: 8px;
     --r-md: 12px;

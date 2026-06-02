@@ -13,16 +13,14 @@ const DAYS    = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
 // ==================================================================
 // color por código de curso 
 function colorKeyFor(code) {
-    const c = code.toLowerCase();
-    if (c.startsWith('bfi')) return 'fis';
-    if (c.startsWith('beg')) return 'eco';
-    if (c.startsWith('bef')) return 'eti';
-    if (c.startsWith('bic')) return 'com';
-    if (c === 'bma01') return 'cdi';
-    if (c === 'bma02') return 'cin';
-    if (c === 'bma03') return 'alg';
-    if (c.startsWith('bqu')) return 'qui';
-    return 'eco';
+    const p = code.slice(0, 2).toLowerCase();
+    if (p[0] === 'b')          return 'basic'; // todos los b* son básicos
+    if (p === 'cm')            return 'mat';
+    if (p === 'cf')            return 'fis';
+    if (p === 'cq' || p === 'ch') return 'qui';
+    if (p === 'cc' || p === 'cl') return 'com';
+    if (p === 'if')            return 'inf';
+    return 'basic';            // fallback
 }
 // -------------------------------------------------------------------
 // construir grid del calendario
