@@ -113,7 +113,9 @@ function showCourses(codes_course) {
 function toggle(code) {
     var index = codes_selected.indexOf(code);
     if (index !== -1) {
+        // limpiar también la sección asociada
         codes_selected.splice(index, 1);
+        removeSectionFromStorage(code);
     } else {
         codes_selected.push(code);
     }
@@ -121,6 +123,14 @@ function toggle(code) {
     updateSelectedList();
     saveSelectedCourses();
 }
+function removeSectionFromStorage(code) {
+    var stored = JSON.parse(localStorage.getItem('sectionsSelected') || '{}');
+    if (stored[code] !== undefined) {
+        delete stored[code];
+        localStorage.setItem('sectionsSelected', JSON.stringify(stored));
+    }
+}
+
 
 // actualiza la lista de cursos seleccionados
 function updateSelectedList() {
