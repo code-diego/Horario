@@ -5,31 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horario FC-UNI</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-seleccionar.css">
 </head>
 <body>
-    <header>
-        <h1>Horario FC-UNI 2026-1</h1>
-        <a href="https://www.instagram.com/dtp.wolf/", target="_blank" class="sm-icon">
-            <img src="images/ig.png" alt="Insta" style="width:30px;height:30px;">
-        </a>
-    </header>
-    <main>
-        <div class="search-box"> 
-            <input type="text" id="search" oninput="searchInList()" placeholder="🔍 Buscar curso por nombre ó código del curso ">
-            <div id="list-data">
-                <!-- <ul> Generación de cursos </ul> -->
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="brand-mark">H</div>
+                <div class="brand-text">
+                    <span class="brand-title">Horario <b>FC·UNI</b></span>
+                    <span class="brand-sub">Facultad de Ciencias</span>
+                </div>
             </div>
+            <div class="topbar-spacer"></div>
+            <span class="term-badge">Ciclo 2026-1</span>
+            <a class="ig-link" href="https://www.instagram.com/dtp.wolf/" target="_blank" aria-label="Instagram">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+                </svg>
+            </a>
         </div>
-        <div class="selected-box">
-            <div>cursos :</div>
-            <!-- <ul> Generación de cursos-seleccionados </ul> -->
+    </header>
+
+    <main class="wrap">
+        <div class="page-head">
+            <span class="step-tag"><span class="dot"></span>Paso 1 de 2</span>
+            <h1>Arma tu horario</h1>
+            <p>Busca y agrega los cursos que llevarás este ciclo.</p>
         </div>
-        <button id="generate">generar</button>
+        <div class="layout">
+            <section>
+                <div class="searchbar">
+                    <!-- SVG LUPA -->
+                    <input type="text" id="search"
+                        placeholder="Buscar curso por nombre o código"
+                        autocomplete="off">
+                    <span class="search-count" id="searchCount">0 cursos</span>
+                </div>
+                <div class="list-head">
+                    <h2>Cursos disponibles</h2>
+                    <span class="hint">Ciclo 2026-1 · Facultad de Ciencias</span>
+                </div>
+                <div class="course-list" id="courseList"></div>
+            </section>
+
+            <aside class="rail">
+                <div class="card rail-card">
+                    <div class="rail-head">
+                        <h2>Mis curso</h2>
+                        <span class="count-pill" id="countPill">0</span>
+                    </div>
+                    <div class="mine" id="mine"></div>
+                    <div class="summary">
+                        <span>Total de créditos</span>
+                        <b><span id="credits">0</span> cr.</b>
+                    </div>
+                    <button class="btn btn-primary" id="generar">
+                        Generar horario
+                    </button>
+                    <p class="rail-note">Te mostraremos los horarios posibles.</p>
+                </div>
+            </aside>
+        </div>
     </main>
+
     <!-- script JS -->
     <!-- <script src="script-mock.js"></script> -->
     <script src="script-fetch.js"></script>
-    <!-- <script src="script-seleccionar.js"></script> -->
-    <!-- script JS -->
 </body>
 </html>

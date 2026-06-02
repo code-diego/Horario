@@ -1,11 +1,12 @@
 // ==================================================================
 // Constantes
 // ==================================================================
-const main_section = document.querySelector('main');
-const list_data_div = document.querySelector('#list-data');
-const list_selected_div = document.querySelector('.selected-box');
-const generate_button = document.querySelector('#generate');
-
+const list_data_div   = document.querySelector('#courseList');
+const list_selected_div = document.querySelector('#mine');
+const generate_button = document.querySelector('#generar');
+const searchCountEl   = document.getElementById('searchCount');
+const countPillEl     = document.getElementById('countPill');
+const creditsEl       = document.getElementById('credits');
 // ==================================================================
 // Estados
 // ==================================================================
@@ -24,18 +25,20 @@ function normalizeStr(str) {
 
 // funcion para el input  -> 'search'
 function searchInList(){
-    var filer = normalizeStr(document.getElementById('search').value);
-    var list = document.getElementById('list-data');
-    var elements = list.getElementsByTagName('li');
+    var filter = normalizeStr(document.getElementById('search').value);
+    var elements = document.querySelectorAll('#courseList .course');
+    var visible = 0;
 
-    for (var i=0; i< elements.length; i++) {
-        var textElement = normalizeStr(elements[i].textContent);
-        if (textElement.includes(filer)){
-            elements[i].style.display = 'flex';
+    elements.forEach(function(el) {
+        var text = normalizeStr(el.textContent);
+        if (text.includes(filter)) {
+            el.style.display = '';
+            visible++;
         } else {
-            elements[i].style.display = 'none';
+            el.style.display = 'none';
         }
-    }
+    });
+    searchCountEl.textContent = visible + (visible === 1 ? ' curso' : ' cursos');
 }
 
 // guarda los cursos seleccionados en localStorage
@@ -54,103 +57,111 @@ function loadSelectedCourses() {
     updateSelectedList();
 }
 
+// asigna un color CSS por prefijo de código de curso
+function colorKeyFor(code) {
+    const c = code.toLowerCase();
+    if (c.startsWith('bfi')) return 'fis';
+    if (c.startsWith('beg')) return 'eco';
+    if (c.startsWith('bef')) return 'eti';
+    if (c.startsWith('bic')) return 'com';
+    if (c === 'bma01') return 'cdi';
+    if (c === 'bma02') return 'cin';
+    if (c === 'bma03') return 'alg';
+    if (c.startsWith('bqu')) return 'qui';
+    return 'eco'; // fallback
+}
+
 // muestra los cursos de 'data'
 function showCourses(codes_course) {
-    var ul_element = document.createElement('ul');
-    ul_element.classList.add('scrollable-list');
+    list_data_div.innerHTML = '';
+    var count = 0;
 
     codes_course.forEach(function(code) {
-        var li_element = document.createElement('li');
-        course_name = DATA[code]['curso']; // uso de DATA
-        li_element.textContent = course_name;
+        var course_name = DATA[code]['curso'];
+        var key = colorKeyFor(code);
+        var isAdded = codes_selected.includes(code);
+        count++;
 
-        var div_code = document.createElement('div');
-        div_code.textContent = code;
-        li_element.appendChild(div_code);
+        var div = document.createElement('div');
+        div.classList.add('course');
+        if (isAdded) div.classList.add('added');
+        div.setAttribute('data-code', code);
 
-        // Marcar como seleccionado si está en codes_selected
-        if (codes_selected.includes(code)) {
-            li_element.classList.add('selected');
-        }
-    
-        // agregando evento
-        li_element.addEventListener('click', function() {
-            li_element.classList.toggle('selected');
-            var value = li_element.querySelector('div').textContent;
-            var index = codes_selected.indexOf(value);
-            if (index !== -1) {
-                codes_selected.splice(index, 1);
-            } else {
-                codes_selected.push(code);
-            }
-            updateSelectedList();
+        div.innerHTML = `
+            <span class="accent" style="background:var(--c-${key})"></span>
+            <div class="meta">
+                <div class="name">${course_name}</div>
+                <div class="tags">
+                    <span class="code-chip">${code}</span>
+                </div>
+            </div>
+            <button class="add-btn" data-code="${code}">
+                ${isAdded ? '✔ Agregado' : '+ Agregar'}
+            </button>
+        `;
+
+        div.querySelector('.add-btn').addEventListener('click', function() {
+            toggle(code);
         });
-    
-        ul_element.appendChild(li_element);
+
+        list_data_div.appendChild(div);
     });
-    list_data_div.appendChild(ul_element);
+
+    searchCountEl.textContent = count + (count === 1 ? ' curso' : ' cursos');
+}
+
+function toggle(code) {
+    var index = codes_selected.indexOf(code);
+    if (index !== -1) {
+        codes_selected.splice(index, 1);
+    } else {
+        codes_selected.push(code);
+    }
+    showCourses(Object.keys(DATA));
+    updateSelectedList();
+    saveSelectedCourses();
 }
 
 // actualiza la lista de cursos seleccionados
 function updateSelectedList() {
-    var div_title = document.createElement('div');
-    div_title.textContent = 'Cursos:';
-    
-    var ul_element_sel = document.createElement('ul');
-    ul_element_sel.classList.add('scrollable-list');
+    list_selected_div.innerHTML = '';
+    countPillEl.textContent = codes_selected.length;
 
-    // Limpiar lista
-    list_selected_div.textContent = '';
-    list_selected_div.appendChild(div_title);
-    
-    codes_selected.forEach(function(cs, index) {
-        var li_element_sel = document.createElement('li');
-        li_element_sel.style.display = 'flex';
-        li_element_sel.style.justifyContent = 'space-between';
-        li_element_sel.style.alignItems = 'center';
-        li_element_sel.style.padding = '10px';
-        li_element_sel.style.fontSize = '16px';
-        li_element_sel.style.position = 'relative';
-        
-        var span_text = document.createElement('span');
-        span_text.textContent = cs;
-        
-        var remove_button = document.createElement('button');
-        remove_button.textContent = '✖';
-        remove_button.style.position = 'absolute';
-        remove_button.style.right = '10px';
-        remove_button.style.top = '50%';
-        remove_button.style.transform = 'translateY(-50%)';
-        remove_button.style.cursor = 'pointer';
-        remove_button.style.background = 'red';
-        remove_button.style.color = 'white';
-        remove_button.style.border = 'none';
-        remove_button.style.padding = '5px 10px';
-        remove_button.style.borderRadius = '5px';
-        remove_button.style.fontSize = '16px';
-        
-        remove_button.addEventListener('click', function() {
-            codes_selected.splice(index, 1);
-            saveSelectedCourses(); // Guardar después de eliminar
-            updateSelectedList(); // Actualizar la lista después de eliminar
-            
-            // Actualizar la lista de cursos mostrados
-            var course_items = document.querySelectorAll('#list-data ul li');
-            course_items.forEach(function(item) {
-                var code = item.querySelector('div').textContent;
-                if (!codes_selected.includes(code)) {
-                    item.classList.remove('selected');
-                }
-            });
+    // creditsEl: data.json no tiene créditos, dejamos en 0
+    // Si añades 'creditos' a data.json, calcular aquí
+    creditsEl.textContent = '0';
+
+    if (codes_selected.length === 0) {
+        list_selected_div.innerHTML = `
+            <div class="empty-mine">
+                <p>Aún no agregas cursos.</p>
+            </div>`;
+        return;
+    }
+
+    codes_selected.forEach(function(code) {
+        var course_name = DATA[code]['curso'];
+        var key = colorKeyFor(code);
+
+        var item = document.createElement('div');
+        item.classList.add('mine-item');
+        item.setAttribute('data-code', code);
+
+        item.innerHTML = `
+            <span class="swatch" style="background:var(--c-${key})"></span>
+            <div>
+                <div class="mi-name">${course_name}</div>
+                <div class="mi-code">${code}</div>
+            </div>
+            <button class="remove" data-code="${code}" aria-label="Quitar">✖</button>
+        `;
+
+        item.querySelector('.remove').addEventListener('click', function() {
+            toggle(code);
         });
-        
-        li_element_sel.appendChild(span_text);
-        li_element_sel.appendChild(remove_button);
-        ul_element_sel.appendChild(li_element_sel);
+
+        list_selected_div.appendChild(item);
     });
-    
-    list_selected_div.appendChild(ul_element_sel);
-    saveSelectedCourses(); // Guardar cuando se actualiza la lista
 }
 
 // ==================================================================
@@ -164,6 +175,7 @@ showCourses(Object.keys(DATA));
 // ==================================================================
 // Navegacion
 // ==================================================================
+document.getElementById('search').addEventListener('input', searchInList);
 generate_button.addEventListener('click', function () {
     saveSelectedCourses();              // por seguridad
     window.location.href = 'horario.html';

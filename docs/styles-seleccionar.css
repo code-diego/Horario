@@ -1,0 +1,290 @@
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 372px;
+    gap: 26px;
+    align-items: start;
+}
+
+/* ---- Search ---- */
+.searchbar {
+    display: flex; align-items: center; gap: 12px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 4px 6px 4px 16px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 18px;
+    transition: border-color .15s, box-shadow .15s;
+}
+.searchbar:focus-within { 
+    border-color: var(--garnet-600); 
+    box-shadow: 0 0 0 4px var(--garnet-tint); 
+}
+.searchbar svg { 
+    flex: none; color: var(--muted); 
+}
+.searchbar input {
+    flex: 1; 
+    border: none; 
+    outline: none; 
+    background: transparent;
+    font-size: 15.5px; 
+    color: var(--ink);
+    padding: 13px 0;
+}
+.searchbar input::placeholder {
+    color: var(--muted); 
+}
+.search-count {
+    font-size: 12.5px; 
+    font-weight: 700; 
+    color: var(--ink-2);
+    background: var(--bg-2); 
+    padding: 8px 12px; 
+    border-radius: 10px; 
+    white-space: nowrap;
+}
+
+/* ---- Course list ---- */
+.list-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    margin: 0 2px 12px;
+}
+.list-head h2 { 
+    font-family: var(--ff-display); 
+    font-size: 16px;
+    margin: 0; 
+    font-weight: 700; 
+}
+.list-head .hint { 
+    font-size: 12.5px; 
+    color: var(--muted); 
+}
+
+.course-list { 
+    display: flex; 
+    flex-direction: column; gap: 10px; 
+}
+
+.course {
+    display: grid;
+    grid-template-columns: 6px 1fr auto;
+    align-items: center;
+    gap: 16px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    padding: 14px 16px 14px 0;
+    box-shadow: var(--shadow-sm);
+    transition: transform .12s, box-shadow .15s, border-color .15s;
+}
+.course:hover { transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+    border-color: #DCCFBE;
+}
+.course .accent { width: 6px;
+    height: 100%; 
+    min-height: 44px; 
+    border-radius: 6px 0 0 6px; 
+    align-self: stretch; 
+}
+.course .meta { min-width: 0; 
+}
+.course .name { font-weight: 700; 
+    font-size: 15px; 
+    line-height: 1.25; 
+}
+.course .tags { display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    margin-top: 6px; 
+    flex-wrap: wrap; 
+}
+.code-chip {
+    font-family: var(--ff); 
+    font-size: 11.5px; 
+    font-weight: 700; 
+    letter-spacing: .03em;
+    text-transform: uppercase; 
+    color: var(--ink-2);
+    background: var(--bg-2); 
+    border: 1px solid var(--line);
+    padding: 3px 8px; 
+    border-radius: 7px;
+}
+.credit-chip { font-size: 12px; 
+    color: var(--muted); 
+    font-weight: 600; 
+}
+
+.add-btn {
+    flex: none; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 7px;
+    border: 1px solid var(--garnet-600); 
+    color: var(--garnet-700);
+    background: var(--surface);
+    font-weight: 700; 
+    font-size: 13.5px; 
+    padding: 9px 14px; 
+    border-radius: 10px;
+    transition: all .14s;
+}
+.add-btn:hover { 
+    background: var(--garnet-700); 
+    color: #fff; 
+}
+.add-btn svg { 
+    transition: transform .14s; 
+}
+
+.course.added { 
+    border-color: transparent; 
+    background: linear-gradient(0deg, var(--bg-2), var(--bg-2)); 
+}
+.course.added .add-btn {
+    border-color: transparent; 
+    background: var(--c-eco-bg); color: var(--c-eco);
+}
+.course.added .add-btn:hover { 
+    background: #D6EDE8; 
+    color: var(--c-eco); 
+}
+
+/* ---- Right rail ---- */
+.rail { position: sticky; 
+    top: 92px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 16px; 
+}
+.rail-card { padding: 18px; 
+}
+.rail-head { display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 14px; 
+}
+.rail-head h2 { font-family: var(--ff-display); 
+    font-size: 17px; 
+    margin: 0; 
+}
+.count-pill {
+    font-size: 12.5px; 
+    font-weight: 800; 
+    color: #fff;
+    background: var(--garnet-700); 
+    border-radius: 999px;
+    min-width: 24px; 
+    height: 24px; 
+    padding: 0 8px;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.mine { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 9px; 
+}
+.mine-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center; 
+    gap: 11px;
+    background: var(--bg); 
+    border: 1px solid var(--line-2);
+    border-radius: 11px; 
+    padding: 10px 11px;
+    animation: pop .18s ease;
+}
+@keyframes pop { 
+    from { transform: scale(.985); } to { transform: scale(1); } 
+}
+.swatch { width: 11px; 
+    height: 11px; 
+    border-radius: 4px; 
+    flex: none; 
+}
+.mine-item .mi-name { font-weight: 700; 
+    font-size: 13.5px; 
+    line-height: 1.2; 
+}
+.mine-item .mi-code { font-size: 11.5px; 
+    color: var(--muted); 
+    font-weight: 600; 
+    margin-top: 1px; 
+}
+.remove {
+    width: 28px; 
+    height: 28px; 
+    border-radius: 8px; 
+    border: none;
+    background: transparent; 
+    color: var(--muted);
+    display: grid; 
+    place-items: center; 
+    transition: all .14s;
+
+}
+.remove:hover { 
+    background: var(--c-cin-bg); 
+    color: var(--c-cin); 
+}
+
+.empty-mine { 
+    text-align: center; 
+    padding: 26px 12px; 
+    color: var(--muted); 
+}
+.empty-mine svg { 
+    color: #D8C9B4; 
+    margin-bottom: 8px; 
+}
+.empty-mine p { 
+    margin: 0; 
+    font-size: 13.5px; 
+}
+
+.summary {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin: 16px 2px 14px; 
+    padding-top: 14px; 
+    border-top: 1px dashed var(--line);
+    font-size: 13.5px; 
+    color: var(--ink-2); 
+    font-weight: 600;
+
+}
+.summary b { 
+    font-family: var(--ff-display); 
+    font-size: 16px; 
+    color: var(--ink); 
+    white-space: nowrap; 
+}
+.rail-card .btn-primary { 
+    width: 100%; 
+}
+.rail-note { 
+    font-size: 12px; 
+    color: var(--muted); 
+    text-align: center; 
+    margin: 10px 4px 0; 
+}
+
+@media (max-width: 940px) {
+    .layout { 
+        grid-template-columns: 1fr; 
+    }
+    .rail { 
+        position: static; 
+    }
+    .topbar-inner, .wrap { 
+        padding-left: 16px; 
+        padding-right: 16px; 
+    }
+}

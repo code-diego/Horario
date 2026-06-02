@@ -1,208 +1,269 @@
+/* ============================================================
+    Horario FC-UNI — shared design system
+============================================================ */
+
 /* * {
     border: 1px solid #000000;
     padding: 5px;
 } */
 
-header {
-    background-color: #561C24;
-    color: white;
-    text-align: center;
-    position: relative;
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&display=swap');
+
+:root {
+    /* Brand — garnet / UNI */
+    --garnet-900: #4E121C;
+    --garnet-800: #631824;
+    --garnet-700: #7C2030;
+    --garnet-600: #97303F;
+    --garnet-tint: #F6E9EB;
+    /* Accent — warm gold */
+    --gold-600: #C8902C;
+    --gold-500: #E0A53A;
+    --gold-100: #FBF1DC;
+    /* Neutrals — warm */
+    --bg:        #F7F2EA;
+    --bg-2:      #F1EADD;
+    --surface:   #FFFFFF;
+    --line:      #E7DFD2;
+    --line-2:    #EFE8DB;
+    --ink:       #2B2126;
+    --ink-2:     #5A4F54;
+    --muted:     #9A8E91;
+    /* Course colors — distinct, friendly, used as accents on tinted cards */
+    --c-fis: #4C63E0;  --c-fis-bg: #EDEFFC;
+    --c-eco: #149A86;  --c-eco-bg: #E4F4F1;
+    --c-eti: #8B54D8;  --c-eti-bg: #F1EAFB;
+    --c-com: #0E94BC;  --c-com-bg: #E2F2F8;
+    --c-cdi: #DD8214;  --c-cdi-bg: #FBEFDD;
+    --c-cin: #DB4A6B;  --c-cin-bg: #FBE7EC;
+    --c-alg: #3A9D4C;  --c-alg-bg: #E6F4E7;
+    --c-qui: #E0652A;  --c-qui-bg: #FBEADF;
+    /* Shape */
+    --r-sm: 8px;
+    --r-md: 12px;
+    --r-lg: 18px;
+    --r-xl: 26px;
+    --shadow-sm: 0 1px 2px rgba(46,24,28,.06), 0 1px 3px rgba(46,24,28,.05);
+    --shadow-md: 0 4px 14px rgba(60,28,34,.08), 0 2px 6px rgba(60,28,34,.05);
+    --shadow-lg: 0 18px 44px rgba(60,28,34,.14), 0 6px 16px rgba(60,28,34,.08);
+    --ff-display: 'Bricolage Grotesque', system-ui, sans-serif;
+    --ff: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+* { 
+    box-sizing: border-box; 
+}
+html, body { 
+    margin: 0; 
+    padding: 0; 
+}
+body {
+    font-family: var(--ff);
+    color: var(--ink);
+    background:
+        radial-gradient(1200px 520px at 88% -10%, var(--gold-100) 0%, transparent 60%),
+        radial-gradient(900px 480px at -5% 0%, #F3ECE0 0%, transparent 55%),
+        var(--bg);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+button { 
+    font-family: inherit; 
+    cursor: pointer; 
+}
+input  { 
+    font-family: inherit; 
+}
+a { 
+    color: inherit; 
+    text-decoration: none;
+}
+
+/* ---------- Top bar ---------- */
+.topbar {
+    position: sticky; 
+    top: 0; 
+    z-index: 50;
+    background: linear-gradient(100deg, var(--garnet-900), var(--garnet-700) 70%);
+    color: #fff;
+    border-bottom: 3px solid var(--gold-500);
+}
+.topbar-inner {
+    max-width: 1320px; 
+    margin: 0 auto;
+    padding: 0 28px; 
+    height: 68px;
     display: flex; 
     align-items: center; 
-    justify-content: space-between;
+    gap: 16px;
 }
-
-header h1 {
-    margin: 0;
-    padding: 20px;
-    flex-grow: 1; 
-    text-align: center;
+.brand { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px;
 }
-
-header.sm-icon {
-    margin-left: auto; 
+.brand-mark {
+    width: 38px; 
+    height: 38px; 
+    border-radius: 11px;
+    background: linear-gradient(150deg, var(--gold-500), var(--gold-600));
+    color: var(--garnet-900);
+    display: grid; 
+    place-items: center;
+    font-family: var(--ff-display); 
+    font-weight: 800; font-size: 19px;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.25);
+    flex: none;
 }
-
-body {
-    background-color: #C7B7A3;
-    text-align: center;
-    margin: 0;
-}
-
-main {
-    display: flex;
-    justify-content: space-around;
-}
-
-main .search-box{
-    width: 42%;
-    padding: 20px;
-
-}
-
-input{
-    width: 90%;
-    padding: 10px 20px 10px 40px;
-    margin-bottom: 10px;
-    border : none;
-    border-radius: 25px;
-    background-color: #f5f5f5;
-    font-size: 16px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    outline: none;
-}
-
-input:hover{
-    background-color: #e0e0e0;
-}
-
-main .selected-box{
-    width: 40%;
-    padding: 20px;
-}
-
-ul {
-    background-color: #E8D8C4;
-}
-
-.scrollable-list {
-    display: flex;
+.brand-text { 
+    display: flex; 
     flex-direction: column;
-    max-height: 520px; 
-    overflow-y: scroll; /*Para no sobrepasar el tamaño maximo */
-    list-style-type: none; /* Elimina puntos de lista */
-    padding: 0;
+    line-height: 1.05; 
 }
-.scrollable-list::-webkit-scrollbar {
-    width: 4px;
+.brand-title {
+    font-family: var(--ff-display); 
+    font-weight: 700;
+    font-size: 21px; letter-spacing: .2px;
 }
-.scrollable-list::-webkit-scrollbar-track {
-    background-color: transparent;
+.brand-title b { 
+    color: var(--gold-500); 
+    font-weight: 800; 
 }
-.scrollable-list::-webkit-scrollbar-thumb {
-    background-color: #454372;
-    border-radius: 20px;
-}
-
-  
-.scrollable-list li {
-    display: flex;
-    justify-content: center; /*horizontalmente*/
-    align-items: center; /*verticalmente*/
-    flex-direction: column;
-    text-align: center; /*centrar texto*/
-    border-top: 1px solid #454372;
-    border-right: 1px solid #454372;
-    border-left: 1px solid #454372;
-    padding: 1em;
-}
-.scrollable-list li:last-child {
-    border-bottom: 1px solid #454372;
+.brand-sub { 
+    font-size: 11.5px; 
+    font-weight: 600; 
+    color: #E9C7B8; 
+    letter-spacing: .14em; 
+    text-transform: uppercase; 
 }
 
-.scrollable-list li div{
-    border: 1px solid #454372;
-    font-size: 1em;
-    color: #777;
-    width: 80px;
+.topbar-spacer { 
+    flex: 1; 
+}
+.term-badge {
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.22);
+    color: #fff; 
+    font-weight: 700; 
+    font-size: 12.5px;
+    padding: 6px 12px; 
+    border-radius: 999px; 
+    letter-spacing: .03em;
+}
+.ig-link {
+    width: 38px; 
+    height: 38px; 
+    border-radius: 11px;
+    display: grid; 
+    place-items: center;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.16);
+    transition: background .15s, transform .15s;
+}
+.ig-link:hover { 
+    background: rgba(255,255,255,.2); 
+    transform: translateY(-1px); 
 }
 
-.selected {
-    background-color: #D8DBA9; 
+/* ---------- Page shell ---------- */
+.wrap { 
+    max-width: 1320px; 
+    margin: 0 auto; 
+    padding: 26px 28px 64px; 
 }
-   
-button#generate {
-    position: fixed;
-    bottom: 80px;
-    left: 50%; 
-    transform: translateX(-50%);
-    font-size: 20px;
-    padding: 10px 25px;
-    border-radius: 18px;
-    border: 2px solid #454372;
-    box-shadow: 2px 5px 10px var(--color-shadow);
+.page-head { 
+    margin: 6px 0 22px; 
 }
-button#generate:hover {
-    background-color: #454372;
-    color: white;
+.page-head h1 {
+    font-family: var(--ff-display); 
+    font-weight: 700;
+    font-size: 27px; 
+    margin: 0 0 4px;
 }
-
-/* ====(after of button -> generar)==== */
-
-main .calendar{
-    width: 75%;
-    padding: 20px;
+.page-head p { 
+    margin: 0; color: var(--ink-2); 
+    font-size: 14.5px; 
 }
-
-main .allcourses{
-    width: 24%;
-    padding: 20px;
+.step-tag {
+    display: inline-flex; 
+    align-items: center; 
+    gap: 7px;
+    font-size: 12px; 
+    font-weight: 700; 
+    letter-spacing: .04em; 
+    text-transform: uppercase;
+    color: var(--garnet-700); 
+    background: var(--garnet-tint);
+    padding: 5px 11px; 
+    border-radius: 999px; 
+    margin-bottom: 10px; 
+    white-space: nowrap;
 }
-
-/* table *{
-    border: 1px solid black;
-} */
-
-table {
-    border: 1px solid black;
-    width: 100%;
-    height: 700px;
-    border-collapse: collapse;
+.step-tag .dot { 
+    width: 6px; 
+    height: 6px; 
+    border-radius: 50%; 
+    background: var(--garnet-600); 
 }
 
-table th {
-    border: 1px solid black;
-    background-color: #6D2932;
-    color: white;
-    width: 14.28%;
-    height: auto;
+/* ---------- Generic card ---------- */
+.card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-sm);
 }
 
-table td[class] {
-    background-color: #5CA4A9;
-    color: white;
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; gap: 9px;
+    border: none; 
+    border-radius: 12px;
+    font-weight: 700; 
+    font-size: 15px; 
+    padding: 13px 20px;
+    transition: transform .12s, box-shadow .15s, background .15s;
+}
+.btn-primary {
+    background: linear-gradient(180deg, var(--garnet-600), var(--garnet-700));
+    color: #fff; 
+    box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255,255,255,.14);
+}
+.btn-primary:hover { 
+    transform: translateY(-1px); 
+    box-shadow: var(--shadow-lg); 
+}
+.btn-primary:disabled { 
+    opacity: .45; 
+    cursor: not-allowed; 
+    transform: none; 
+    box-shadow: var(--shadow-sm); 
+}
+.btn-ghost {
+    background: var(--surface); 
+    color: var(--garnet-700);
+    border: 1px solid var(--line); 
+    box-shadow: var(--shadow-sm);
+}
+.btn-ghost:hover { 
+    background: var(--bg-2); 
 }
 
-table td.conflict{
-    background-color: #ED6A5A;
-    color: white;
+/* ---------- Scrollbars ---------- */
+.scroll::-webkit-scrollbar { 
+    width: 10px; 
 }
-
-.allcourses {
-    width: 100%;
+.scroll::-webkit-scrollbar-track { 
+    background: transparent; 
 }
-
-.allcourses > div{
-    border: 1px solid #454372;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    background-color: #dacbb8;
-    margin: 20px 50px;
-    padding: 10px;
+.scroll::-webkit-scrollbar-thumb { 
+    background: #DCCBB4; 
+    border-radius: 999px; 
+    border: 3px solid var(--surface); 
 }
-
-.allcourses > div > div{
-    display: flex;
-    flex-direction: row;
-
-}
-
-.allcourses > div > div > div{
-    border: 2px solid #000;
-    padding : 5px 10px;
-    margin: 2px;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s, transform 0.3s;
-}
-.allcourses > div > div > div:hover{
-    background-color:  rgb(99, 179, 99);
-    transform: scale(1.1); 
-}
-
-.select-one {
-    background-color: rgb(99, 179, 99);
+.scroll::-webkit-scrollbar-thumb:hover { 
+    background: #CBB494; 
 }

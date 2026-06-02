@@ -4,208 +4,161 @@
 var codes_selected = JSON.parse(localStorage.getItem('selectedCourses') || '[]');
 var sections_selected_courses = JSON.parse(localStorage.getItem('sectionsSelected') || '{}');
 
-// ==================================================================
-// Referncias DOM
-// ==================================================================
-const main_section = document.querySelector('main');
+const DAY_COL = { LU: 2, MA: 3, MI: 4, JU: 5, VI: 6, SA: 7 };
+const TIMES   = ['7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm','9pm'];
+const DAYS    = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
 
 // ==================================================================
 // Funciones
 // ==================================================================
+// color por código de curso 
+function colorKeyFor(code) {
+    const c = code.toLowerCase();
+    if (c.startsWith('bfi')) return 'fis';
+    if (c.startsWith('beg')) return 'eco';
+    if (c.startsWith('bef')) return 'eti';
+    if (c.startsWith('bic')) return 'com';
+    if (c === 'bma01') return 'cdi';
+    if (c === 'bma02') return 'cin';
+    if (c === 'bma03') return 'alg';
+    if (c.startsWith('bqu')) return 'qui';
+    return 'eco';
+}
+// -------------------------------------------------------------------
+// construir grid del calendario
+function buildGrid() {
+    const tt = document.getElementById('timetable');
+    let html = '<div class="th corner">Hora</div>';
+    DAYS.forEach(d => html += `<div class="th">${d}</div>`);
 
-// retorna una tabla de horarios
-function makeTableCalendar(){
-    var table = document.createElement('table');
-    var days = ['Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
-    var hourStart = 7;
-    var hourEnd = 22;
-
-    var header = document.createElement('tr');
-    header.appendChild(document.createElement('th'));
-    days.forEach(function(day){
-        var day_th = document.createElement('th');
-        day_th.textContent = day;
-        header.appendChild(day_th);
-    })
-    table.appendChild(header);
-
-    for (var hour = hourStart; hour < hourEnd; hour++){
-        var row = createRow(hour);
-        table.appendChild(row);
+    for (let r = 0; r < TIMES.length; r++) {
+        html += `<div class="time-lbl" style="grid-column:1;grid-row:${r+2}">${TIMES[r]}</div>`;
+        for (let c = 0; c < 6; c++) {
+            html += `<div class="cell ${r%2?'alt':''}" style="grid-column:${c+2};grid-row:${r+2}"></div>`;
+        }
     }
-    return table
+    tt.innerHTML = html;
 }
+// -------------------------------------------------------------------
+// pintar bloques de cursos
+function placeBlocks() {
+    const tt = document.getElementById('timetable');
+    // quitar bloques anteriores
+    tt.querySelectorAll('.block').forEach(b => b.remove());
 
-// retorna una fila de la tabla
-function createRow(hour) {
-    var prefix_days = ['LU','MA','MI','JU','VI','SA'];
-    var row = document.createElement('tr');
-    row.appendChild(createTimeHeader(hour));
-    for (var i = 0; i < 6; i++){
-        var cell = document.createElement('td');
-        cell.setAttribute('id',prefix_days[i]+'-'+hour);
-        row.appendChild(cell);
-    }
-    return row;
-}
+    var placed = []; // para detección de conflictos
 
-// retorna el encabezado en una fila de la tabla
-function createTimeHeader(hour){
-    var hour_n = (hour%12 == 0) ? 12 : hour%12;
-    var period = (hour < 12) ? 'am' : 'pm';
-    var time_cell = document.createElement('th');
-    time_cell.textContent = hour_n + period + ' - ' + ((hour_n+1 === 13)?1:(hour_n+1)) + period;
-    return time_cell;
-}
+    Object.keys(sections_selected_courses).forEach(function(code) {
+        var sec = sections_selected_courses[code];
+        var horarios = DATA[code]['seccion'][sec]['horario'];
+        if (!horarios || horarios.includes('n.d.')) return;
 
-// ------------------------------------------------------------------
+        var key = colorKeyFor(code);
+        var course_name = DATA[code]['curso'];
+        var aulas = DATA[code]['seccion'][sec]['aula'] || [];
 
-// retorna div con div-curso's en el div -> 'allcourses'
-function makeCoursesWithSection(codes_s){
-    var courses = document.createElement('div');
-    courses.classList.add('allcourses')
+        horarios.forEach(function(h, i) {
+            var parts = h.split(' ');
+            var day   = parts[0];
+            var range = parts[1].split('-');
+            var start = parseInt(range[0]);
+            var end   = parseInt(range[1]);
+            var col   = DAY_COL[day];
+            if (!col) return;
 
-    var title = document.createElement('h3');
-    title.textContent = "*seleccione la sección de los cursos"; 
-    title.style.fontWeight = "normal"; 
-    courses.appendChild(title);
+            var rowStart = start - 7 + 2;
+            var rowEnd   = end   - 7 + 2;
+            var room     = aulas[i] || '';
 
-    codes_s.forEach(function(code){
-        var course = document.createElement('div');
-        course.innerHTML = code;
-        course.appendChild(addCourseSection(code));
-        courses.appendChild(course);
-    })
-    return courses;
-}
+            // crear bloque
+            var block = document.createElement('div');
+            block.className = 'block';
+            block.style.setProperty('--bd',   `var(--c-${key})`);
+            block.style.setProperty('--bg-c', `var(--c-${key}-bg)`);
+            block.style.gridColumn = col;
+            block.style.gridRow    = `${rowStart} / ${rowEnd}`;
+            block.innerHTML = `
+                <div class="b-name">${course_name}</div>
+                <div class="b-row">
+                    <span class="b-sec">Sec ${sec}</span>
+                    <span class="b-room">${room}</span>
+                </div>`;
 
-// agrega las secciones al div-curso
-function addCourseSection(course_code){
-    var course_sections = document.createElement('div');
-    var sections = DATA[course_code]['seccion'];
-    var name_sections = Object.keys(sections);
-    
-    var old_cd_crs_select = '';
-
-    name_sections.forEach(function(sec){
-        var section_div = document.createElement('div');
-        section_div.classList.add(course_code+'-'+sec);
-        section_div.textContent = sec;
-
-        section_div.addEventListener('click', function(){
-            var sec_select = section_div.textContent;
-            var old_sec = sections_selected_courses[course_code];
-            
-            if (old_cd_crs_select && course_code === old_cd_crs_select ){
-                // si se selecciona el mismo curso -> cambio de seccion
-
-                if (sec !== old_sec){
-                    // si se selecciona una nueva seccion (del mismo curso)   
-                    var old_sec_div = document.querySelector('.'+course_code+'-'+old_sec);
-                    if (old_sec_div){
-                        old_sec_div.classList.remove('select-one');
-                    }
-                }else {
-                    // si se selecciona la misma seccion
-                    var old_sec_div = document.querySelector('.'+course_code+'-'+old_sec+'.select-one');
-                    if (old_sec_div){
-                        old_sec_div.classList.remove('select-one');
-                        delete sections_selected_courses[course_code];
-                        clearCellCourse(course_code);
-                        return;
-                    }
+            // detección de conflicto
+            placed.forEach(function(p) {
+                if (p.col === col && p.start < rowEnd && rowStart < p.end) {
+                    block.classList.add('conflict');
+                    p.el.classList.add('conflict');
                 }
-                clearCellCourse(course_code);
-            }
+            });
 
-            makeDivCourse(course_code, sec);
-
-            section_div.classList.toggle('select-one');
-            sections_selected_courses[course_code] = sec_select;
-            old_cd_crs_select = course_code;
-
-        })
-        course_sections.appendChild(section_div);
-    })
-    return course_sections
+            placed.push({ col, start: rowStart, end: rowEnd, el: block });
+            tt.appendChild(block);
+        });
+    });
 }
+// -------------------------------------------------------------------
+// panel de secciones
+function buildSecList() {
+    var wrap = document.getElementById('secList');
+    wrap.innerHTML = '';
 
-// ------------------------------------------------------------------
-
-// pinta el curso-sec seleccionado(clickeado) 
-function makeDivCourse(course_code, section){
-    var schedules_data = DATA[course_code]['seccion'][section]['horario'];
-    if (schedules_data.includes('n.d.')) {
-        alert('No hay horarios para este curso :C');
+    if (codes_selected.length === 0) {
+        wrap.innerHTML = '<p style="color:var(--muted);padding:12px">No hay cursos seleccionados.</p>';
         return;
     }
 
-    // schedules_data (ejemplo) -> ['MI 10-12','VI 10-12']
-    schedules_data.forEach(function(hour_data){
-        var day = hour_data.split(' ')[0];
-        var hourStar = parseInt(hour_data.split(' ')[1].split('-')[0]);
-        var hourEnd = parseInt(hour_data.split(' ')[1].split('-')[1]);
-        var course_name = DATA[course_code]['curso'];
+    codes_selected.forEach(function(code) {
+        var course_name = DATA[code]['curso'];
+        var key = colorKeyFor(code);
+        var secciones = Object.keys(DATA[code]['seccion']);
+        var secActiva = sections_selected_courses[code] || '';
 
-        for (var h = hourStar; h < hourEnd; h++){
-            var cell = document.querySelector('#'+day+'-'+(h));
-            var divs_cell = cell.querySelectorAll('div');
+        var card = document.createElement('div');
+        card.className = 'sec-card';
+        card.style.setProperty('--bd', `var(--c-${key})`);
 
-            var div_course = document.createElement('div');
-            if (divs_cell.length == 0){
-                // si la celda no tiene cursos(divs)
-                cell.classList.add(course_code); // old
-                div_course.textContent = course_name + ' - ' + section;
-                div_course.classList.add(course_code);
-                cell.appendChild(div_course);
-            } else {
-                if (divs_cell[0].id !== course_code){
-                    // si la celda solo tiene un curso(diferente al actual)
-                    cell.classList.add('conflict');
-                    cell.classList.add(course_code); // old
-                    div_course.textContent = course_name + ' - ' + section;
-                    div_course.classList.add(course_code);
-                    cell.appendChild(div_course);
+        var pills = secciones.map(function(s) {
+            var on = s === secActiva ? 'on' : '';
+            return `<button class="pill ${on}" data-code="${code}" data-sec="${s}">${s}</button>`;
+        }).join('');
+
+        card.innerHTML = `
+            <div class="sec-top">
+                <span class="sec-dot"></span>
+                <div>
+                    <div class="sec-name">${course_name}</div>
+                    <div class="sec-code">${code}</div>
+                </div>
+            </div>
+            <div class="sec-label">Sección</div>
+            <div class="pills">${pills}</div>
+        `;
+
+        card.querySelectorAll('.pill').forEach(function(pill) {
+            pill.addEventListener('click', function() {
+                var c   = pill.dataset.code;
+                var sec = pill.dataset.sec;
+
+                if (sections_selected_courses[c] === sec) {
+                    // clic en la misma sección → deseleccionar
+                    delete sections_selected_courses[c];
+                } else {
+                    sections_selected_courses[c] = sec;
                 }
-            } 
-        }   
-    })
-}
+                localStorage.setItem('sectionsSelected', JSON.stringify(sections_selected_courses));
+                buildSecList();
+                placeBlocks();
+            });
+        });
 
-// limpia el div(course) de la celda
-function clearCellCourse(code_c){
-    var divs_cell = document.querySelectorAll('div.'+code_c);
-
-    divs_cell.forEach(div_c => {
-        var cell = div_c.parentElement;
-        cell.classList.remove(code_c);
-        // si la celda tiene solo un curso
-        if (cell.querySelectorAll('div').length <= 1){
-            cell.classList.remove('conflict');
-            cell.removeAttribute('class'); 
-        } else {
-            cell.classList.remove('conflict');
-        }
-
-        div_c.remove();
-    })
-}
-
-// limpia todas las celdas del horario
-function clearAllCells(){
-    const cells = document.querySelectorAll('.calendar td');
-    cells.forEach(cell => {
-        cell.textContent = '';
-    })
+        wrap.appendChild(card);
+    });
 }
 
 // ==================================================================
-// Inicializacion
+// Inicialización
 // ==================================================================
-var calendar_div = document.createElement('div');
-calendar_div.classList.add('calendar');
-calendar_div.appendChild(makeTableCalendar());
-main_section.appendChild(calendar_div);
-
-var allcourses_div = makeCoursesWithSection(codes_selected);
-main_section.appendChild(allcourses_div);
+buildGrid();
+buildSecList();
+placeBlocks();
